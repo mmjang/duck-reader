@@ -1,0 +1,58 @@
+.dictionary {
+  position: fixed;
+  bottom: 0;
+  max-height: 38vh;
+  width: 100vw;
+  padding: 8px;
+  background-color: gainsboro;
+  overflow-y: scroll;
+  box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.71);
+}
+
+.dictionary .definition-wrapper {
+  margin: 8px 0;
+}
+
+.dictionary .loading {
+  display: flex;
+  justify-content: center;
+}
+
+.dictionary .loading img {
+  height: 60px;
+}
+
+.dictionary.compact {
+  line-height: 1.8;
+  max-height: 20vh;
+}
+
+.dictionary.compact .tag {
+  border-radius: 8px;
+  background-color: ghostwhite;
+  margin: 2px 4px;
+  padding: 2px 4px;
+}
+
+.dictionary .icon-row {
+  padding-bottom: 4px;
+  position: relative;
+  height: 28px;
+  text-align: center;
+  color: white;
+  transform: translateY(-4px);
+  border-radius: 16px;
+}
+
+.dictionary .icon-row:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.dictionary .icon-row .expand-icon {
+  width: 30px;
+}
+
+.dictionary .icon-row .close-icon {
+  position: absolute;
+  right: 0;
+}

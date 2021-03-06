@@ -1,0 +1,5 @@
+.word-tile.selected {
+  color: white;
+  background-color: teal;
+  border-radius: 2px;
+}

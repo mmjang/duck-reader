@@ -1,0 +1,28 @@
+.home-banner {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgb(245, 243, 243);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.home-banner .title {
+  text-align: center;
+  line-height: 55px;
+  font-size: 18px;
+  color: rgb(121, 121, 121);
+}
+
+.home-banner .card-list-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: darkolivegreen;
+  color: aliceblue;
+}

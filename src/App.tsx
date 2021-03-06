@@ -1,25 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Toaster } from "react-hot-toast";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.css";
+import CardListView from "./views/cardlist/CardListView";
+import MainView from "./views/main/MainView";
+import ReaderView from "./views/reader/ReaderView";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Switch>
+          <Route path="/" exact>
+            <MainView></MainView>
+          </Route>
+          <Route path="/article/:id">
+            <ReaderView></ReaderView>
+          </Route>
+          <Route path="/cardlist">
+            <CardListView></CardListView>
+          </Route>
+        </Switch>
+      </Router>
+      <Toaster />
+    </>
   );
 }
 

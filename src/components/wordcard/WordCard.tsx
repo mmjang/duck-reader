@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Card } from "../../types/types";
+import { bracketToBoldTag, maskWord, maskBold } from "../../utils/tags";
 import "./WordCard.css";
 
 type State = "show" | "hide";
@@ -7,23 +8,6 @@ type State = "show" | "hide";
 type Props = Card & {
   defaultState: State;
 };
-
-function bracketToBoldTag(str: string) {
-  return str.replace(/\[\[(.+?)\]\]/g, "<b>$1</b>");
-}
-
-function maskWord(word: string) {
-  return word.replace(/\S/g, "*");
-}
-
-function maskBold(str: string) {
-  return str.replace(
-    /<b>(.+?)<\/b>/g,
-    (substring: string, ...args: any[]): string => {
-      return maskWord(args[0]);
-    }
-  );
-}
 
 export default function WordCard({
   defaultState,

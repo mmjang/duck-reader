@@ -6,6 +6,11 @@ import { Token } from "../../types/types";
 import { collins } from "../../api/collins";
 import Dictionary from "../dictionary/Dictionary";
 import "./Reader.css";
+import { useLocation } from "react-router-dom";
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 export default function Reader({
   title = "",

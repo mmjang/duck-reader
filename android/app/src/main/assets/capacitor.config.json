@@ -1,0 +1,13 @@
+{
+  "appId": "com.mmjang.webducking",
+  "appName": "webducking",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

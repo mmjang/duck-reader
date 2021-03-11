@@ -53,4 +53,5 @@ export interface Card {
   dictResult: DictResultEntry;
   // unix time
   addTime: number;
+  exported?: boolean;
 }

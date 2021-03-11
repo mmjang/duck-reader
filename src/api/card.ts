@@ -2,9 +2,14 @@ import { Card } from "../types/types";
 
 const CARD_LIST_KEY = "card_list_key";
 
-const cardList: Card[] = JSON.parse(
-  localStorage.getItem(CARD_LIST_KEY) || "[]"
-);
+let cardList: Card[] = JSON.parse(localStorage.getItem(CARD_LIST_KEY) || "[]");
+
+// 初始化exported属性，最早的版本没这个
+for (const c of cardList) {
+  if (c.exported === undefined) {
+    c.exported = false;
+  }
+}
 
 function saveCardList() {
   localStorage.setItem(CARD_LIST_KEY, JSON.stringify(cardList, null, 2));
@@ -13,6 +18,10 @@ function saveCardList() {
 export const card = {
   getCardList() {
     return cardList;
+  },
+  setCardList(cList: Card[]) {
+    cardList = cList;
+    saveCardList();
   },
   addCard(card: Card) {
     cardList.push(card);

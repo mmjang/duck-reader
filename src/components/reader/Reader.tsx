@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Article, TOKEN_TYPE } from "../../types/types";
 import { splitWords } from "../../utils";
 import WordTile from "../wordtile/WordTile";
@@ -8,41 +8,29 @@ import Dictionary from "../dictionary/Dictionary";
 import "./Reader.css";
 import { useLocation } from "react-router-dom";
 
-function useQuery() {
-  return new URLSearchParams(useLocation().search);
-}
-
 export default function Reader({
   title = "",
   content = [],
   articleId,
-}: Partial<Article> & { articleId: string }) {
+  // tile index list of highlighted words
+  highlights = [],
+  // is word selectable
+  selectable = true,
+  scrollToHighlights = false,
+}: Partial<Article> & {
+  articleId: string;
+  highlights?: number[];
+  selectable?: boolean;
+  scrollToHighlights?: boolean;
+}) {
   const [selectedWordIndex, setSelectedWordIndex] = useState(-1);
 
   async function onWordClick(id: number) {
     console.log("word select: ", id);
     const token = tokens[id];
-    if (token.type === TOKEN_TYPE.WORD) {
+    if (token.type === TOKEN_TYPE.WORD && selectable) {
       setSelectedWordIndex(id);
     }
-  }
-
-  function makeWordTiles(str: string) {
-    return splitWords(str)
-      .concat({ type: TOKEN_TYPE.EOL, word: "" })
-      .map((word, i) => {
-        const currentIndex = tokenIndex++;
-        tokens.push(word);
-        return (
-          <WordTile
-            id={currentIndex}
-            text={word.word}
-            selected={selectedWordIndex === currentIndex}
-            onClick={onWordClick}
-            key={currentIndex}
-          ></WordTile>
-        );
-      });
   }
 
   function isSentenceEnd(token: Token) {
@@ -85,8 +73,39 @@ export default function Reader({
     setSelectedWordIndex(-1);
   }
 
+  useEffect(() => {
+    if (highlights.length > 0) {
+      const firstHighlight = highlights[0];
+      if (firstHighlight < tileRefArray.current.length) {
+        tileRefArray.current[firstHighlight].scrollIntoView();
+      }
+    }
+  }, [highlights]);
+
   let tokenIndex = 0;
   const tokens = [] as Token[];
+  const tileRefArray = useRef<Element[]>([]);
+  function makeWordTiles(str: string) {
+    return splitWords(str)
+      .concat({ type: TOKEN_TYPE.EOL, word: "" })
+      .map((word, i) => {
+        const currentIndex = tokenIndex++;
+        tokens.push(word);
+        return (
+          <WordTile
+            id={currentIndex}
+            text={word.word}
+            selected={selectedWordIndex === currentIndex}
+            onClick={onWordClick}
+            highlighted={highlights.includes(currentIndex)}
+            key={currentIndex}
+            tileRefFunc={(el: HTMLSpanElement) => {
+              tileRefArray.current[currentIndex] = el;
+            }}
+          ></WordTile>
+        );
+      });
+  }
   return (
     <>
       <div className="reader" onClick={onClickReader}>

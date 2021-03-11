@@ -3,3 +3,16 @@
   background-color: teal;
   border-radius: 2px;
 }
+
+.word-tile.highlighted {
+  color: black;
+  background-color: #fffbcc;
+  border-radius: 2px;
+}
+
+.word-tile.highlighted.selected {
+  color: black;
+  background-color: #fffbcc;
+  border-radius: 2px;
+  border-bottom: 2px solid teal;
+}

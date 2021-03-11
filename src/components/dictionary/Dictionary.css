@@ -4,9 +4,10 @@
   max-height: 38vh;
   width: 100vw;
   padding: 8px;
-  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.8);
   overflow-y: scroll;
   box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.71);
+  backdrop-filter: blur(2px);
 }
 
 .dictionary .definition-wrapper {

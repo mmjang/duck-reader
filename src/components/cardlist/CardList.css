@@ -1,7 +1,32 @@
 .card-list {
-  padding: 0 8px;
+  padding: 50px 8px 0px 8px;
 }
 
 .card-list .word-card {
   margin: 8px 0;
+}
+
+.card-list-banner {
+  position: fixed;
+  height: 50px;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid gainsboro;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  justify-content: space-between;
+}
+
+.card-list-banner > button {
+  background-color: rgb(235, 235, 235);
+  border: 1px solid #808080;
+  font-size: 16px;
+}
+
+.card-list-banner > select {
+  font-size: 16px;
 }

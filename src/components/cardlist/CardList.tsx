@@ -16,13 +16,25 @@ import { useLocalStorage } from "../../utils/hooks";
 import { Card } from "../../types/types";
 import { exportApkg } from "../../api/export";
 import ReaderPopup from "../readerpopup/ReaderPopup";
+import { detect } from "detect-browser";
 
 const { Filesystem, Share } = Plugins;
 type CardFilterOption = "all" | "exported" | "unexported";
 
 export default function CardList() {
+  const browser = detect();
   async function exportCard() {
     try {
+      if (
+        browser?.os?.includes("Android") ||
+        (browser?.os?.includes("iOS") &&
+          browser.name !== "safari" &&
+          browser.name !== "ios")
+      ) {
+        console.log(browser);
+        toast("目前导出牌组功能仅支持电脑和iOS Safari。安卓App即将推出。");
+        return;
+      }
       const exportedCards = filterCardListByType(cardList, cardFilter);
       await exportApkg(exportedCards, "duck-reader.apkg", "duck-reader");
       const newCardList = cardList.map((c) => {

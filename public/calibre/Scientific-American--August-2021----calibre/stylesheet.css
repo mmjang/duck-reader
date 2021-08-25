@@ -1,0 +1,149 @@
+.article {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left
+    }
+.article_date {
+    color: gray;
+    font-family: monospace
+    }
+.article_description {
+    display: block;
+    font-size: 0.7em;
+    text-indent: 0
+    }
+.article-author__suggested__title {
+    display: block;
+    font-weight: bold;
+    margin: 1.33em 0
+    }
+.article-header {
+    display: block
+    }
+.article-header__title {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.67em 0
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre_feed_list {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre_feed_title {
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.83em 0
+    }
+.calibre_navbar {
+    display: block;
+    font-family: monospace;
+    font-size: 0.7em;
+    text-align: center
+    }
+.calibre1 {
+    display: block;
+    font-size: 1em
+    }
+.calibre2 {
+    display: block;
+    text-align: center;
+    margin: 1em 0
+    }
+.calibre3 {
+    height: auto;
+    width: auto
+    }
+.calibre4 {
+    display: block;
+    text-align: right;
+    margin: 1em 0
+    }
+.calibre5 {
+    display: list-item
+    }
+.calibre6 {
+    color: gray;
+    display: block;
+    height: 2px;
+    margin: 0.5em auto;
+    border: currentColor inset 1px
+    }
+.calibre7 {
+    display: list-item;
+    font-size: 1em;
+    padding-bottom: 0.5em
+    }
+.calibre8 {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    margin: 1em 0
+    }
+.calibre9 {
+    font-weight: bold
+    }
+.calibre10 {
+    font-style: italic
+    }
+.calibre11 {
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.83em 0
+    }
+.calibre12 {
+    font-size: 0.75em;
+    line-height: normal;
+    vertical-align: sub
+    }
+.calibre13 {
+    height: 1122px;
+    width: 1536px
+    }
+.calibre14 {
+    font-size: 0.75em;
+    line-height: normal;
+    vertical-align: super
+    }
+.calibre15 {
+    height: 1536px;
+    width: 1536px
+    }
+.calibre16 {
+    height: 720px;
+    width: 1280px
+    }
+.calibre17 {
+    height: 600px;
+    width: 900px
+    }
+.circle-img {
+    height: 65px;
+    width: 65px
+    }
+.feed {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2
+    }
+.t_article-subtitle {
+    display: block;
+    margin: 1em 0
+    }

@@ -1,0 +1,146 @@
+.article {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left
+    }
+.article__dek {
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.83em 0
+    }
+.article__header {
+    display: block
+    }
+.article__hed {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.67em 0
+    }
+.article_date {
+    color: gray;
+    font-family: monospace
+    }
+.article_description {
+    display: block;
+    font-size: 0.7em;
+    text-indent: 0
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre_feed_list {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em
+    }
+.calibre_feed_title {
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0.83em 0
+    }
+.calibre_navbar {
+    display: block;
+    font-family: monospace;
+    font-size: 0.7em;
+    text-align: center
+    }
+.calibre_navbar1 {
+    display: block;
+    font-family: monospace;
+    font-size: 0.7em
+    }
+.calibre1 {
+    display: block;
+    font-size: 1em
+    }
+.calibre2 {
+    display: block;
+    text-align: center;
+    margin: 1em 0
+    }
+.calibre3 {
+    height: auto;
+    width: auto
+    }
+.calibre4 {
+    display: block;
+    text-align: right;
+    margin: 1em 0
+    }
+.calibre5 {
+    display: list-item
+    }
+.calibre6 {
+    color: gray;
+    display: block;
+    height: 2px;
+    margin: 0.5em auto;
+    border: currentColor inset 1px
+    }
+.calibre7 {
+    display: list-item;
+    font-size: 1em;
+    padding-bottom: 0.5em
+    }
+.calibre8 {
+    display: none
+    }
+.calibre9 {
+    font-style: italic
+    }
+.calibre10 {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+    margin: 1em 0
+    }
+.calibre11 {
+    font-weight: bold
+    }
+.calibre12 {
+    height: 16px;
+    width: auto
+    }
+.calibre13 {
+    font-style: italic;
+    line-height: 1.2
+    }
+.calibre14 {
+    font-size: 0.75em;
+    line-height: normal;
+    vertical-align: super
+    }
+.feed {
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.2
+    }
+.slate-paragraph {
+    display: block;
+    margin: 1em 0
+    }
+.subhead {
+    display: block;
+    font-size: 1.29167em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 1em 0
+    }
+.subhead__marker {
+    display: block;
+    line-height: 1.2
+    }

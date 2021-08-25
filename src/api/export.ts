@@ -2,6 +2,7 @@
 import AnkiExport from "anki-apkg-export";
 import { Plugins, FilesystemDirectory, Capacitor } from "@capacitor/core";
 import { saveAs } from "file-saver";
+import streamSaver from "streamsaver";
 import toast from "react-hot-toast";
 import { Card } from "../types/types";
 import { bracketToBoldTag } from "../utils/tags";
@@ -47,8 +48,17 @@ export async function exportApkg(
         reader.readAsDataURL(zip);
       } else {
         try {
-          saveAs(zip, fileName);
-          resolve(true);
+          // debugger;
+          // saveAs(zip, fileName);
+          // resolve(true);
+          const fileStream = streamSaver.createWriteStream(fileName, {
+            size: undefined, // (optional filesize) Will show progress
+            writableStrategy: undefined, // (optional)
+            readableStrategy: undefined, // (optional)
+          });
+          new Response(zip).body?.pipeTo(fileStream).then(() => {
+            resolve(true);
+          });
         } catch (err) {
           reject(err);
         }

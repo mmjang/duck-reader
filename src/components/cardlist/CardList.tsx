@@ -25,16 +25,16 @@ export default function CardList() {
   const browser = detect();
   async function exportCard() {
     try {
-      if (
-        browser?.os?.includes("Android") ||
-        (browser?.os?.includes("iOS") &&
-          browser.name !== "safari" &&
-          browser.name !== "ios")
-      ) {
-        console.log(browser);
-        toast("目前导出牌组功能仅支持电脑和iOS Safari。安卓App即将推出。");
-        return;
-      }
+      // if (
+      //   browser?.os?.includes("Android") ||
+      //   (browser?.os?.includes("iOS") &&
+      //     browser.name !== "safari" &&
+      //     browser.name !== "ios")
+      // ) {
+      //   console.log(browser);
+      //   toast("目前导出牌组功能仅支持电脑和iOS Safari。安卓App即将推出。");
+      //   return;
+      // }
       const exportedCards = filterCardListByType(cardList, cardFilter);
       await exportApkg(exportedCards, "duck-reader.apkg", "duck-reader");
       const newCardList = cardList.map((c) => {
@@ -50,8 +50,8 @@ export default function CardList() {
       } else if (Capacitor.getPlatform() === "android") {
         toast("牌组已导出至sdcard/Documents下");
       }
-    } catch {
-      toast("导出失败");
+    } catch (e) {
+      toast("导出失败: " + e.message);
     }
   }
   function onCardFilterSelectorChange(

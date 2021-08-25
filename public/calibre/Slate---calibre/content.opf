@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:language>en</dc:language>
+    <dc:title>Slate</dc:title>
+    <dc:creator opf:file-as="calibre" opf:role="aut">calibre</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.25.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:description>本期文章:
+
+It Still Takes a Sex Scandal to Stop a Bully
+
+Supreme Court Orders Biden to Restart Trump-Era “Remain in Mexico” Immigration Policy
+
+FCC Proposes $5 Million Fine for Right-Wing Conspiracists’ Vote-Suppressing Election Robocalls
+
+The First Step Toward Protecting Everyone Else From Teslas
+
+Our Attempts to Perform Empathy Are Backfiring. Here’s What to Try Instead.
+
+The Venezuelans Trying to Escape Their Country Through Video Game Grunt Work
+
+A Chair Reviews The Chair
+
+Annette is Many Things—But It’s Not Conventional
+
+The Parents Who Lied to Get Their 11-Year-Olds Vaccinated
+
+Help! My Father-in-Law Refuses to Stop Smoking Pot Around Me.
+
+A general-interest publication offering analysis and commentary about politics, news and culture.</dc:description>
+    <dc:publisher>calibre</dc:publisher>
+    <dc:date>2021-08-25T14:43:42.086599+00:00</dc:date>
+    <meta name="calibre:timestamp" content="2021-08-25T14:43:42.080848+00:00"/>
+    <meta name="calibre:publication_type" content="periodical:unknown:Slate"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">929eff12-53d9-435c-b941-ce83cf322801</dc:identifier>
+    <meta name="cover" content="cover"/>
+  </metadata>
+  <manifest>
+    <item id="cover" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id31" href="index_u7.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="feed_0/index_u8.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="feed_0/article_0/index_u17.html" media-type="application/xhtml+xml"/>
+    <item id="id4" href="feed_0/article_1/index_u9.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="feed_0/article_2/index_u16.html" media-type="application/xhtml+xml"/>
+    <item id="id5" href="feed_1/index.html" media-type="application/xhtml+xml"/>
+    <item id="id8" href="feed_1/article_0/index_u10.html" media-type="application/xhtml+xml"/>
+    <item id="id9" href="feed_1/article_1/index_u1.html" media-type="application/xhtml+xml"/>
+    <item id="id6" href="feed_1/article_2/index_u23.html" media-type="application/xhtml+xml"/>
+    <item id="id10" href="feed_2/index_u24.html" media-type="application/xhtml+xml"/>
+    <item id="id13" href="feed_2/article_0/index_u2.html" media-type="application/xhtml+xml"/>
+    <item id="id14" href="feed_2/article_1/index_u25.html" media-type="application/xhtml+xml"/>
+    <item id="id11" href="feed_2/article_2/index_u18.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="feed_3/index_u3.html" media-type="application/xhtml+xml"/>
+    <item id="id16" href="feed_3/article_0/index_u26.html" media-type="application/xhtml+xml"/>
+    <item id="id17" href="feed_3/article_1/index_u19.html" media-type="application/xhtml+xml"/>
+    <item id="id18" href="feed_4/index_u11.html" media-type="application/xhtml+xml"/>
+    <item id="id19" href="feed_4/article_0/index_u4.html" media-type="application/xhtml+xml"/>
+    <item id="id20" href="feed_4/article_1/index_u27.html" media-type="application/xhtml+xml"/>
+    <item id="id21" href="feed_5/index_u20.html" media-type="application/xhtml+xml"/>
+    <item id="id23" href="feed_5/article_0/index_u15.html" media-type="application/xhtml+xml"/>
+    <item id="id24" href="feed_5/article_1/index_u5.html" media-type="application/xhtml+xml"/>
+    <item id="id22" href="feed_5/article_2/index_u12.html" media-type="application/xhtml+xml"/>
+    <item id="id25" href="feed_6/index_u21.html" media-type="application/xhtml+xml"/>
+    <item id="id26" href="feed_6/article_0/index_u13.html" media-type="application/xhtml+xml"/>
+    <item id="id27" href="feed_6/article_1/index_u6.html" media-type="application/xhtml+xml"/>
+    <item id="id28" href="feed_7/index_u28.html" media-type="application/xhtml+xml"/>
+    <item id="id29" href="feed_7/article_0/index_u22.html" media-type="application/xhtml+xml"/>
+    <item id="id30" href="feed_7/article_1/index_u14.html" media-type="application/xhtml+xml"/>
+    <item id="masthead-image" href="mastheadImage.jpg" media-type="image/jpeg"/>
+    <item id="id7" href="feed_1/article_2/images/img1_u1.png" media-type="image/png"/>
+    <item id="id12" href="feed_2/article_2/images/img1.png" media-type="image/png"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id31"/>
+    <itemref idref="id1"/>
+    <itemref idref="id3"/>
+    <itemref idref="id4"/>
+    <itemref idref="id2"/>
+    <itemref idref="id5"/>
+    <itemref idref="id8"/>
+    <itemref idref="id9"/>
+    <itemref idref="id6"/>
+    <itemref idref="id10"/>
+    <itemref idref="id13"/>
+    <itemref idref="id14"/>
+    <itemref idref="id11"/>
+    <itemref idref="id15"/>
+    <itemref idref="id16"/>
+    <itemref idref="id17"/>
+    <itemref idref="id18"/>
+    <itemref idref="id19"/>
+    <itemref idref="id20"/>
+    <itemref idref="id21"/>
+    <itemref idref="id23"/>
+    <itemref idref="id24"/>
+    <itemref idref="id22"/>
+    <itemref idref="id25"/>
+    <itemref idref="id26"/>
+    <itemref idref="id27"/>
+    <itemref idref="id28"/>
+    <itemref idref="id29"/>
+    <itemref idref="id30"/>
+  </spine>
+  <guide>
+    <reference type="other.masthead" href="mastheadImage.jpg" title="Masthead Image"/>
+    <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+  </guide>
+</package>

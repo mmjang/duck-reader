@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="929eff12-53d9-435c-b941-ce83cf322801"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:generator" content="calibre (5.25.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Slate</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>News &amp; Politics</text>
+      </navLabel>
+      <content src="feed_0/index_u8.html"/>
+      <navPoint id="num_2" playOrder="2" class="chapter">
+        <navLabel>
+          <text>It Still Takes a Sex Scandal to Stop a Bully</text>
+        </navLabel>
+        <content src="feed_0/article_0/index_u17.html"/>
+      </navPoint>
+      <navPoint id="num_3" playOrder="3" class="chapter">
+        <navLabel>
+          <text>Supreme Court Orders Biden to Restart Trump-Era “Remain in Mexico” Immigration Policy</text>
+        </navLabel>
+        <content src="feed_0/article_1/index_u9.html"/>
+      </navPoint>
+      <navPoint id="num_4" playOrder="4" class="chapter">
+        <navLabel>
+          <text>FCC Proposes $5 Million Fine for Right-Wing Conspiracists’ Vote-Suppressing Election Robocalls</text>
+        </navLabel>
+        <content src="feed_0/article_2/index_u16.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_5" playOrder="5" class="chapter">
+      <navLabel>
+        <text>Technology</text>
+      </navLabel>
+      <content src="feed_1/index.html"/>
+      <navPoint id="num_6" playOrder="6" class="chapter">
+        <navLabel>
+          <text>The First Step Toward Protecting Everyone Else From Teslas</text>
+        </navLabel>
+        <content src="feed_1/article_0/index_u10.html"/>
+      </navPoint>
+      <navPoint id="num_7" playOrder="7" class="chapter">
+        <navLabel>
+          <text>Our Attempts to Perform Empathy Are Backfiring. Here’s What to Try Instead.</text>
+        </navLabel>
+        <content src="feed_1/article_1/index_u1.html"/>
+      </navPoint>
+      <navPoint id="num_8" playOrder="8" class="chapter">
+        <navLabel>
+          <text>The Venezuelans Trying to Escape Their Country Through Video Game Grunt Work</text>
+        </navLabel>
+        <content src="feed_1/article_2/index_u23.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_9" playOrder="9" class="chapter">
+      <navLabel>
+        <text>Business</text>
+      </navLabel>
+      <content src="feed_2/index_u24.html"/>
+      <navPoint id="num_10" playOrder="10" class="chapter">
+        <navLabel>
+          <text>The First Step Toward Protecting Everyone Else From Teslas</text>
+        </navLabel>
+        <content src="feed_2/article_0/index_u2.html"/>
+      </navPoint>
+      <navPoint id="num_11" playOrder="11" class="chapter">
+        <navLabel>
+          <text>Our Attempts to Perform Empathy Are Backfiring. Here’s What to Try Instead.</text>
+        </navLabel>
+        <content src="feed_2/article_1/index_u25.html"/>
+      </navPoint>
+      <navPoint id="num_12" playOrder="12" class="chapter">
+        <navLabel>
+          <text>The Venezuelans Trying to Escape Their Country Through Video Game Grunt Work</text>
+        </navLabel>
+        <content src="feed_2/article_2/index_u18.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_13" playOrder="13" class="chapter">
+      <navLabel>
+        <text>Arts</text>
+      </navLabel>
+      <content src="feed_3/index_u3.html"/>
+      <navPoint id="num_14" playOrder="14" class="chapter">
+        <navLabel>
+          <text>A Chair Reviews The Chair</text>
+        </navLabel>
+        <content src="feed_3/article_0/index_u26.html"/>
+      </navPoint>
+      <navPoint id="num_15" playOrder="15" class="chapter">
+        <navLabel>
+          <text>Annette is Many Things—But It’s Not Conventional</text>
+        </navLabel>
+        <content src="feed_3/article_1/index_u19.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_16" playOrder="16" class="chapter">
+      <navLabel>
+        <text>Life</text>
+      </navLabel>
+      <content src="feed_4/index_u11.html"/>
+      <navPoint id="num_17" playOrder="17" class="chapter">
+        <navLabel>
+          <text>The Parents Who Lied to Get Their 11-Year-Olds Vaccinated</text>
+        </navLabel>
+        <content src="feed_4/article_0/index_u4.html"/>
+      </navPoint>
+      <navPoint id="num_18" playOrder="18" class="chapter">
+        <navLabel>
+          <text>Help! My Father-in-Law Refuses to Stop Smoking Pot Around Me.</text>
+        </navLabel>
+        <content src="feed_4/article_1/index_u27.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_19" playOrder="19" class="chapter">
+      <navLabel>
+        <text>Health &amp; Science</text>
+      </navLabel>
+      <content src="feed_5/index_u20.html"/>
+      <navPoint id="num_20" playOrder="20" class="chapter">
+        <navLabel>
+          <text>The First Step Toward Protecting Everyone Else From Teslas</text>
+        </navLabel>
+        <content src="feed_5/article_0/index_u15.html"/>
+      </navPoint>
+      <navPoint id="num_21" playOrder="21" class="chapter">
+        <navLabel>
+          <text>Our Attempts to Perform Empathy Are Backfiring. Here’s What to Try Instead.</text>
+        </navLabel>
+        <content src="feed_5/article_1/index_u5.html"/>
+      </navPoint>
+      <navPoint id="num_22" playOrder="22" class="chapter">
+        <navLabel>
+          <text>The Venezuelans Trying to Escape Their Country Through Video Game Grunt Work</text>
+        </navLabel>
+        <content src="feed_5/article_2/index_u12.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_23" playOrder="23" class="chapter">
+      <navLabel>
+        <text>Sports</text>
+      </navLabel>
+      <content src="feed_6/index_u21.html"/>
+      <navPoint id="num_24" playOrder="24" class="chapter">
+        <navLabel>
+          <text>A Chair Reviews The Chair</text>
+        </navLabel>
+        <content src="feed_6/article_0/index_u13.html"/>
+      </navPoint>
+      <navPoint id="num_25" playOrder="25" class="chapter">
+        <navLabel>
+          <text>Annette is Many Things—But It’s Not Conventional</text>
+        </navLabel>
+        <content src="feed_6/article_1/index_u6.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_26" playOrder="26" class="chapter">
+      <navLabel>
+        <text>Double X</text>
+      </navLabel>
+      <content src="feed_7/index_u28.html"/>
+      <navPoint id="num_27" playOrder="27" class="chapter">
+        <navLabel>
+          <text>The Parents Who Lied to Get Their 11-Year-Olds Vaccinated</text>
+        </navLabel>
+        <content src="feed_7/article_0/index_u22.html"/>
+      </navPoint>
+      <navPoint id="num_28" playOrder="28" class="chapter">
+        <navLabel>
+          <text>Help! My Father-in-Law Refuses to Stop Smoking Pot Around Me.</text>
+        </navLabel>
+        <content src="feed_7/article_1/index_u14.html"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

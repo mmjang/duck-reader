@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:language>en</dc:language>
+    <dc:title>Scientific American [August 2021]</dc:title>
+    <dc:creator opf:file-as="calibre" opf:role="aut">calibre</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.25.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:description>本期文章:
+
+New Ideas about the Way Autoimmune Diseases Start and How to Stop Them
+
+How I Was Betrayed from Within
+
+The Terrible Toll of 76 Autoimmune Diseases
+
+In Autoimmune Disease, Organs May Lure the Immune System into an Attack
+
+Why Nearly 80 Percent of Autoimmune Sufferers Are Female
+
+Targeted Treatments for Autoimmune Disease Make Progress
+
+NASA Just Broke the 'Venus Curse': Here's What It Took
+
+New Tech Can Reveal a Vast Network of Methane Leaks
+
+World's Largest Wildlife Bridge Could Save Mountain Lions
+
+Progress on Autoimmune Disorders, Mountain Lions and Venus
+
+Readers Respond to the May 2021 Issue
+
+New Tool Shows Geology behind Kidney Stone Crystallization
+
+Birds' Eye Size Predicts Vulnerability to Habitat Loss
+
+In Case You Missed It
+
+See the Highest-Resolution Atomic Image Ever Captured
+
+Misophonia Might Not Be about Hating Sounds After All
+
+How Rootworms Sniff Carbon Dioxide to Devastate Corn Crops
+
+Many Mouse Studies Happen at the Wrong Time of Day
+
+Made-Up Sounds Convey Meaning across Cultures
+
+See Bizarre Seeds and Fruits from around the Globe
+
+Engineered Bacteria Produce a Rainbow of Colors
+
+Tiny Robots Could Clean Up Microplastic Pollution
+
+Illinois Announces Official State Microbe
+
+Tragedy of the White Tiger
+
+A Vaccine against Poison Ivy Misery Is in the Works as Scientists Also Explore New Treatment Paths
+
+Fix Disaster Response Now
+
+A Plot Twist for Climate Change, the Power of Occam's Razor, and Other New Books
+
+50, 100 &amp; 150 Years Ago: September 2021
+
+The Pandemic's Hidden Toll Is Revealed in Excess Death Counts
+
+Poem: 'sap pitch and resin'
+
+The Lab-Leak Theory of COVID's Origin Is Not Totally Irrational
+
+Popular Science. Monthly magazine. Should be downloaded around the middle of each month.</dc:description>
+    <dc:publisher>calibre</dc:publisher>
+    <dc:date>2021-08-24T16:00:01.066865+00:00</dc:date>
+    <meta name="calibre:timestamp" content="2021-08-24T16:00:01.058893+00:00"/>
+    <meta name="calibre:publication_type" content="periodical:unknown:Scientific American"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">085daee3-7c6f-4062-9c44-3450a9474b93</dc:identifier>
+    <meta name="cover" content="cover"/>
+  </metadata>
+  <manifest>
+    <item id="cover" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id83" href="index_u6.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="feed_0/index_u21.html" media-type="application/xhtml+xml"/>
+    <item id="id7" href="feed_0/article_0/index_u29.html" media-type="application/xhtml+xml"/>
+    <item id="id8" href="feed_0/article_1/index_u37.html" media-type="application/xhtml+xml"/>
+    <item id="id5" href="feed_0/article_2/index_u10.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="feed_0/article_3/index_u33.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="feed_0/article_4/index_u42.html" media-type="application/xhtml+xml"/>
+    <item id="id4" href="feed_0/article_5/index_u5.html" media-type="application/xhtml+xml"/>
+    <item id="id9" href="feed_0/article_6/index_u2.html" media-type="application/xhtml+xml"/>
+    <item id="id6" href="feed_0/article_7/index_u16.html" media-type="application/xhtml+xml"/>
+    <item id="id14" href="feed_0/article_8/index_u1.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="feed_1/index_u20.html" media-type="application/xhtml+xml"/>
+    <item id="id16" href="feed_1/article_0/index_u32.html" media-type="application/xhtml+xml"/>
+    <item id="id19" href="feed_2/index_u11.html" media-type="application/xhtml+xml"/>
+    <item id="id20" href="feed_2/article_0/index_u17.html" media-type="application/xhtml+xml"/>
+    <item id="id22" href="feed_3/index_u38.html" media-type="application/xhtml+xml"/>
+    <item id="id41" href="feed_3/article_0/index_u12.html" media-type="application/xhtml+xml"/>
+    <item id="id44" href="feed_3/article_1/index_u27.html" media-type="application/xhtml+xml"/>
+    <item id="id33" href="feed_3/article_2/index_u43.html" media-type="application/xhtml+xml"/>
+    <item id="id27" href="feed_3/article_3/index_u34.html" media-type="application/xhtml+xml"/>
+    <item id="id29" href="feed_3/article_4/index_u9.html" media-type="application/xhtml+xml"/>
+    <item id="id31" href="feed_3/article_5/index_u22.html" media-type="application/xhtml+xml"/>
+    <item id="id46" href="feed_3/article_6/index_u7.html" media-type="application/xhtml+xml"/>
+    <item id="id38" href="feed_3/article_7/index_u39.html" media-type="application/xhtml+xml"/>
+    <item id="id48" href="feed_3/article_8/index_u23.html" media-type="application/xhtml+xml"/>
+    <item id="id36" href="feed_3/article_9/index_u18.html" media-type="application/xhtml+xml"/>
+    <item id="id23" href="feed_3/article_10/index_u3.html" media-type="application/xhtml+xml"/>
+    <item id="id25" href="feed_3/article_11/index_u15.html" media-type="application/xhtml+xml"/>
+    <item id="id50" href="feed_4/index_u40.html" media-type="application/xhtml+xml"/>
+    <item id="id51" href="feed_4/article_0/index_u4.html" media-type="application/xhtml+xml"/>
+    <item id="id54" href="feed_5/index_u28.html" media-type="application/xhtml+xml"/>
+    <item id="id55" href="feed_5/article_0/index_u36.html" media-type="application/xhtml+xml"/>
+    <item id="id58" href="feed_6/index_u14.html" media-type="application/xhtml+xml"/>
+    <item id="id59" href="feed_6/article_0/index_u25.html" media-type="application/xhtml+xml"/>
+    <item id="id61" href="feed_7/index.html" media-type="application/xhtml+xml"/>
+    <item id="id62" href="feed_7/article_0/index_u8.html" media-type="application/xhtml+xml"/>
+    <item id="id65" href="feed_8/index_u31.html" media-type="application/xhtml+xml"/>
+    <item id="id66" href="feed_8/article_0/index_u41.html" media-type="application/xhtml+xml"/>
+    <item id="id69" href="feed_9/index_u19.html" media-type="application/xhtml+xml"/>
+    <item id="id70" href="feed_9/article_0/index_u30.html" media-type="application/xhtml+xml"/>
+    <item id="id75" href="feed_10/index_u26.html" media-type="application/xhtml+xml"/>
+    <item id="id76" href="feed_10/article_0/index_u35.html" media-type="application/xhtml+xml"/>
+    <item id="id79" href="feed_11/index_u13.html" media-type="application/xhtml+xml"/>
+    <item id="id80" href="feed_11/article_0/index_u24.html" media-type="application/xhtml+xml"/>
+    <item id="id13" href="feed_0/article_6/images/img1_u19.jpg" media-type="image/jpeg"/>
+    <item id="id12" href="feed_0/article_6/images/img2_u5.jpg" media-type="image/jpeg"/>
+    <item id="id11" href="feed_0/article_6/images/img3.jpg" media-type="image/jpeg"/>
+    <item id="id18" href="feed_1/article_0/images/img1_u2.jpg" media-type="image/jpeg"/>
+    <item id="id17" href="feed_1/article_0/images/img2_u7.jpg" media-type="image/jpeg"/>
+    <item id="id21" href="feed_2/article_0/images/img1_u14.jpg" media-type="image/jpeg"/>
+    <item id="id43" href="feed_3/article_0/images/img1_u20.jpg" media-type="image/jpeg"/>
+    <item id="id42" href="feed_3/article_0/images/img2_u6.jpg" media-type="image/jpeg"/>
+    <item id="id45" href="feed_3/article_1/images/img1_u1.jpg" media-type="image/jpeg"/>
+    <item id="id28" href="feed_3/article_3/images/img1.jpg" media-type="image/jpeg"/>
+    <item id="id30" href="feed_3/article_4/images/img1_u8.jpg" media-type="image/jpeg"/>
+    <item id="id32" href="feed_3/article_5/images/img1_u16.jpg" media-type="image/jpeg"/>
+    <item id="id47" href="feed_3/article_6/images/img1_u7.jpg" media-type="image/jpeg"/>
+    <item id="id40" href="feed_3/article_7/images/img1_u9.jpg" media-type="image/jpeg"/>
+    <item id="id49" href="feed_3/article_8/images/img1_u17.jpg" media-type="image/jpeg"/>
+    <item id="id37" href="feed_3/article_9/images/img1_u15.jpg" media-type="image/jpeg"/>
+    <item id="id24" href="feed_3/article_10/images/img1_u4.jpg" media-type="image/jpeg"/>
+    <item id="id26" href="feed_3/article_11/images/img1_u13.jpg" media-type="image/jpeg"/>
+    <item id="id53" href="feed_4/article_0/images/img1_u10.jpg" media-type="image/jpeg"/>
+    <item id="id52" href="feed_4/article_0/images/img2_u3.jpg" media-type="image/jpeg"/>
+    <item id="id57" href="feed_5/article_0/images/img1_u5.jpg" media-type="image/jpeg"/>
+    <item id="id56" href="feed_5/article_0/images/img2_u1.jpg" media-type="image/jpeg"/>
+    <item id="id60" href="feed_6/article_0/images/img1_u18.jpg" media-type="image/jpeg"/>
+    <item id="id64" href="feed_7/article_0/images/img1_u11.jpg" media-type="image/jpeg"/>
+    <item id="id63" href="feed_7/article_0/images/img2_u4.jpg" media-type="image/jpeg"/>
+    <item id="id68" href="feed_8/article_0/images/img1_u6.jpg" media-type="image/jpeg"/>
+    <item id="id67" href="feed_8/article_0/images/img2_u2.jpg" media-type="image/jpeg"/>
+    <item id="id71" href="feed_9/article_0/images/img4.jpg" media-type="image/jpeg"/>
+    <item id="id78" href="feed_10/article_0/images/img1_u3.jpg" media-type="image/jpeg"/>
+    <item id="id77" href="feed_10/article_0/images/img2.jpg" media-type="image/jpeg"/>
+    <item id="id82" href="feed_11/article_0/images/img1_u12.jpg" media-type="image/jpeg"/>
+    <item id="masthead-image" href="mastheadImage.jpg" media-type="image/jpeg"/>
+    <item id="id10" href="feed_0/article_6/images/img4.png" media-type="image/png"/>
+    <item id="id35" href="feed_3/article_2/images/img1.png" media-type="image/png"/>
+    <item id="id34" href="feed_3/article_2/images/img2.png" media-type="image/png"/>
+    <item id="id39" href="feed_3/article_7/images/img2_u1.png" media-type="image/png"/>
+    <item id="id74" href="feed_9/article_0/images/img1_u1.png" media-type="image/png"/>
+    <item id="id73" href="feed_9/article_0/images/img2_u2.png" media-type="image/png"/>
+    <item id="id72" href="feed_9/article_0/images/img3.png" media-type="image/png"/>
+    <item id="id81" href="feed_11/article_0/images/img2_u3.png" media-type="image/png"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id83"/>
+    <itemref idref="id1"/>
+    <itemref idref="id7"/>
+    <itemref idref="id8"/>
+    <itemref idref="id5"/>
+    <itemref idref="id2"/>
+    <itemref idref="id3"/>
+    <itemref idref="id4"/>
+    <itemref idref="id9"/>
+    <itemref idref="id6"/>
+    <itemref idref="id14"/>
+    <itemref idref="id15"/>
+    <itemref idref="id16"/>
+    <itemref idref="id19"/>
+    <itemref idref="id20"/>
+    <itemref idref="id22"/>
+    <itemref idref="id41"/>
+    <itemref idref="id44"/>
+    <itemref idref="id33"/>
+    <itemref idref="id27"/>
+    <itemref idref="id29"/>
+    <itemref idref="id31"/>
+    <itemref idref="id46"/>
+    <itemref idref="id38"/>
+    <itemref idref="id48"/>
+    <itemref idref="id36"/>
+    <itemref idref="id23"/>
+    <itemref idref="id25"/>
+    <itemref idref="id50"/>
+    <itemref idref="id51"/>
+    <itemref idref="id54"/>
+    <itemref idref="id55"/>
+    <itemref idref="id58"/>
+    <itemref idref="id59"/>
+    <itemref idref="id61"/>
+    <itemref idref="id62"/>
+    <itemref idref="id65"/>
+    <itemref idref="id66"/>
+    <itemref idref="id69"/>
+    <itemref idref="id70"/>
+    <itemref idref="id75"/>
+    <itemref idref="id76"/>
+    <itemref idref="id79"/>
+    <itemref idref="id80"/>
+  </spine>
+  <guide>
+    <reference type="other.masthead" href="mastheadImage.jpg" title="Masthead Image"/>
+    <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+  </guide>
+</package>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="73f80537-590a-49d7-b48a-97e508e225e7"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="calibre (5.25.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>The Verge [Wed, 25 Aug 2021]</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>Several Best Buy stores will have Nvidia RTX 30-series GPUs available tomorrow</text>
+      </navLabel>
+      <content src="feed_0/article_0/index_u4.html"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2" class="chapter">
+      <navLabel>
+        <text>The latest August Wi-Fi Smart Lock is cheaper than ever</text>
+      </navLabel>
+      <content src="feed_0/article_1/index_u6.html"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3" class="chapter">
+      <navLabel>
+        <text>Alphabet’s drone delivery service Wing hits 100,000 deliveries milestone</text>
+      </navLabel>
+      <content src="feed_0/article_2/index_u8.html"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4" class="chapter">
+      <navLabel>
+        <text>How to watch Gamescom’s Opening Night Live stream</text>
+      </navLabel>
+      <content src="feed_0/article_3/index_u10.html"/>
+    </navPoint>
+    <navPoint id="num_5" playOrder="5" class="chapter">
+      <navLabel>
+        <text>Joe Rogan, confined to Spotify, is losing influence</text>
+      </navLabel>
+      <content src="feed_0/article_4/index_u1.html"/>
+    </navPoint>
+    <navPoint id="num_6" playOrder="6" class="chapter">
+      <navLabel>
+        <text>The company behind PUBG is trying to create the next big fantasy epic</text>
+      </navLabel>
+      <content src="feed_0/article_6/index_u5.html"/>
+    </navPoint>
+    <navPoint id="num_7" playOrder="7" class="chapter">
+      <navLabel>
+        <text>Fitbit’s new Charge 5 has a rounded design and a color screen</text>
+      </navLabel>
+      <content src="feed_0/article_7/index_u9.html"/>
+    </navPoint>
+    <navPoint id="num_8" playOrder="8" class="chapter">
+      <navLabel>
+        <text>Otter.ai can transcribe Microsoft Teams, Google Meet, and Cisco Webex meetings if you’re not there</text>
+      </navLabel>
+      <content src="feed_0/article_8/index.html"/>
+    </navPoint>
+    <navPoint id="num_9" playOrder="9" class="chapter">
+      <navLabel>
+        <text>OnlyFans says never mind, it actually won’t ban porn on October 1st</text>
+      </navLabel>
+      <content src="feed_0/article_9/index_u2.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

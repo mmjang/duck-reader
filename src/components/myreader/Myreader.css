@@ -1,0 +1,24 @@
+.myreader {
+  width: 100%;
+  padding: 0 16px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.myreader img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.token-class.word {
+  border-radius: 4px;
+}
+
+.token-class.word:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+.token-class.highlight {
+  background-color: palegoldenrod;
+}

@@ -1,0 +1,1077 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="9f63c512-8292-4a52-885a-b72551a4fc6d"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:generator" content="calibre (5.25.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>The Guardian and The Observer [Wed, 25 Aug 2021]</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>Headlines wednesday 25 august 2021</text>
+      </navLabel>
+      <content src="feed_0/index_u30.html"/>
+      <navPoint id="num_2" playOrder="2" class="chapter">
+        <navLabel>
+          <text>Afghanistan 2,000 people who worked for UK still to be airlifted</text>
+        </navLabel>
+        <content src="feed_0/article_0/index_u170.html"/>
+      </navPoint>
+      <navPoint id="num_3" playOrder="3" class="chapter">
+        <navLabel>
+          <text>Live Afghanistan: unclear how many will be left behind after evacuation, says Raab</text>
+        </navLabel>
+        <content src="feed_0/article_1/index_u16.html"/>
+      </navPoint>
+      <navPoint id="num_4" playOrder="4" class="chapter">
+        <navLabel>
+          <text>Dominic Raab US special relationship 'still alive' after Afghan evacuation</text>
+        </navLabel>
+        <content src="feed_0/article_2/index_u27.html"/>
+      </navPoint>
+      <navPoint id="num_5" playOrder="5" class="chapter">
+        <navLabel>
+          <text>Evacuating Afghanistan A visual guide to flights in and out of Kabul</text>
+        </navLabel>
+        <content src="feed_0/article_3/index_u84.html"/>
+      </navPoint>
+      <navPoint id="num_6" playOrder="6" class="chapter">
+        <navLabel>
+          <text>Police Black people more likely to be Tasered for longer, watchdog finds</text>
+        </navLabel>
+        <content src="feed_0/article_4/index_u107.html"/>
+      </navPoint>
+      <navPoint id="num_7" playOrder="7" class="chapter">
+        <navLabel>
+          <text>England Families urge ban on police Taser use against people in distress</text>
+        </navLabel>
+        <content src="feed_0/article_5/index_u131.html"/>
+      </navPoint>
+      <navPoint id="num_8" playOrder="8" class="chapter">
+        <navLabel>
+          <text>Technology OnlyFans scraps plans to ban sexually explicit material</text>
+        </navLabel>
+        <content src="feed_0/article_6/index_u115.html"/>
+      </navPoint>
+      <navPoint id="num_9" playOrder="9" class="chapter">
+        <navLabel>
+          <text>Supply chain crisis HGV driver shortages could ‘cancel’ Christmas, warns Iceland boss</text>
+        </navLabel>
+        <content src="feed_0/article_7/index_u145.html"/>
+      </navPoint>
+      <navPoint id="num_10" playOrder="10" class="chapter">
+        <navLabel>
+          <text>Live Iceland boss: Christmas at risk</text>
+        </navLabel>
+        <content src="feed_0/article_8/index_u139.html"/>
+      </navPoint>
+      <navPoint id="num_11" playOrder="11" class="chapter">
+        <navLabel>
+          <text>Extinction Rebellion Protesters block Oxford Circus in London</text>
+        </navLabel>
+        <content src="feed_0/article_9/index_u119.html"/>
+      </navPoint>
+      <navPoint id="num_12" playOrder="12" class="chapter">
+        <navLabel>
+          <text>Unite Leftwinger Sharon Graham elected as union leader</text>
+        </navLabel>
+        <content src="feed_0/article_10/index_u37.html"/>
+      </navPoint>
+      <navPoint id="num_13" playOrder="13" class="chapter">
+        <navLabel>
+          <text>Farming UN criticised over statement on overuse of antibiotics</text>
+        </navLabel>
+        <content src="feed_0/article_11/index_u61.html"/>
+      </navPoint>
+      <navPoint id="num_14" playOrder="14" class="chapter">
+        <navLabel>
+          <text>‘Deep regret’ C of E admits to failings over allegations against priest who took his own life</text>
+        </navLabel>
+        <content src="feed_0/article_12/index_u95.html"/>
+      </navPoint>
+      <navPoint id="num_15" playOrder="15" class="chapter">
+        <navLabel>
+          <text>Ultra Trail du Mont Blanc Runner dies from injuries after falling in mountain race</text>
+        </navLabel>
+        <content src="feed_0/article_13/index_u52.html"/>
+      </navPoint>
+      <navPoint id="num_16" playOrder="16" class="chapter">
+        <navLabel>
+          <text>Nirvana Baby on Nevermind cover sues band over child sexual exploitation</text>
+        </navLabel>
+        <content src="feed_0/article_14/index_u75.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_17" playOrder="17" class="chapter">
+      <navLabel>
+        <text>Spotlight</text>
+      </navLabel>
+      <content src="feed_1/index_u173.html"/>
+      <navPoint id="num_18" playOrder="18" class="chapter">
+        <navLabel>
+          <text>Sam Fender Leftie is now a slur in working-class towns</text>
+        </navLabel>
+        <content src="feed_1/article_0/index_u17.html"/>
+      </navPoint>
+      <navPoint id="num_19" playOrder="19" class="chapter">
+        <navLabel>
+          <text>Charlie Watts A rock’n’roll legend whose true love was jazz</text>
+        </navLabel>
+        <content src="feed_1/article_1/index_u54.html"/>
+      </navPoint>
+      <navPoint id="num_20" playOrder="20" class="chapter">
+        <navLabel>
+          <text>The great disrupter How John Cage had the last laugh - by writing beautiful music</text>
+        </navLabel>
+        <content src="feed_1/article_2/index_u128.html"/>
+      </navPoint>
+      <navPoint id="num_21" playOrder="21" class="chapter">
+        <navLabel>
+          <text>New Unite boss Sharon Graham Doing what it says on the union tin</text>
+        </navLabel>
+        <content src="feed_1/article_3/index_u4.html"/>
+      </navPoint>
+      <navPoint id="num_22" playOrder="22" class="chapter">
+        <navLabel>
+          <text>Hobbled by hype Why are lauded British directors only making one movie?</text>
+        </navLabel>
+        <content src="feed_1/article_4/index_u45.html"/>
+      </navPoint>
+      <navPoint id="num_23" playOrder="23" class="chapter">
+        <navLabel>
+          <text>Lucy Dawson The model who got a mystery headache, a misdiagnosis – and a new mission in life</text>
+        </navLabel>
+        <content src="feed_1/article_5/index_u79.html"/>
+      </navPoint>
+      <navPoint id="num_24" playOrder="24" class="chapter">
+        <navLabel>
+          <text>Walking Eagle News Canada turns to satirical Indigenous website to interpret grim news</text>
+        </navLabel>
+        <content src="feed_1/article_6/index_u85.html"/>
+      </navPoint>
+      <navPoint id="num_25" playOrder="25" class="chapter">
+        <navLabel>
+          <text>‘I’m lost’ Poorer pupils lose university places after A-level grade surge</text>
+        </navLabel>
+        <content src="feed_1/article_7/index_u162.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_26" playOrder="26" class="chapter">
+      <navLabel>
+        <text>Coronavirus</text>
+      </navLabel>
+      <content src="feed_2/index_u116.html"/>
+      <navPoint id="num_27" playOrder="27" class="chapter">
+        <navLabel>
+          <text>Explainer Does Covid immunity wane and will vaccine booster jabs be needed?</text>
+        </navLabel>
+        <content src="feed_2/article_0/index_u64.html"/>
+      </navPoint>
+      <navPoint id="num_28" playOrder="28" class="chapter">
+        <navLabel>
+          <text>New Zealand Country won’t ‘throw in towel’ on Covid-zero strategy despite rising infections</text>
+        </navLabel>
+        <content src="feed_2/article_1/index_u90.html"/>
+      </navPoint>
+      <navPoint id="num_29" playOrder="29" class="chapter">
+        <navLabel>
+          <text>Thailand Robotic system developed to up Covid vaccine doses</text>
+        </navLabel>
+        <content src="feed_2/article_2/index_u46.html"/>
+      </navPoint>
+      <navPoint id="num_30" playOrder="30" class="chapter">
+        <navLabel>
+          <text>Taiwan Zero Covid cases for first time since outbreak in May</text>
+        </navLabel>
+        <content src="feed_2/article_3/index_u124.html"/>
+      </navPoint>
+      <navPoint id="num_31" playOrder="31" class="chapter">
+        <navLabel>
+          <text>Covid test-and-trace Staff told to limit toilet and food breaks to 10 minutes</text>
+        </navLabel>
+        <content src="feed_2/article_4/index_u151.html"/>
+      </navPoint>
+      <navPoint id="num_32" playOrder="32" class="chapter">
+        <navLabel>
+          <text>Live Covid: Japan to expand state of emergency; New Zealand delay over potential saline jab error ‘regrettable’</text>
+        </navLabel>
+        <content src="feed_2/article_5/index_u174.html"/>
+      </navPoint>
+      <navPoint id="num_33" playOrder="33" class="chapter">
+        <navLabel>
+          <text>US Intelligence gives Biden inconclusive report on Covid origins</text>
+        </navLabel>
+        <content src="feed_2/article_6/index_u112.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_34" playOrder="34" class="chapter">
+      <navLabel>
+        <text>Opinion</text>
+      </navLabel>
+      <content src="feed_3/index_u129.html"/>
+      <navPoint id="num_35" playOrder="35" class="chapter">
+        <navLabel>
+          <text>Who’s to blame for the Afghanistan chaos? Remember the war’s cheerleaders</text>
+        </navLabel>
+        <content src="feed_3/article_0/index_u117.html"/>
+      </navPoint>
+      <navPoint id="num_36" playOrder="36" class="chapter">
+        <navLabel>
+          <text>Why has so little been said about the Afghan casualties of the past 20 years?</text>
+        </navLabel>
+        <content src="feed_3/article_1/index_u152.html"/>
+      </navPoint>
+      <navPoint id="num_37" playOrder="37" class="chapter">
+        <navLabel>
+          <text>A Scottish Green-SNP alliance could transform the country, and the climate</text>
+        </navLabel>
+        <content src="feed_3/article_2/index_u55.html"/>
+      </navPoint>
+      <navPoint id="num_38" playOrder="38" class="chapter">
+        <navLabel>
+          <text>Feeding birds in our gardens is a joy – but it may be harming weaker species</text>
+        </navLabel>
+        <content src="feed_3/article_3/index_u135.html"/>
+      </navPoint>
+      <navPoint id="num_39" playOrder="39" class="chapter">
+        <navLabel>
+          <text>Is democracy getting in the way of saving the planet?</text>
+        </navLabel>
+        <content src="feed_3/article_4/index_u163.html"/>
+      </navPoint>
+      <navPoint id="num_40" playOrder="40" class="chapter">
+        <navLabel>
+          <text>I dreamed of moving to the country – until I went on a rural summer holiday</text>
+        </navLabel>
+        <content src="feed_3/article_5/index_u31.html"/>
+      </navPoint>
+      <navPoint id="num_41" playOrder="41" class="chapter">
+        <navLabel>
+          <text>It’s time to free Black revolutionaries from US prisons</text>
+        </navLabel>
+        <content src="feed_3/article_6/index_u172.html"/>
+      </navPoint>
+      <navPoint id="num_42" playOrder="42" class="chapter">
+        <navLabel>
+          <text>Ian Botham as trade envoy? Never fear, it’s a job even Prince Andrew could do</text>
+        </navLabel>
+        <content src="feed_3/article_7/index_u86.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_43" playOrder="43" class="chapter">
+      <navLabel>
+        <text>Editorials &amp; letters</text>
+      </navLabel>
+      <content src="feed_4/index_u26.html"/>
+      <navPoint id="num_44" playOrder="44" class="chapter">
+        <navLabel>
+          <text>The Guardian view The G7’s great game: the Taliban rules in Kabul</text>
+        </navLabel>
+        <content src="feed_4/article_0/index_u80.html"/>
+      </navPoint>
+      <navPoint id="num_45" playOrder="45" class="chapter">
+        <navLabel>
+          <text>The Guardian view Ukraine’s independence celebration: shadowed by insecurity</text>
+        </navLabel>
+        <content src="feed_4/article_1/index_u102.html"/>
+      </navPoint>
+      <navPoint id="num_46" playOrder="46" class="chapter">
+        <navLabel>
+          <text>Letters Britain’s military must learn from its mistakes</text>
+        </navLabel>
+        <content src="feed_4/article_2/index_u57.html"/>
+      </navPoint>
+      <navPoint id="num_47" playOrder="47" class="chapter">
+        <navLabel>
+          <text>Letters Cheaper Covid tests help high hopes in Italy</text>
+        </navLabel>
+        <content src="feed_4/article_3/index_u33.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_48" playOrder="48" class="chapter">
+      <navLabel>
+        <text>Tokyo paralympic games</text>
+      </navLabel>
+      <content src="feed_5/index_u126.html"/>
+      <navPoint id="num_49" playOrder="49" class="chapter">
+        <navLabel>
+          <text>Cycling Storey storms to stunning 15th gold in individual pursuit</text>
+        </navLabel>
+        <content src="feed_5/article_0/index_u141.html"/>
+      </navPoint>
+      <navPoint id="num_50" playOrder="50" class="chapter">
+        <navLabel>
+          <text>In pictures Best images from day one of Tokyo Paralympics</text>
+        </navLabel>
+        <content src="feed_5/article_1/index_u175.html"/>
+      </navPoint>
+      <navPoint id="num_51" playOrder="51" class="chapter">
+        <navLabel>
+          <text>Paralympics Day-by-day guide to all the best action</text>
+        </navLabel>
+        <content src="feed_5/article_2/index_u67.html"/>
+      </navPoint>
+      <navPoint id="num_52" playOrder="52" class="chapter">
+        <navLabel>
+          <text>Covid-19 Two more athletes test positive in Paralympic village</text>
+        </navLabel>
+        <content src="feed_5/article_3/index_u136.html"/>
+      </navPoint>
+      <navPoint id="num_53" playOrder="53" class="chapter">
+        <navLabel>
+          <text>Swimming Kearney and Dunn take silver as ParalympicsGB go close in pool</text>
+        </navLabel>
+        <content src="feed_5/article_4/index_u161.html"/>
+      </navPoint>
+      <navPoint id="num_54" playOrder="54" class="chapter">
+        <navLabel>
+          <text>Ellie Simmonds I’ve found the expectations harder as I’ve got older</text>
+        </navLabel>
+        <content src="feed_5/article_5/index_u7.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_55" playOrder="55" class="chapter">
+      <navLabel>
+        <text>Sport</text>
+      </navLabel>
+      <content src="feed_6/index_u18.html"/>
+      <navPoint id="num_56" playOrder="56" class="chapter">
+        <navLabel>
+          <text>Live England bowl India out for 78 – third Test, day one!</text>
+        </navLabel>
+        <content src="feed_6/article_0/index_u12.html"/>
+      </navPoint>
+      <navPoint id="num_57" playOrder="57" class="chapter">
+        <navLabel>
+          <text>Football Kane confirms he will stay at Tottenham after accepting defeat</text>
+        </navLabel>
+        <content src="feed_6/article_1/index_u81.html"/>
+      </navPoint>
+      <navPoint id="num_58" playOrder="58" class="chapter">
+        <navLabel>
+          <text>Lack of European fans will magnify home advantage for US at Ryder Cup</text>
+        </navLabel>
+        <content src="feed_6/article_2/index_u68.html"/>
+      </navPoint>
+      <navPoint id="num_59" playOrder="59" class="chapter">
+        <navLabel>
+          <text>The Open R&amp;A scrap ‘no-readmission’ policy from 2022</text>
+        </navLabel>
+        <content src="feed_6/article_3/index_u29.html"/>
+      </navPoint>
+      <navPoint id="num_60" playOrder="60" class="chapter">
+        <navLabel>
+          <text>Tennis Serena Williams withdraws from US Open with hamstring not healed</text>
+        </navLabel>
+        <content src="feed_6/article_4/index_u48.html"/>
+      </navPoint>
+      <navPoint id="num_61" playOrder="61" class="chapter">
+        <navLabel>
+          <text>Football PSG reject Real’s £137m bid for Mbappé but admit he wants to go</text>
+        </navLabel>
+        <content src="feed_6/article_6/index_u103.html"/>
+      </navPoint>
+      <navPoint id="num_62" playOrder="62" class="chapter">
+        <navLabel>
+          <text>Tsimikas has given Liverpool a new lease of life at left-back</text>
+        </navLabel>
+        <content src="feed_6/article_7/index_u153.html"/>
+      </navPoint>
+      <navPoint id="num_63" playOrder="63" class="chapter">
+        <navLabel>
+          <text>Leon Bailey Jamaican's long road to Villa via Slovakia and a cold Austrian park</text>
+        </navLabel>
+        <content src="feed_6/article_8/index_u127.html"/>
+      </navPoint>
+      <navPoint id="num_64" playOrder="64" class="chapter">
+        <navLabel>
+          <text>The Knowledge Which teammates have played against each other most?</text>
+        </navLabel>
+        <content src="feed_6/article_9/index_u108.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_65" playOrder="65" class="chapter">
+      <navLabel>
+        <text>Climate crisis</text>
+      </navLabel>
+      <content src="feed_7/index_u168.html"/>
+      <navPoint id="num_66" playOrder="66" class="chapter">
+        <navLabel>
+          <text>Australia Country ‘more and more isolated’ on climate, former EU trade commissioner says</text>
+        </navLabel>
+        <content src="feed_7/article_0/index_u49.html"/>
+      </navPoint>
+      <navPoint id="num_67" playOrder="67" class="chapter">
+        <navLabel>
+          <text>Extinction Rebellion Activists block junction in London’s West End in latest protest</text>
+        </navLabel>
+        <content src="feed_7/article_1/index_u69.html"/>
+      </navPoint>
+      <navPoint id="num_68" playOrder="68" class="chapter">
+        <navLabel>
+          <text>Germany Climate crisis made deadly floods ‘up to nine times more likely’</text>
+        </navLabel>
+        <content src="feed_7/article_2/index_u19.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_69" playOrder="69" class="chapter">
+      <navLabel>
+        <text>From the uk</text>
+      </navLabel>
+      <content src="feed_8/index_u97.html"/>
+      <navPoint id="num_70" playOrder="70" class="chapter">
+        <navLabel>
+          <text>Gatwick Airport plans to proceed with conversion of emergency runway</text>
+        </navLabel>
+        <content src="feed_8/article_0/index_u94.html"/>
+      </navPoint>
+      <navPoint id="num_71" playOrder="71" class="chapter">
+        <navLabel>
+          <text>Coronavirus Domestic abusers ‘weaponised’ Covid in England and Wales, study finds</text>
+        </navLabel>
+        <content src="feed_8/article_1/index_u120.html"/>
+      </navPoint>
+      <navPoint id="num_72" playOrder="72" class="chapter">
+        <navLabel>
+          <text>Into the wild Beavers to make ‘cautious’ return to England with legal protection</text>
+        </navLabel>
+        <content src="feed_8/article_2/index_u11.html"/>
+      </navPoint>
+      <navPoint id="num_73" playOrder="73" class="chapter">
+        <navLabel>
+          <text>Sheffield Afghan boy, 5, fell from hotel on to car park roof, inquest told</text>
+        </navLabel>
+        <content src="feed_8/article_3/index_u106.html"/>
+      </navPoint>
+      <navPoint id="num_74" playOrder="74" class="chapter">
+        <navLabel>
+          <text>Amigo Boss says new rescue plan could save struggling lender by 2022</text>
+        </navLabel>
+        <content src="feed_8/article_4/index_u142.html"/>
+      </navPoint>
+      <navPoint id="num_75" playOrder="75" class="chapter">
+        <navLabel>
+          <text>The National Trust Staff to be given siestas in summer</text>
+        </navLabel>
+        <content src="feed_8/article_5/index_u164.html"/>
+      </navPoint>
+      <navPoint id="num_76" playOrder="76" class="chapter">
+        <navLabel>
+          <text>Scotland Minister’s wife pursues legal action against Dundee nursery</text>
+        </navLabel>
+        <content src="feed_8/article_6/index_u146.html"/>
+      </navPoint>
+      <navPoint id="num_77" playOrder="77" class="chapter">
+        <navLabel>
+          <text>Health Dangerous weight loss products for sale online with no warnings</text>
+        </navLabel>
+        <content src="feed_8/article_7/index_u63.html"/>
+      </navPoint>
+      <navPoint id="num_78" playOrder="78" class="chapter">
+        <navLabel>
+          <text>FTSE 100 Morrisons and Meggitt tipped for return as shares surge</text>
+        </navLabel>
+        <content src="feed_8/article_8/index_u169.html"/>
+      </navPoint>
+      <navPoint id="num_79" playOrder="79" class="chapter">
+        <navLabel>
+          <text>Stagecoach EY fined by UK accountancy watchdog over audit failings</text>
+        </navLabel>
+        <content src="feed_8/article_9/index_u44.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_80" playOrder="80" class="chapter">
+      <navLabel>
+        <text>Around the world</text>
+      </navLabel>
+      <content src="feed_9/index_u6.html"/>
+      <navPoint id="num_81" playOrder="81" class="chapter">
+        <navLabel>
+          <text>Afghanistan Taliban have captured more than 100 military helicopters, Russia says</text>
+        </navLabel>
+        <content src="feed_9/article_0/index_u130.html"/>
+      </navPoint>
+      <navPoint id="num_82" playOrder="82" class="chapter">
+        <navLabel>
+          <text>Afghanistan Fury as US politicians fly into Kabul in midst of evacuation effort</text>
+        </navLabel>
+        <content src="feed_9/article_1/index_u158.html"/>
+      </navPoint>
+      <navPoint id="num_83" playOrder="83" class="chapter">
+        <navLabel>
+          <text>Evacuations Scottish charity urges Raab to help two Afghan aid workers</text>
+        </navLabel>
+        <content src="feed_9/article_2/index_u34.html"/>
+      </navPoint>
+      <navPoint id="num_84" playOrder="84" class="chapter">
+        <navLabel>
+          <text>‘Don’t avert your eyes’ Afghan teachers urge world to defend girls’ education</text>
+        </navLabel>
+        <content src="feed_9/article_3/index_u98.html"/>
+      </navPoint>
+      <navPoint id="num_85" playOrder="85" class="chapter">
+        <navLabel>
+          <text>Mexico Oxygen firms accused of intimidating hospitals during pandemic</text>
+        </navLabel>
+        <content src="feed_9/article_4/index_u140.html"/>
+      </navPoint>
+      <navPoint id="num_86" playOrder="86" class="chapter">
+        <navLabel>
+          <text>A love heart made out of sheep Australian farmer pays tribute to his aunt</text>
+        </navLabel>
+        <content src="feed_9/article_5/index_u13.html"/>
+      </navPoint>
+      <navPoint id="num_87" playOrder="87" class="chapter">
+        <navLabel>
+          <text>News Corporation Murdoch empire strikes back at ABC documentary on Fox News’ championing of Trump</text>
+        </navLabel>
+        <content src="feed_9/article_7/index_u104.html"/>
+      </navPoint>
+      <navPoint id="num_88" playOrder="88" class="chapter">
+        <navLabel>
+          <text>Afghanistan Fresh hope for ex-marine’s efforts to rescue 200 cats and dogs</text>
+        </navLabel>
+        <content src="feed_9/article_8/index_u20.html"/>
+      </navPoint>
+      <navPoint id="num_89" playOrder="89" class="chapter">
+        <navLabel>
+          <text>Havana syndrome Kamala Harris trip delayed after two officials report suspected cases</text>
+        </navLabel>
+        <content src="feed_9/article_9/index_u82.html"/>
+      </navPoint>
+      <navPoint id="num_90" playOrder="90" class="chapter">
+        <navLabel>
+          <text>US Supreme court orders Biden to revive Trump’s ‘remain in Mexico’ policy</text>
+        </navLabel>
+        <content src="feed_9/article_10/index_u36.html"/>
+      </navPoint>
+      <navPoint id="num_91" playOrder="91" class="chapter">
+        <navLabel>
+          <text>California Fear as raging blaze ‘knocks on the door’ of Lake Tahoe</text>
+        </navLabel>
+        <content src="feed_9/article_11/index_u60.html"/>
+      </navPoint>
+      <navPoint id="num_92" playOrder="92" class="chapter">
+        <navLabel>
+          <text>R Kelly Singer barred girlfriends from watching series on abuse allegations, court hears</text>
+        </navLabel>
+        <content src="feed_9/article_12/index_u58.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_93" playOrder="93" class="chapter">
+      <navLabel>
+        <text>Culture</text>
+      </navLabel>
+      <content src="feed_10/index_u38.html"/>
+      <navPoint id="num_94" playOrder="94" class="chapter">
+        <navLabel>
+          <text>Kanye West Rapper formally applies to change name to Ye</text>
+        </navLabel>
+        <content src="feed_10/article_0/index_u91.html"/>
+      </navPoint>
+      <navPoint id="num_95" playOrder="95" class="chapter">
+        <navLabel>
+          <text>My best shot Ansel Adams, Brassaï and Bill Brandt sitting on a bench, by Paul Joyce</text>
+        </navLabel>
+        <content src="feed_10/article_1/index_u113.html"/>
+      </navPoint>
+      <navPoint id="num_96" playOrder="96" class="chapter">
+        <navLabel>
+          <text>Mosquito State review A torrid, original tone poem to late capitalism</text>
+        </navLabel>
+        <content src="feed_10/article_2/index_u65.html"/>
+      </navPoint>
+      <navPoint id="num_97" playOrder="97" class="chapter">
+        <navLabel>
+          <text>Chineke!/Bovell review Young orchestra continue to make strong case for neglected repertoire</text>
+        </navLabel>
+        <content src="feed_10/article_3/index_u50.html"/>
+      </navPoint>
+      <navPoint id="num_98" playOrder="98" class="chapter">
+        <navLabel>
+          <text>Firefights, foxhunts and flowers A staggering new view of the Troubles</text>
+        </navLabel>
+        <content src="feed_10/article_4/index_u87.html"/>
+      </navPoint>
+      <navPoint id="num_99" playOrder="99" class="chapter">
+        <navLabel>
+          <text>Autumn 2021’s essential music From Ghetts to Genesis, Nick Cave to Arlo Parks</text>
+        </navLabel>
+        <content src="feed_10/article_5/index_u132.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_100" playOrder="100" class="chapter">
+      <navLabel>
+        <text>Lifestyle</text>
+      </navLabel>
+      <content src="feed_11/index_u147.html"/>
+      <navPoint id="num_101" playOrder="101" class="chapter">
+        <navLabel>
+          <text>How to cook the perfect ... Lamingtons – recipe</text>
+        </navLabel>
+        <content src="feed_11/article_0/index_u176.html"/>
+      </navPoint>
+      <navPoint id="num_102" playOrder="102" class="chapter">
+        <navLabel>
+          <text>Viking beauty kits and Neanderthal contouring The secret history of male beauty</text>
+        </navLabel>
+        <content src="feed_11/article_1/index_u96.html"/>
+      </navPoint>
+      <navPoint id="num_103" playOrder="103" class="chapter">
+        <navLabel>
+          <text>A moment that changed me The shock of being beaten by teenage fascists</text>
+        </navLabel>
+        <content src="feed_11/article_2/index_u154.html"/>
+      </navPoint>
+      <navPoint id="num_104" playOrder="104" class="chapter">
+        <navLabel>
+          <text>'It makes you feel alive while half-killing you' Cycling in Carmarthenshire</text>
+        </navLabel>
+        <content src="feed_11/article_3/index_u159.html"/>
+      </navPoint>
+      <navPoint id="num_105" playOrder="105" class="chapter">
+        <navLabel>
+          <text>Communities Lockdown spirit lives on as neighbour groups become swap shops</text>
+        </navLabel>
+        <content src="feed_11/article_4/index_u51.html"/>
+      </navPoint>
+      <navPoint id="num_106" playOrder="106" class="chapter">
+        <navLabel>
+          <text>August Design News Wooden bags, concrete coral, political pottery</text>
+        </navLabel>
+        <content src="feed_11/article_5/index_u76.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_107" playOrder="107" class="chapter">
+      <navLabel>
+        <text>Take part</text>
+      </navLabel>
+      <content src="feed_12/index_u148.html"/>
+      <navPoint id="num_108" playOrder="108" class="chapter">
+        <navLabel>
+          <text>Tell us Have you been affected by the shortage of school uniform in the UK?</text>
+        </navLabel>
+        <content src="feed_12/article_0/index_u71.html"/>
+      </navPoint>
+      <navPoint id="num_109" playOrder="109" class="chapter">
+        <navLabel>
+          <text>Business How is the shortage of EU workers affecting your business?</text>
+        </navLabel>
+        <content src="feed_12/article_1/index_u15.html"/>
+      </navPoint>
+      <navPoint id="num_110" playOrder="110" class="chapter">
+        <navLabel>
+          <text>Tell us What was the moment that changed you?</text>
+        </navLabel>
+        <content src="feed_12/article_2/index_u8.html"/>
+      </navPoint>
+      <navPoint id="num_111" playOrder="111" class="chapter">
+        <navLabel>
+          <text>Parenting Has your children’s screen time changed during the pandemic?</text>
+        </navLabel>
+        <content src="feed_12/article_3/index_u160.html"/>
+      </navPoint>
+      <navPoint id="num_112" playOrder="112" class="chapter">
+        <navLabel>
+          <text>Paralympics What are you enjoying most about the Tokyo Paralympic Games 2020?</text>
+        </navLabel>
+        <content src="feed_12/article_4/index_u21.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_113" playOrder="113" class="chapter">
+      <navLabel>
+        <text>Explore</text>
+      </navLabel>
+      <content src="feed_13/index_u143.html"/>
+      <navPoint id="num_114" playOrder="114" class="chapter">
+        <navLabel>
+          <text>‘My persian had a three-hour blow-dry!’ 150 years of cat shows – then and now</text>
+        </navLabel>
+        <content src="feed_13/article_0/index_u100.html"/>
+      </navPoint>
+      <navPoint id="num_115" playOrder="115" class="chapter">
+        <navLabel>
+          <text>Meat wars Why Biden wants to break up the powerful US beef industry</text>
+        </navLabel>
+        <content src="feed_13/article_1/index_u73.html"/>
+      </navPoint>
+      <navPoint id="num_116" playOrder="116" class="chapter">
+        <navLabel>
+          <text>‘We can never go back’ Taliban surge spreads fear in Delhi’s ‘Little Kabul’</text>
+        </navLabel>
+        <content src="feed_13/article_2/index_u110.html"/>
+      </navPoint>
+      <navPoint id="num_117" playOrder="117" class="chapter">
+        <navLabel>
+          <text>‘It literally saved us’ What the US’s new anti-poverty measure means for families</text>
+        </navLabel>
+        <content src="feed_13/article_3/index_u5.html"/>
+      </navPoint>
+      <navPoint id="num_118" playOrder="118" class="chapter">
+        <navLabel>
+          <text>‘Quite shaky acceptance’ Trans kids and the fight for inclusion</text>
+        </navLabel>
+        <content src="feed_13/article_4/index_u43.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_119" playOrder="119" class="chapter">
+      <navLabel>
+        <text>Newsletters</text>
+      </navLabel>
+      <content src="feed_14/index_u150.html"/>
+      <navPoint id="num_120" playOrder="120" class="chapter">
+        <navLabel>
+          <text>Guardian morning briefing Sign up and start the day one step ahead</text>
+        </navLabel>
+        <content src="feed_14/article_0/index_u88.html"/>
+      </navPoint>
+      <navPoint id="num_121" playOrder="121" class="chapter">
+        <navLabel>
+          <text>Tokyo 2020 Paralympics briefing Two more weeks of glory and despair</text>
+        </navLabel>
+        <content src="feed_14/article_1/index_u39.html"/>
+      </navPoint>
+      <navPoint id="num_122" playOrder="122" class="chapter">
+        <navLabel>
+          <text>Staying In Sign up for our home entertainment tips</text>
+        </navLabel>
+        <content src="feed_14/article_2/index_u134.html"/>
+      </navPoint>
+      <navPoint id="num_123" playOrder="123" class="chapter">
+        <navLabel>
+          <text>TechScape How the UK forced global shift in child safety policies</text>
+        </navLabel>
+        <content src="feed_14/article_3/index_u10.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_124" playOrder="124" class="chapter">
+      <navLabel>
+        <text>In pictures</text>
+      </navLabel>
+      <content src="feed_15/index_u138.html"/>
+      <navPoint id="num_125" playOrder="125" class="chapter">
+        <navLabel>
+          <text>Wednesday’s best photos Reading festival and Extinction Rebellion protest</text>
+        </navLabel>
+        <content src="feed_15/article_0/index_u83.html"/>
+      </navPoint>
+      <navPoint id="num_126" playOrder="126" class="chapter">
+        <navLabel>
+          <text>Haiti Earthquake relief efforts under way</text>
+        </navLabel>
+        <content src="feed_15/article_1/index_u137.html"/>
+      </navPoint>
+      <navPoint id="num_127" playOrder="127" class="chapter">
+        <navLabel>
+          <text>Silence is golden The archives of Charlie Chaplin</text>
+        </navLabel>
+        <content src="feed_15/article_2/index_u111.html"/>
+      </navPoint>
+      <navPoint id="num_128" playOrder="128" class="chapter">
+        <navLabel>
+          <text>In black and white The 2021 Mono photography awards</text>
+        </navLabel>
+        <content src="feed_15/article_3/index_u3.html"/>
+      </navPoint>
+      <navPoint id="num_129" playOrder="129" class="chapter">
+        <navLabel>
+          <text>Charlie Watts A life in pictures</text>
+        </navLabel>
+        <content src="feed_15/article_4/index_u155.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_130" playOrder="130" class="chapter">
+      <navLabel>
+        <text>Sport - Sport</text>
+      </navLabel>
+      <content src="feed_16/index_u171.html"/>
+      <navPoint id="num_131" playOrder="131" class="chapter">
+        <navLabel>
+          <text>Daily briefing Golden starts for GB and Australia in cycling and swimming</text>
+        </navLabel>
+        <content src="feed_16/article_0/index_u42.html"/>
+      </navPoint>
+      <navPoint id="num_132" playOrder="132" class="chapter">
+        <navLabel>
+          <text>NFL Rookie quarterback watch: Lawrence struggles as Wilson shines</text>
+        </navLabel>
+        <content src="feed_16/article_1/index_u114.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_133" playOrder="133" class="chapter">
+      <navLabel>
+        <text>Sport - Tokyo paralympics</text>
+      </navLabel>
+      <content src="feed_17/index_u105.html"/>
+      <navPoint id="num_134" playOrder="134" class="chapter">
+        <navLabel>
+          <text>Daily briefing Games lift off with airport-themed party</text>
+        </navLabel>
+        <content src="feed_17/article_0/index_u149.html"/>
+      </navPoint>
+      <navPoint id="num_135" playOrder="135" class="chapter">
+        <navLabel>
+          <text>Jannik Blair All I remember is light and dark as the truck was rolling</text>
+        </navLabel>
+        <content src="feed_17/article_1/index_u28.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_136" playOrder="136" class="chapter">
+      <navLabel>
+        <text>Sport - News and features</text>
+      </navLabel>
+      <content src="feed_18/index_u47.html"/>
+      <navPoint id="num_137" playOrder="137" class="chapter">
+        <navLabel>
+          <text>‘Stain for our game’ AFL apologises again to Goodes</text>
+        </navLabel>
+        <content src="feed_18/article_0/index_u123.html"/>
+      </navPoint>
+      <navPoint id="num_138" playOrder="138" class="chapter">
+        <navLabel>
+          <text>Vuelta a España Eiking takes red jersey after Roglic suffers spill</text>
+        </navLabel>
+        <content src="feed_18/article_1/index_u74.html"/>
+      </navPoint>
+      <navPoint id="num_139" playOrder="139" class="chapter">
+        <navLabel>
+          <text>Anti-vaxx athletes’ stance shows myths cut across boundaries</text>
+        </navLabel>
+        <content src="feed_18/article_2/index_u1.html"/>
+      </navPoint>
+      <navPoint id="num_140" playOrder="140" class="chapter">
+        <navLabel>
+          <text>Afghanistan Female athletes leave Kabul after receiving Australian visas</text>
+        </navLabel>
+        <content src="feed_18/article_3/index_u59.html"/>
+      </navPoint>
+      <navPoint id="num_141" playOrder="141" class="chapter">
+        <navLabel>
+          <text>Exclusive Senior ECB executives to share £2.1m bonus amid Covid job cuts</text>
+        </navLabel>
+        <content src="feed_18/article_4/index_u2.html"/>
+      </navPoint>
+      <navPoint id="num_142" playOrder="142" class="chapter">
+        <navLabel>
+          <text>Kyle Anderson Tributes paid to darts player after his death aged 33</text>
+        </navLabel>
+        <content src="feed_18/article_5/index_u167.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_143" playOrder="143" class="chapter">
+      <navLabel>
+        <text>Sport - In depth</text>
+      </navLabel>
+      <content src="feed_19/index_u62.html"/>
+      <navPoint id="num_144" playOrder="144" class="chapter">
+        <navLabel>
+          <text>Patty Mills I don’t consider my actions to be political activism</text>
+        </navLabel>
+        <content src="feed_19/article_0/index_u25.html"/>
+      </navPoint>
+      <navPoint id="num_145" playOrder="145" class="chapter">
+        <navLabel>
+          <text>The Spin England are quacking and creaking into duck history books</text>
+        </navLabel>
+        <content src="feed_19/article_1/index_u133.html"/>
+      </navPoint>
+      <navPoint id="num_146" playOrder="146" class="chapter">
+        <navLabel>
+          <text>Opening ceremony mixes politics, pandemic and plenty of fun</text>
+        </navLabel>
+        <content src="feed_19/article_2/index_u165.html"/>
+      </navPoint>
+      <navPoint id="num_147" playOrder="147" class="chapter">
+        <navLabel>
+          <text>Azeem Rafiq It brings back hurt to be around cricket people</text>
+        </navLabel>
+        <content src="feed_19/article_3/index_u101.html"/>
+      </navPoint>
+      <navPoint id="num_148" playOrder="148" class="chapter">
+        <navLabel>
+          <text>La Liga fans finally return on emotional weekend</text>
+        </navLabel>
+        <content src="feed_19/article_4/index_u93.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_149" playOrder="149" class="chapter">
+      <navLabel>
+        <text>Sport - Football</text>
+      </navLabel>
+      <content src="feed_20/index_u125.html"/>
+      <navPoint id="num_150" playOrder="150" class="chapter">
+        <navLabel>
+          <text>Wales Page calls decision to move Belarus game a ‘nightmare’</text>
+        </navLabel>
+        <content src="feed_20/article_0/index_u122.html"/>
+      </navPoint>
+      <navPoint id="num_151" playOrder="151" class="chapter">
+        <navLabel>
+          <text>Carabao Cup Aston Villa and Norwich score six as Watford beat Crystal Palace</text>
+        </navLabel>
+        <content src="feed_20/article_1/index_u72.html"/>
+      </navPoint>
+      <navPoint id="num_152" playOrder="152" class="chapter">
+        <navLabel>
+          <text>Arsenal Arteta urges fans to show patience and get behind team</text>
+        </navLabel>
+        <content src="feed_20/article_2/index_u53.html"/>
+      </navPoint>
+      <navPoint id="num_153" playOrder="153" class="chapter">
+        <navLabel>
+          <text>The Rumour Mill Ronaldo to land at Manchester City?</text>
+        </navLabel>
+        <content src="feed_20/article_3/index_u166.html"/>
+      </navPoint>
+      <navPoint id="num_154" playOrder="154" class="chapter">
+        <navLabel>
+          <text>Mauritius FA looks into claim toilet recording device was seen in May</text>
+        </navLabel>
+        <content src="feed_20/article_4/index_u92.html"/>
+      </navPoint>
+      <navPoint id="num_155" playOrder="155" class="chapter">
+        <navLabel>
+          <text>Leeds 3-0 Crewe Phillips and Harrison strike late to end resistance</text>
+        </navLabel>
+        <content src="feed_20/article_5/index_u99.html"/>
+      </navPoint>
+      <navPoint id="num_156" playOrder="156" class="chapter">
+        <navLabel>
+          <text>Huddersfield 1-2 Everton Townsend helps 10 men survive in Carabao Cup</text>
+        </navLabel>
+        <content src="feed_20/article_6/index_u22.html"/>
+      </navPoint>
+      <navPoint id="num_157" playOrder="157" class="chapter">
+        <navLabel>
+          <text>Cardiff 0-2 Brighton Potter’s young guns take Seagulls through</text>
+        </navLabel>
+        <content src="feed_20/article_7/index_u177.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_158" playOrder="158" class="chapter">
+      <navLabel>
+        <text>Sport - Regulars</text>
+      </navLabel>
+      <content src="feed_21/index_u144.html"/>
+      <navPoint id="num_159" playOrder="159" class="chapter">
+        <navLabel>
+          <text>Football Weekly What is the point of Arsenal?</text>
+        </navLabel>
+        <content src="feed_21/article_0/index_u121.html"/>
+      </navPoint>
+      <navPoint id="num_160" playOrder="160" class="chapter">
+        <navLabel>
+          <text>The Fiver The fabled Fun and Games in South America Dept</text>
+        </navLabel>
+        <content src="feed_21/article_1/index_u157.html"/>
+      </navPoint>
+      <navPoint id="num_161" playOrder="161" class="chapter">
+        <navLabel>
+          <text>Premier League 10 talking points from the weekend’s action</text>
+        </navLabel>
+        <content src="feed_21/article_2/index_u35.html"/>
+      </navPoint>
+      <navPoint id="num_162" playOrder="162" class="chapter">
+        <navLabel>
+          <text>County cricket Underdogs Glamorgan end their trophy drought in style</text>
+        </navLabel>
+        <content src="feed_21/article_3/index_u9.html"/>
+      </navPoint>
+      <navPoint id="num_163" playOrder="163" class="chapter">
+        <navLabel>
+          <text>Classic YouTube The great Gerd Müller, Rossi magic and Paralympic glory</text>
+        </navLabel>
+        <content src="feed_21/article_4/index.html"/>
+      </navPoint>
+      <navPoint id="num_164" playOrder="164" class="chapter">
+        <navLabel>
+          <text>Football Weekly Extra Kane and the endless Tottenham transfer saga</text>
+        </navLabel>
+        <content src="feed_21/article_5/index_u77.html"/>
+      </navPoint>
+      <navPoint id="num_165" playOrder="165" class="chapter">
+        <navLabel>
+          <text>David Squires on … The Premier League’s big opening weekend</text>
+        </navLabel>
+        <content src="feed_21/article_6/index_u40.html"/>
+      </navPoint>
+      <navPoint id="num_166" playOrder="166" class="chapter">
+        <navLabel>
+          <text>The Spin Siraj is keeping batsmen quiet after rapid rise with India</text>
+        </navLabel>
+        <content src="feed_21/article_7/index_u24.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_167" playOrder="167" class="chapter">
+      <navLabel>
+        <text>Sport - Catch up</text>
+      </navLabel>
+      <content src="feed_22/index_u78.html"/>
+      <navPoint id="num_168" playOrder="168" class="chapter">
+        <navLabel>
+          <text>Phil Jones, elite player who has become laughing stock</text>
+        </navLabel>
+        <content src="feed_22/article_0/index_u89.html"/>
+      </navPoint>
+      <navPoint id="num_169" playOrder="169" class="chapter">
+        <navLabel>
+          <text>Jonnie Peacock I don’t need to win another gold medal for my happiness</text>
+        </navLabel>
+        <content src="feed_22/article_1/index_u41.html"/>
+      </navPoint>
+      <navPoint id="num_170" playOrder="170" class="chapter">
+        <navLabel>
+          <text>Marc Márquez I was afraid I would not have a normal arm again</text>
+        </navLabel>
+        <content src="feed_22/article_2/index_u14.html"/>
+      </navPoint>
+      <navPoint id="num_171" playOrder="171" class="chapter">
+        <navLabel>
+          <text>Rob Burrow It’s beautiful being cared for by the only girl you’ve ever loved</text>
+        </navLabel>
+        <content src="feed_22/article_3/index_u118.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_172" playOrder="172" class="chapter">
+      <navLabel>
+        <text>Sport - The big picture</text>
+      </navLabel>
+      <content src="feed_23/index_u32.html"/>
+      <navPoint id="num_173" playOrder="173" class="chapter">
+        <navLabel>
+          <text>Instagram Follow Guardian Sport now</text>
+        </navLabel>
+        <content src="feed_23/article_0/index_u70.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_174" playOrder="174" class="chapter">
+      <navLabel>
+        <text>Sport - Most viewed</text>
+      </navLabel>
+      <content src="feed_24/index_u109.html"/>
+      <navPoint id="num_175" playOrder="175" class="chapter">
+        <navLabel>
+          <text>Tokyo 2020 Paralympic Games: full medal table</text>
+        </navLabel>
+        <content src="feed_24/article_0/index_u66.html"/>
+      </navPoint>
+      <navPoint id="num_176" playOrder="176" class="chapter">
+        <navLabel>
+          <text>Tokyo 2020 Paralympics day one: swimming, cycling, wheelchair rugby and more – as it happened</text>
+        </navLabel>
+        <content src="feed_24/article_1/index_u56.html"/>
+      </navPoint>
+      <navPoint id="num_177" playOrder="177" class="chapter">
+        <navLabel>
+          <text>Virat Kohli will not ‘back down’ after sledging against England at Lord’s</text>
+        </navLabel>
+        <content src="feed_24/article_2/index_u156.html"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

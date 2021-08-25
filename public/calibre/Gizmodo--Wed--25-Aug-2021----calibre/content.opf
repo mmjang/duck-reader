@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:language>en</dc:language>
+    <dc:title>Gizmodo [Wed, 25 Aug 2021]</dc:title>
+    <dc:creator opf:file-as="calibre" opf:role="aut">calibre</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.25.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:description>本期文章:
+
+
+
+Gizmodo, the gadget guide. So much in love with shiny new toys, it's unnatural.</dc:description>
+    <dc:publisher>gizmodo.com</dc:publisher>
+    <dc:date>2021-08-25T14:44:05.476531+00:00</dc:date>
+    <meta name="calibre:timestamp" content="2021-08-25T14:44:05.470894+00:00"/>
+    <meta name="calibre:publication_type" content="periodical:unknown:Gizmodo"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">1d6fa0a2-5a97-4192-a4c8-f9fc7f34f7eb</dc:identifier>
+    <dc:subject>news</dc:subject>
+    <dc:subject>IT</dc:subject>
+    <dc:subject>Internet</dc:subject>
+    <dc:subject>gadgets</dc:subject>
+    <meta name="cover" content="cover"/>
+  </metadata>
+  <manifest>
+    <item id="cover" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id2" href="index_u1.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="feed_0/index.html" media-type="application/xhtml+xml"/>
+    <item id="masthead-image" href="mastheadImage.jpg" media-type="image/jpeg"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id2"/>
+    <itemref idref="id1"/>
+  </spine>
+  <guide>
+    <reference type="other.masthead" href="mastheadImage.jpg" title="Masthead Image"/>
+    <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+  </guide>
+</package>

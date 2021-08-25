@@ -114,15 +114,15 @@ export default function Reader({
           <p key={index}>{makeWordTiles(item.content)}</p>
         ))}
       </div>
-      {selectedWordIndex >= 0 ? (
-        <Dictionary
-          word={tokens[selectedWordIndex].word}
-          sentence={getSentenceFromIndex(selectedWordIndex)}
-          articleId={articleId}
-          wordIndex={selectedWordIndex}
-          onClose={() => setSelectedWordIndex(-1)}
-        ></Dictionary>
-      ) : null}
+      {/* {selectedWordIndex >= 0 ? (
+        // <Dictionary
+        //   word={tokens[selectedWordIndex].word}
+        //   sentence={getSentenceFromIndex(selectedWordIndex)}
+        //   articleId={articleId}
+        //   wordIndex={selectedWordIndex}
+        //   onClose={() => setSelectedWordIndex(-1)}
+        // ></Dictionary>
+      ) : null} */}
     </>
   );
 }

@@ -1,0 +1,13 @@
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booklist .book {
+  flex: 1 50%;
+  padding: 8px;
+}
+
+.booklist .book img {
+  width: 100%;
+}

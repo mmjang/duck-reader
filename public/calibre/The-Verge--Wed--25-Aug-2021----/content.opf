@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:language>en</dc:language>
+    <dc:title>The Verge [Wed, 25 Aug 2021]</dc:title>
+    <dc:creator opf:file-as="calibre" opf:role="aut">calibre</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.25.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:description>本期文章:
+
+Several Best Buy stores will have Nvidia RTX 30-series GPUs available tomorrow
+
+The latest August Wi-Fi Smart Lock is cheaper than ever
+
+Alphabet’s drone delivery service Wing hits 100,000 deliveries milestone
+
+How to watch Gamescom’s Opening Night Live stream
+
+Joe Rogan, confined to Spotify, is losing influence
+
+Popular online businesses are opening storefronts thanks to TikTok
+
+The company behind PUBG is trying to create the next big fantasy epic
+
+Fitbit’s new Charge 5 has a rounded design and a color screen
+
+Otter.ai can transcribe Microsoft Teams, Google Meet, and Cisco Webex meetings if you’re not there
+
+OnlyFans says never mind, it actually won’t ban porn on October 1st</dc:description>
+    <dc:publisher>calibre</dc:publisher>
+    <dc:date>2021-08-25T14:45:50.165461+00:00</dc:date>
+    <meta name="calibre:timestamp" content="2021-08-25T14:45:50.158132+00:00"/>
+    <meta name="calibre:publication_type" content="periodical:unknown:The Verge"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">73f80537-590a-49d7-b48a-97e508e225e7</dc:identifier>
+    <meta name="cover" content="cover"/>
+  </metadata>
+  <manifest>
+    <item id="cover" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id24" href="index_u3.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="feed_0/index_u7.html" media-type="application/xhtml+xml"/>
+    <item id="id14" href="feed_0/article_0/index_u4.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="feed_0/article_1/index_u6.html" media-type="application/xhtml+xml"/>
+    <item id="id5" href="feed_0/article_2/index_u8.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="feed_0/article_3/index_u10.html" media-type="application/xhtml+xml"/>
+    <item id="id3" href="feed_0/article_4/index_u1.html" media-type="application/xhtml+xml"/>
+    <item id="id22" href="feed_0/article_6/index_u5.html" media-type="application/xhtml+xml"/>
+    <item id="id9" href="feed_0/article_7/index_u9.html" media-type="application/xhtml+xml"/>
+    <item id="id23" href="feed_0/article_8/index.html" media-type="application/xhtml+xml"/>
+    <item id="id8" href="feed_0/article_9/index_u2.html" media-type="application/xhtml+xml"/>
+    <item id="id21" href="feed_0/article_1/images/img1.jpg" media-type="image/jpeg"/>
+    <item id="id20" href="feed_0/article_1/images/img2.jpg" media-type="image/jpeg"/>
+    <item id="id19" href="feed_0/article_1/images/img3_u1.jpg" media-type="image/jpeg"/>
+    <item id="id17" href="feed_0/article_1/images/img4_u1.jpg" media-type="image/jpeg"/>
+    <item id="id16" href="feed_0/article_1/images/img5.jpg" media-type="image/jpeg"/>
+    <item id="id18" href="feed_0/article_1/images/img6.jpg" media-type="image/jpeg"/>
+    <item id="id7" href="feed_0/article_2/images/img1_u2.jpg" media-type="image/jpeg"/>
+    <item id="id6" href="feed_0/article_2/images/img2_u2.jpg" media-type="image/jpeg"/>
+    <item id="id13" href="feed_0/article_7/images/img1_u1.jpg" media-type="image/jpeg"/>
+    <item id="id12" href="feed_0/article_7/images/img2_u1.jpg" media-type="image/jpeg"/>
+    <item id="id11" href="feed_0/article_7/images/img3.jpg" media-type="image/jpeg"/>
+    <item id="id10" href="feed_0/article_7/images/img4.jpg" media-type="image/jpeg"/>
+    <item id="masthead-image" href="mastheadImage.jpg" media-type="image/jpeg"/>
+    <item id="id4" href="feed_0/article_4/images/img1.png" media-type="image/png"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id24"/>
+    <itemref idref="id1"/>
+    <itemref idref="id14"/>
+    <itemref idref="id15"/>
+    <itemref idref="id5"/>
+    <itemref idref="id2"/>
+    <itemref idref="id3"/>
+    <itemref idref="id22"/>
+    <itemref idref="id9"/>
+    <itemref idref="id23"/>
+    <itemref idref="id8"/>
+  </spine>
+  <guide>
+    <reference type="other.masthead" href="mastheadImage.jpg" title="Masthead Image"/>
+    <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+  </guide>
+</package>

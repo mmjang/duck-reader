@@ -7,17 +7,22 @@ export default function NewsCard({
   clickHandler,
 }: {
   title: string;
-  imgUrl: string;
+  imgUrl?: string;
   summary: string;
   clickHandler: () => void;
 }) {
   return (
     <div className="article-item" onClick={clickHandler}>
-      <div className="img-wrapper">
-        <img src={imgUrl} className="img" />
-      </div>
-      <div className="title">{title}</div>
-      <div className="description">{summary}</div>
+      {imgUrl ? (
+        <div className="img-wrapper">
+          <img src={imgUrl} className="img" />
+        </div>
+      ) : null}
+      <div className="title" dangerouslySetInnerHTML={{ __html: title }}></div>
+      <div
+        className="description"
+        dangerouslySetInnerHTML={{ __html: summary }}
+      ></div>
     </div>
   );
 }

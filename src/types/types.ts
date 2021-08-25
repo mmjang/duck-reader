@@ -25,6 +25,23 @@ export interface ArticleItem {
   id: string;
 }
 
+export interface ArticleItemNew {
+  title: string;
+  byline: string;
+  dir: string;
+  length: number;
+  excerpt: string;
+  siteName: string;
+  articleJson: string;
+  image?: string;
+}
+
+export interface BookItem {
+  id: string;
+  coverUrl: string;
+  title: string;
+}
+
 export enum TOKEN_TYPE {
   WORD,
   BLANK,

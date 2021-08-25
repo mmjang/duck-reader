@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" version="2.0" unique-identifier="uuid_id">
+  <metadata xmlns:opf="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata">
+    <dc:language>en</dc:language>
+    <dc:title>LifeHacker [Wed, 25 Aug 2021]</dc:title>
+    <dc:creator opf:file-as="calibre" opf:role="aut">calibre</dc:creator>
+    <dc:contributor opf:role="bkp">calibre (5.25.0) [https://calibre-ebook.com]</dc:contributor>
+    <dc:description>本期文章:
+
+How to Start an Indoor Vegetable Garden
+
+How to Finally Translate (Almost) Any Text in iOS 15
+
+7 Slightly Weird But Useful Ways You Should Reduce the Amount of Crap You Throw Away
+
+In Defense of Cheap, Plain Ol' Vegetable Oil
+
+8 Types of Toys Lifehacker Readers Have Banned From Their Homes
+
+Salmonella Has Come for Our Italian-Style Cold Cuts, According to the CDC
+
+How to Identify Your 'Dominant Emotional Style' (and Why It's so Important)
+
+People Shouldn't Need to Be Told Not to Take Horse Medicine, and Yet
+
+How to Learn to Skateboard In 30 Days Even If You're Old and Broken
+
+Don't Get Scammed by These Fake Crypto Apps on the Google Play Store
+
+How to Delete Space-Hogging 'Other' Files on Your Mac
+
+Can You Actually Exercise in an Exercise Dress?
+
+What Are Vinaigrettes, Exactly?
+
+11 Wonderful Waze Settings Everyone Should Be Using
+
+What's New on Amazon Prime Video in September 2021
+
+Why You Need a 'Family Email Address'
+
+How to Write a 5-Star Review That's Actually Helpful (and Looks Real)
+
+11 Self-Sabotaging Phrases to Drop From Your Vocabulary
+
+What to Do If Your Joy Cons' Motion Controls Are Borked
+
+How to Break in a New Pair of Glasses
+
+Tips, tricks, and downloads for getting things done.</dc:description>
+    <dc:publisher>calibre</dc:publisher>
+    <dc:date>2021-08-25T14:27:39.887223+00:00</dc:date>
+    <meta name="calibre:timestamp" content="2021-08-25T14:27:39.874932+00:00"/>
+    <meta name="calibre:publication_type" content="periodical:unknown:LifeHacker"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">4d53d89c-d75b-4610-ba54-0420f962da97</dc:identifier>
+    <meta name="cover" content="cover"/>
+  </metadata>
+  <manifest>
+    <item id="cover" href="cover.jpg" media-type="image/jpeg"/>
+    <item id="titlepage" href="titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="id75" href="index_u11.html" media-type="application/xhtml+xml"/>
+    <item id="id1" href="feed_0/index_u13.html" media-type="application/xhtml+xml"/>
+    <item id="id69" href="feed_0/article_0/index_u10.html" media-type="application/xhtml+xml"/>
+    <item id="id71" href="feed_0/article_1/index_u18.html" media-type="application/xhtml+xml"/>
+    <item id="id40" href="feed_0/article_2/index_u6.html" media-type="application/xhtml+xml"/>
+    <item id="id27" href="feed_0/article_3/index_u19.html" media-type="application/xhtml+xml"/>
+    <item id="id29" href="feed_0/article_4/index_u17.html" media-type="application/xhtml+xml"/>
+    <item id="id39" href="feed_0/article_5/index.html" media-type="application/xhtml+xml"/>
+    <item id="id73" href="feed_0/article_6/index_u12.html" media-type="application/xhtml+xml"/>
+    <item id="id67" href="feed_0/article_7/index_u7.html" media-type="application/xhtml+xml"/>
+    <item id="id74" href="feed_0/article_8/index_u5.html" media-type="application/xhtml+xml"/>
+    <item id="id65" href="feed_0/article_9/index_u1.html" media-type="application/xhtml+xml"/>
+    <item id="id15" href="feed_0/article_10/index_u15.html" media-type="application/xhtml+xml"/>
+    <item id="id23" href="feed_0/article_11/index_u4.html" media-type="application/xhtml+xml"/>
+    <item id="id63" href="feed_0/article_12/index_u2.html" media-type="application/xhtml+xml"/>
+    <item id="id47" href="feed_0/article_13/index_u9.html" media-type="application/xhtml+xml"/>
+    <item id="id59" href="feed_0/article_14/index_u3.html" media-type="application/xhtml+xml"/>
+    <item id="id61" href="feed_0/article_15/index_u14.html" media-type="application/xhtml+xml"/>
+    <item id="id25" href="feed_0/article_16/index_u8.html" media-type="application/xhtml+xml"/>
+    <item id="id2" href="feed_0/article_17/index_u20.html" media-type="application/xhtml+xml"/>
+    <item id="id20" href="feed_0/article_18/index_u16.html" media-type="application/xhtml+xml"/>
+    <item id="id18" href="feed_0/article_19/index_u21.html" media-type="application/xhtml+xml"/>
+    <item id="id70" href="feed_0/article_0/images/img1_u5.jpg" media-type="image/jpeg"/>
+    <item id="id72" href="feed_0/article_1/images/img1_u3.jpg" media-type="image/jpeg"/>
+    <item id="id46" href="feed_0/article_2/images/img1_u15.jpg" media-type="image/jpeg"/>
+    <item id="id45" href="feed_0/article_2/images/img2.jpg" media-type="image/jpeg"/>
+    <item id="id44" href="feed_0/article_2/images/img3_u2.jpg" media-type="image/jpeg"/>
+    <item id="id42" href="feed_0/article_2/images/img4_u1.jpg" media-type="image/jpeg"/>
+    <item id="id41" href="feed_0/article_2/images/img5_u2.jpg" media-type="image/jpeg"/>
+    <item id="id43" href="feed_0/article_2/images/img6.jpg" media-type="image/jpeg"/>
+    <item id="id28" href="feed_0/article_3/images/img1_u12.jpg" media-type="image/jpeg"/>
+    <item id="id38" href="feed_0/article_4/images/img1_u6.jpg" media-type="image/jpeg"/>
+    <item id="id37" href="feed_0/article_4/images/img2_u3.jpg" media-type="image/jpeg"/>
+    <item id="id36" href="feed_0/article_4/images/img3.jpg" media-type="image/jpeg"/>
+    <item id="id33" href="feed_0/article_4/images/img4_u3.jpg" media-type="image/jpeg"/>
+    <item id="id32" href="feed_0/article_4/images/img5_u1.jpg" media-type="image/jpeg"/>
+    <item id="id34" href="feed_0/article_4/images/img6_u1.jpg" media-type="image/jpeg"/>
+    <item id="id35" href="feed_0/article_4/images/img7_u1.jpg" media-type="image/jpeg"/>
+    <item id="id31" href="feed_0/article_4/images/img8.jpg" media-type="image/jpeg"/>
+    <item id="id30" href="feed_0/article_4/images/img9.jpg" media-type="image/jpeg"/>
+    <item id="id68" href="feed_0/article_7/images/img1_u14.jpg" media-type="image/jpeg"/>
+    <item id="id66" href="feed_0/article_9/images/img1_u1.jpg" media-type="image/jpeg"/>
+    <item id="id17" href="feed_0/article_10/images/img1.jpg" media-type="image/jpeg"/>
+    <item id="id24" href="feed_0/article_11/images/img1_u4.jpg" media-type="image/jpeg"/>
+    <item id="id64" href="feed_0/article_12/images/img1_u13.jpg" media-type="image/jpeg"/>
+    <item id="id56" href="feed_0/article_13/images/img1_u8.jpg" media-type="image/jpeg"/>
+    <item id="id55" href="feed_0/article_13/images/img2_u1.jpg" media-type="image/jpeg"/>
+    <item id="id51" href="feed_0/article_13/images/img4_u2.jpg" media-type="image/jpeg"/>
+    <item id="id50" href="feed_0/article_13/images/img5_u3.jpg" media-type="image/jpeg"/>
+    <item id="id52" href="feed_0/article_13/images/img6_u3.jpg" media-type="image/jpeg"/>
+    <item id="id49" href="feed_0/article_13/images/img8_u2.jpg" media-type="image/jpeg"/>
+    <item id="id48" href="feed_0/article_13/images/img9_u2.jpg" media-type="image/jpeg"/>
+    <item id="id60" href="feed_0/article_14/images/img1_u9.jpg" media-type="image/jpeg"/>
+    <item id="id62" href="feed_0/article_15/images/img1_u10.jpg" media-type="image/jpeg"/>
+    <item id="id26" href="feed_0/article_16/images/img1_u11.jpg" media-type="image/jpeg"/>
+    <item id="id11" href="feed_0/article_17/images/img1_u16.jpg" media-type="image/jpeg"/>
+    <item id="id10" href="feed_0/article_17/images/img2_u2.jpg" media-type="image/jpeg"/>
+    <item id="id9" href="feed_0/article_17/images/img3_u1.jpg" media-type="image/jpeg"/>
+    <item id="id6" href="feed_0/article_17/images/img4.jpg" media-type="image/jpeg"/>
+    <item id="id5" href="feed_0/article_17/images/img5.jpg" media-type="image/jpeg"/>
+    <item id="id7" href="feed_0/article_17/images/img6_u2.jpg" media-type="image/jpeg"/>
+    <item id="id8" href="feed_0/article_17/images/img7.jpg" media-type="image/jpeg"/>
+    <item id="id4" href="feed_0/article_17/images/img8_u1.jpg" media-type="image/jpeg"/>
+    <item id="id3" href="feed_0/article_17/images/img9_u1.jpg" media-type="image/jpeg"/>
+    <item id="id13" href="feed_0/article_17/images/img10.jpg" media-type="image/jpeg"/>
+    <item id="id12" href="feed_0/article_17/images/img11.jpg" media-type="image/jpeg"/>
+    <item id="id14" href="feed_0/article_17/images/img12.jpg" media-type="image/jpeg"/>
+    <item id="id22" href="feed_0/article_18/images/img1_u2.jpg" media-type="image/jpeg"/>
+    <item id="id19" href="feed_0/article_19/images/img1_u7.jpg" media-type="image/jpeg"/>
+    <item id="masthead-image" href="mastheadImage.jpg" media-type="image/jpeg"/>
+    <item id="id16" href="feed_0/article_10/images/img2.png" media-type="image/png"/>
+    <item id="id54" href="feed_0/article_13/images/img3.png" media-type="image/png"/>
+    <item id="id53" href="feed_0/article_13/images/img7.png" media-type="image/png"/>
+    <item id="id58" href="feed_0/article_13/images/img10.png" media-type="image/png"/>
+    <item id="id57" href="feed_0/article_13/images/img11.png" media-type="image/png"/>
+    <item id="id21" href="feed_0/article_18/images/img2_u1.png" media-type="image/png"/>
+    <item id="page_css" href="page_styles.css" media-type="text/css"/>
+    <item id="css" href="stylesheet.css" media-type="text/css"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id75"/>
+    <itemref idref="id1"/>
+    <itemref idref="id69"/>
+    <itemref idref="id71"/>
+    <itemref idref="id40"/>
+    <itemref idref="id27"/>
+    <itemref idref="id29"/>
+    <itemref idref="id39"/>
+    <itemref idref="id73"/>
+    <itemref idref="id67"/>
+    <itemref idref="id74"/>
+    <itemref idref="id65"/>
+    <itemref idref="id15"/>
+    <itemref idref="id23"/>
+    <itemref idref="id63"/>
+    <itemref idref="id47"/>
+    <itemref idref="id59"/>
+    <itemref idref="id61"/>
+    <itemref idref="id25"/>
+    <itemref idref="id2"/>
+    <itemref idref="id20"/>
+    <itemref idref="id18"/>
+  </spine>
+  <guide>
+    <reference type="other.masthead" href="mastheadImage.jpg" title="Masthead Image"/>
+    <reference type="cover" href="titlepage.xhtml" title="Cover"/>
+  </guide>
+</package>

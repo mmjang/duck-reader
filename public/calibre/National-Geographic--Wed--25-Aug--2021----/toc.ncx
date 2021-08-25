@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="6bb7dc3c-5c45-49b9-aa1c-219ee69b57b6"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:generator" content="calibre (5.25.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>National Geographic [Wed, 25 Aug, 2021]</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>Paid Content</text>
+      </navLabel>
+      <content src="feed_0/index.html"/>
+      <navPoint id="num_2" playOrder="2" class="chapter">
+        <navLabel>
+          <text>Coming together to weather the storm</text>
+        </navLabel>
+        <content src="feed_0/article_0/index_u17.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3" class="chapter">
+      <navLabel>
+        <text>History &amp; Culture</text>
+      </navLabel>
+      <content src="feed_1/index_u1.html"/>
+      <navPoint id="num_4" playOrder="4" class="chapter">
+        <navLabel>
+          <text>Reviving a once-scorned dialect: ‘All French is good French’</text>
+        </navLabel>
+        <content src="feed_1/article_0/index_u18.html"/>
+      </navPoint>
+      <navPoint id="num_5" playOrder="5" class="chapter">
+        <navLabel>
+          <text>CDC, FDA, NIH—what’s the difference?</text>
+        </navLabel>
+        <content src="feed_1/article_1/index_u2.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_6" playOrder="6" class="chapter">
+      <navLabel>
+        <text>Travel</text>
+      </navLabel>
+      <content src="feed_2/index_u8.html"/>
+      <navPoint id="num_7" playOrder="7" class="chapter">
+        <navLabel>
+          <text>Here’s where you can be a volunteer scientist</text>
+        </navLabel>
+        <content src="feed_2/article_0/index_u9.html"/>
+      </navPoint>
+      <navPoint id="num_8" playOrder="8" class="chapter">
+        <navLabel>
+          <text>See the best of the West at these family ranches</text>
+        </navLabel>
+        <content src="feed_2/article_1/index_u4.html"/>
+      </navPoint>
+      <navPoint id="num_9" playOrder="9" class="chapter">
+        <navLabel>
+          <text>Can science solve the seaweed problem on Mexican beaches?</text>
+        </navLabel>
+        <content src="feed_2/article_2/index_u3.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_10" playOrder="10" class="chapter">
+      <navLabel>
+        <text>Magazine</text>
+      </navLabel>
+      <content src="feed_3/index_u10.html"/>
+      <navPoint id="num_11" playOrder="11" class="chapter">
+        <navLabel>
+          <text>The stories behind Ruth Bader Ginsburg’s iconic collars</text>
+        </navLabel>
+        <content src="feed_3/article_0/index_u12.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_12" playOrder="12" class="chapter">
+      <navLabel>
+        <text>Science</text>
+      </navLabel>
+      <content src="feed_4/index_u19.html"/>
+      <navPoint id="num_13" playOrder="13" class="chapter">
+        <navLabel>
+          <text>What full FDA approval of Pfizer’s vaccine means</text>
+        </navLabel>
+        <content src="feed_4/article_0/index_u5.html"/>
+      </navPoint>
+      <navPoint id="num_14" playOrder="14" class="chapter">
+        <navLabel>
+          <text>Booster shots may start rolling out to Americans in September</text>
+        </navLabel>
+        <content src="feed_4/article_1/index_u14.html"/>
+      </navPoint>
+      <navPoint id="num_15" playOrder="15" class="chapter">
+        <navLabel>
+          <text>People with breakthrough infections can spread Delta easily</text>
+        </navLabel>
+        <content src="feed_4/article_2/index_u13.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_16" playOrder="16" class="chapter">
+      <navLabel>
+        <text>Animals</text>
+      </navLabel>
+      <content src="feed_5/index_u16.html"/>
+      <navPoint id="num_17" playOrder="17" class="chapter">
+        <navLabel>
+          <text>To save kelp forests, scientists try breeding sea stars</text>
+        </navLabel>
+        <content src="feed_5/article_0/index_u6.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_18" playOrder="18" class="chapter">
+      <navLabel>
+        <text>Environment</text>
+      </navLabel>
+      <content src="feed_6/index_u7.html"/>
+      <navPoint id="num_19" playOrder="19" class="chapter">
+        <navLabel>
+          <text>Wildfire smoke is transforming clouds, making rainfall less likely</text>
+        </navLabel>
+        <content src="feed_6/article_0/index_u20.html"/>
+      </navPoint>
+      <navPoint id="num_20" playOrder="20" class="chapter">
+        <navLabel>
+          <text>Why New England rarely sees hurricane threats like Henri</text>
+        </navLabel>
+        <content src="feed_6/article_1/index_u11.html"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

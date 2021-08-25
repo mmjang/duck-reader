@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { api } from "../../api/index";
 import Reader from "../../components/reader/Reader";
 import { Article } from "../../types/types";
+import Myreader from "../myreader/Myreader";
 import "./ReaderPopup.css";
 
 type Props = {
@@ -15,26 +16,18 @@ export default function ReaderPopup({
   highlights = [],
   onClose = undefined,
 }: Props) {
-  const [article, setArticle] = useState<Article>();
+  const [articleHtml, setArticleHtml] = useState("");
+
   useEffect(() => {
-    async function getArticle() {
-      setArticle(await api.getArticleDetail(articleId));
-    }
-    getArticle();
-  }, [articleId]);
+    fetch(decodeURIComponent(articleId))
+      .then((r) => r.json())
+      .then((j) => setArticleHtml(j.content));
+  }, []);
   return (
     <div className="reader-popup-wrapper">
       <div className="blank-area" onClick={onClose}></div>
       <div className="reader-popup">
-        {article ? (
-          <Reader
-            {...article}
-            highlights={highlights}
-            selectable={false}
-          ></Reader>
-        ) : (
-          ""
-        )}
+        {articleHtml ? <Myreader html={articleHtml}></Myreader> : ""}
       </div>
     </div>
   );

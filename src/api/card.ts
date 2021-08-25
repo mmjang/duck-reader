@@ -1,6 +1,6 @@
 import { Card } from "../types/types";
 
-const CARD_LIST_KEY = "card_list_key";
+const CARD_LIST_KEY = "card_list_key_v2";
 
 let cardList: Card[] = JSON.parse(localStorage.getItem(CARD_LIST_KEY) || "[]");
 

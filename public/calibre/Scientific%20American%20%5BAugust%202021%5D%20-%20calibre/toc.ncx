@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="085daee3-7c6f-4062-9c44-3450a9474b93"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:generator" content="calibre (5.25.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>Scientific American [August 2021]</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>Features</text>
+      </navLabel>
+      <content src="feed_0/index_u21.html"/>
+      <navPoint id="num_2" playOrder="2" class="chapter">
+        <navLabel>
+          <text>New Ideas about the Way Autoimmune Diseases Start and How to Stop Them</text>
+        </navLabel>
+        <content src="feed_0/article_0/index_u29.html"/>
+      </navPoint>
+      <navPoint id="num_3" playOrder="3" class="chapter">
+        <navLabel>
+          <text>How I Was Betrayed from Within</text>
+        </navLabel>
+        <content src="feed_0/article_1/index_u37.html"/>
+      </navPoint>
+      <navPoint id="num_4" playOrder="4" class="chapter">
+        <navLabel>
+          <text>The Terrible Toll of 76 Autoimmune Diseases</text>
+        </navLabel>
+        <content src="feed_0/article_2/index_u10.html"/>
+      </navPoint>
+      <navPoint id="num_5" playOrder="5" class="chapter">
+        <navLabel>
+          <text>In Autoimmune Disease, Organs May Lure the Immune System into an Attack</text>
+        </navLabel>
+        <content src="feed_0/article_3/index_u33.html"/>
+      </navPoint>
+      <navPoint id="num_6" playOrder="6" class="chapter">
+        <navLabel>
+          <text>Why Nearly 80 Percent of Autoimmune Sufferers Are Female</text>
+        </navLabel>
+        <content src="feed_0/article_4/index_u42.html"/>
+      </navPoint>
+      <navPoint id="num_7" playOrder="7" class="chapter">
+        <navLabel>
+          <text>Targeted Treatments for Autoimmune Disease Make Progress</text>
+        </navLabel>
+        <content src="feed_0/article_5/index_u5.html"/>
+      </navPoint>
+      <navPoint id="num_8" playOrder="8" class="chapter">
+        <navLabel>
+          <text>NASA Just Broke the 'Venus Curse': Here's What It Took</text>
+        </navLabel>
+        <content src="feed_0/article_6/index_u2.html"/>
+      </navPoint>
+      <navPoint id="num_9" playOrder="9" class="chapter">
+        <navLabel>
+          <text>New Tech Can Reveal a Vast Network of Methane Leaks</text>
+        </navLabel>
+        <content src="feed_0/article_7/index_u16.html"/>
+      </navPoint>
+      <navPoint id="num_10" playOrder="10" class="chapter">
+        <navLabel>
+          <text>World's Largest Wildlife Bridge Could Save Mountain Lions</text>
+        </navLabel>
+        <content src="feed_0/article_8/index_u1.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_11" playOrder="11" class="chapter">
+      <navLabel>
+        <text>From the Editor</text>
+      </navLabel>
+      <content src="feed_1/index_u20.html"/>
+      <navPoint id="num_12" playOrder="12" class="chapter">
+        <navLabel>
+          <text>Progress on Autoimmune Disorders, Mountain Lions and Venus</text>
+        </navLabel>
+        <content src="feed_1/article_0/index_u32.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_13" playOrder="13" class="chapter">
+      <navLabel>
+        <text>Letters</text>
+      </navLabel>
+      <content src="feed_2/index_u11.html"/>
+      <navPoint id="num_14" playOrder="14" class="chapter">
+        <navLabel>
+          <text>Readers Respond to the May 2021 Issue</text>
+        </navLabel>
+        <content src="feed_2/article_0/index_u17.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_15" playOrder="15" class="chapter">
+      <navLabel>
+        <text>Advances</text>
+      </navLabel>
+      <content src="feed_3/index_u38.html"/>
+      <navPoint id="num_16" playOrder="16" class="chapter">
+        <navLabel>
+          <text>New Tool Shows Geology behind Kidney Stone Crystallization</text>
+        </navLabel>
+        <content src="feed_3/article_0/index_u12.html"/>
+      </navPoint>
+      <navPoint id="num_17" playOrder="17" class="chapter">
+        <navLabel>
+          <text>Birds' Eye Size Predicts Vulnerability to Habitat Loss</text>
+        </navLabel>
+        <content src="feed_3/article_1/index_u27.html"/>
+      </navPoint>
+      <navPoint id="num_18" playOrder="18" class="chapter">
+        <navLabel>
+          <text>In Case You Missed It</text>
+        </navLabel>
+        <content src="feed_3/article_2/index_u43.html"/>
+      </navPoint>
+      <navPoint id="num_19" playOrder="19" class="chapter">
+        <navLabel>
+          <text>See the Highest-Resolution Atomic Image Ever Captured</text>
+        </navLabel>
+        <content src="feed_3/article_3/index_u34.html"/>
+      </navPoint>
+      <navPoint id="num_20" playOrder="20" class="chapter">
+        <navLabel>
+          <text>Misophonia Might Not Be about Hating Sounds After All</text>
+        </navLabel>
+        <content src="feed_3/article_4/index_u9.html"/>
+      </navPoint>
+      <navPoint id="num_21" playOrder="21" class="chapter">
+        <navLabel>
+          <text>How Rootworms Sniff Carbon Dioxide to Devastate Corn Crops</text>
+        </navLabel>
+        <content src="feed_3/article_5/index_u22.html"/>
+      </navPoint>
+      <navPoint id="num_22" playOrder="22" class="chapter">
+        <navLabel>
+          <text>Many Mouse Studies Happen at the Wrong Time of Day</text>
+        </navLabel>
+        <content src="feed_3/article_6/index_u7.html"/>
+      </navPoint>
+      <navPoint id="num_23" playOrder="23" class="chapter">
+        <navLabel>
+          <text>Made-Up Sounds Convey Meaning across Cultures</text>
+        </navLabel>
+        <content src="feed_3/article_7/index_u39.html"/>
+      </navPoint>
+      <navPoint id="num_24" playOrder="24" class="chapter">
+        <navLabel>
+          <text>See Bizarre Seeds and Fruits from around the Globe</text>
+        </navLabel>
+        <content src="feed_3/article_8/index_u23.html"/>
+      </navPoint>
+      <navPoint id="num_25" playOrder="25" class="chapter">
+        <navLabel>
+          <text>Engineered Bacteria Produce a Rainbow of Colors</text>
+        </navLabel>
+        <content src="feed_3/article_9/index_u18.html"/>
+      </navPoint>
+      <navPoint id="num_26" playOrder="26" class="chapter">
+        <navLabel>
+          <text>Tiny Robots Could Clean Up Microplastic Pollution</text>
+        </navLabel>
+        <content src="feed_3/article_10/index_u3.html"/>
+      </navPoint>
+      <navPoint id="num_27" playOrder="27" class="chapter">
+        <navLabel>
+          <text>Illinois Announces Official State Microbe</text>
+        </navLabel>
+        <content src="feed_3/article_11/index_u15.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_28" playOrder="28" class="chapter">
+      <navLabel>
+        <text>Forum</text>
+      </navLabel>
+      <content src="feed_4/index_u40.html"/>
+      <navPoint id="num_29" playOrder="29" class="chapter">
+        <navLabel>
+          <text>Tragedy of the White Tiger</text>
+        </navLabel>
+        <content src="feed_4/article_0/index_u4.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_30" playOrder="30" class="chapter">
+      <navLabel>
+        <text>The Science of Health</text>
+      </navLabel>
+      <content src="feed_5/index_u28.html"/>
+      <navPoint id="num_31" playOrder="31" class="chapter">
+        <navLabel>
+          <text>A Vaccine against Poison Ivy Misery Is in the Works as Scientists Also Explore New Treatment Paths</text>
+        </navLabel>
+        <content src="feed_5/article_0/index_u36.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_32" playOrder="32" class="chapter">
+      <navLabel>
+        <text>The Science Agenda</text>
+      </navLabel>
+      <content src="feed_6/index_u14.html"/>
+      <navPoint id="num_33" playOrder="33" class="chapter">
+        <navLabel>
+          <text>Fix Disaster Response Now</text>
+        </navLabel>
+        <content src="feed_6/article_0/index_u25.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_34" playOrder="34" class="chapter">
+      <navLabel>
+        <text>Recommended</text>
+      </navLabel>
+      <content src="feed_7/index.html"/>
+      <navPoint id="num_35" playOrder="35" class="chapter">
+        <navLabel>
+          <text>A Plot Twist for Climate Change, the Power of Occam's Razor, and Other New Books</text>
+        </navLabel>
+        <content src="feed_7/article_0/index_u8.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_36" playOrder="36" class="chapter">
+      <navLabel>
+        <text>50, 100 &amp; 150 Years Ago</text>
+      </navLabel>
+      <content src="feed_8/index_u31.html"/>
+      <navPoint id="num_37" playOrder="37" class="chapter">
+        <navLabel>
+          <text>50, 100 &amp; 150 Years Ago: September 2021</text>
+        </navLabel>
+        <content src="feed_8/article_0/index_u41.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_38" playOrder="38" class="chapter">
+      <navLabel>
+        <text>Graphic Science</text>
+      </navLabel>
+      <content src="feed_9/index_u19.html"/>
+      <navPoint id="num_39" playOrder="39" class="chapter">
+        <navLabel>
+          <text>The Pandemic's Hidden Toll Is Revealed in Excess Death Counts</text>
+        </navLabel>
+        <content src="feed_9/article_0/index_u30.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_40" playOrder="40" class="chapter">
+      <navLabel>
+        <text>Meter</text>
+      </navLabel>
+      <content src="feed_10/index_u26.html"/>
+      <navPoint id="num_41" playOrder="41" class="chapter">
+        <navLabel>
+          <text>Poem: 'sap pitch and resin'</text>
+        </navLabel>
+        <content src="feed_10/article_0/index_u35.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="num_42" playOrder="42" class="chapter">
+      <navLabel>
+        <text>Observatory</text>
+      </navLabel>
+      <content src="feed_11/index_u13.html"/>
+      <navPoint id="num_43" playOrder="43" class="chapter">
+        <navLabel>
+          <text>The Lab-Leak Theory of COVID's Origin Is Not Totally Irrational</text>
+        </navLabel>
+        <content src="feed_11/article_0/index_u24.html"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

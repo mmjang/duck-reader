@@ -1,20 +1,12 @@
 import { card } from "../../api/card";
 import WordCard from "../wordcard/WordCard";
 // @ts-ignore
-import AnkiExport from "anki-apkg-export";
 import "./CardList.css";
-import { bracketToBoldTag } from "../../utils/tags";
-import {
-  Plugins,
-  FilesystemDirectory,
-  FilesystemEncoding,
-  Capacitor,
-} from "@capacitor/core";
+import { Plugins, Capacitor } from "@capacitor/core";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import { useLocalStorage } from "../../utils/hooks";
 import { Card } from "../../types/types";
-import { exportApkg } from "../../api/export";
 import ReaderPopup from "../readerpopup/ReaderPopup";
 import { detect } from "detect-browser";
 
@@ -36,7 +28,6 @@ export default function CardList() {
       //   return;
       // }
       const exportedCards = filterCardListByType(cardList, cardFilter);
-      await exportApkg(exportedCards, "duck-reader.apkg", "duck-reader");
       const newCardList = cardList.map((c) => {
         if (exportedCards.includes(c)) {
           c.exported = true;
@@ -92,7 +83,7 @@ export default function CardList() {
           <option value={cardOptions[1]}>已导出</option>
           <option value={cardOptions[2]}>未导出</option>
         </select>
-        <button onClick={exportCard}>导出Anki牌组</button>
+        {/* <button onClick={exportCard}>导出Anki牌组</button> */}
       </div>
       <div className="card-list">
         {filterCardListByType(cardList, cardFilter).map((card, index) => (

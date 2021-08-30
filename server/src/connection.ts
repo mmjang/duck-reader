@@ -12,7 +12,7 @@ export async function connect() {
   }
 }
 
-type Col = "users";
+type Col = "users" | "articles";
 
 export function collection(col: Col) {
   return db.collection(col);

@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.password {
+  margin-top: 8px;
+}
+
+input {
+  margin-top: 8px;
+}
+
+.loginbutton {
+  margin-top: 20px;
+}

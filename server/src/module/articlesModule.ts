@@ -7,7 +7,7 @@ import { ObjectId } from "mongodb";
 
 export default (app: express.Application) => {
   // 提交文章
-  app.post("/submitArticle", async (req, res) => {
+  app.post("/api/submitArticle", async (req, res) => {
     console.log(req.url);
     const payload: { url: string; description: string } = req.body;
     parseArticle(payload.url)
@@ -40,7 +40,7 @@ export default (app: express.Application) => {
   });
 
   // article list
-  app.get("/articleList", async (req, res) => {
+  app.get("/api/articleList", async (req, res) => {
     const projection = {
       content: 0,
       textContent: 0,
@@ -72,7 +72,7 @@ export default (app: express.Application) => {
     }
   });
 
-  app.get("/articleDetail", async (req, res) => {
+  app.get("/api/articleDetail", async (req, res) => {
     const articleId = req.query.articleId as string;
     console.log("articleId", articleId);
     const article = await collection("articles").findOne({

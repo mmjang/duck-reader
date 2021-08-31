@@ -9,7 +9,7 @@ import { getCleanedUser } from "../utils";
 
 export default (app: express.Application) => {
   // 注册
-  app.post("/register", async (req, res) => {
+  app.post("/api/register", async (req, res) => {
     const payload: { username: string; password: string } = req.body;
     const existingUser = await collection("users").findOne({
       name: payload.username,
@@ -33,13 +33,16 @@ export default (app: express.Application) => {
   });
 
   // 登录
-  app.post("/login", async (req, res) => {
+  app.post("/api/login", async (req, res) => {
     console.log(req.url);
     const payload: { username: string; password: string } = req.body;
     const existingUser = await collection("users").findOne({
       name: payload.username,
     });
-    if (existingUser && existingUser.hash === cryptPwd(payload.password)) {
+    if (
+      existingUser &&
+      existingUser.hash === cryptPwd(payload.password || "")
+    ) {
       res.json(
         resp(
           true,
@@ -55,7 +58,7 @@ export default (app: express.Application) => {
   });
 
   // 用户信息
-  app.get("/userinfo", async (req, res) => {
+  app.get("/api/userinfo", async (req, res) => {
     res.json(resp(true, getCleanedUser((req as any).user)));
   });
 };

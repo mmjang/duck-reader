@@ -9,11 +9,14 @@ import { useLocalStorage } from "../../utils/hooks";
 import { Card } from "../../types/types";
 import ReaderPopup from "../readerpopup/ReaderPopup";
 import { detect } from "detect-browser";
+import axios from "axios";
 
 const { Filesystem, Share } = Plugins;
 type CardFilterOption = "all" | "exported" | "unexported";
 
 export default function CardList() {
+  axios.get("/api/userinfo");
+
   const browser = detect();
   async function exportCard() {
     try {

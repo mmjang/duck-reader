@@ -9,11 +9,28 @@
   border-bottom: 0.5px solid grey;
 }
 
+.home-banner .status {
+  position: absolute;
+  left: 0;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+  background: rgb(103, 151, 127);
+}
+
 .home-banner .title {
   text-align: center;
   line-height: 55px;
   font-size: 18px;
   color: rgb(121, 121, 121);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-banner .title img {
+  transform: translateY(-4px);
 }
 
 .home-banner .card-list-button {
@@ -25,4 +42,9 @@
   border-radius: 4px;
   background-color: darkolivegreen;
   color: aliceblue;
+}
+
+.status a {
+  text-decoration: none;
+  color: white;
 }

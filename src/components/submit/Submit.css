@@ -1,0 +1,13 @@
+.submit {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submit .url {
+  margin: 8px 0;
+}
+
+.submit .desc {
+  margin-bottom: 16px;
+}

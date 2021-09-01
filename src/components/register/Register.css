@@ -1,4 +1,4 @@
-.login {
+.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,18 +8,18 @@
   margin: 0 auto;
 }
 
-.login .login-banner {
+.register .register-banner {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 16px;
 }
 
-.login .logo {
+.register .logo {
   width: 70%;
 }
 
-.login div {
+.register div {
   display: flex;
   flex-direction: column;
   justify-content: center;

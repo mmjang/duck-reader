@@ -1,3 +1,18 @@
 .home-view {
   padding-top: 55px;
 }
+
+.home-view .add-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}

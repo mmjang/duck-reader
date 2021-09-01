@@ -13,6 +13,9 @@ import CardListView from "./views/cardlist/CardListView";
 import MainView from "./views/main/MainView";
 import ReaderView from "./views/reader/ReaderView";
 import axios from "axios";
+import Register from "./components/register/Register";
+import Submit from "./components/submit/Submit";
+import Me from "./components/me/Me";
 
 //为每个请求设置token
 axios.interceptors.request.use(
@@ -83,6 +86,15 @@ function App() {
           </Route>
           <Route path="/login">
             <Login></Login>
+          </Route>
+          <Route path="/register">
+            <Register></Register>
+          </Route>
+          <Route path="/submit">
+            <Submit></Submit>
+          </Route>
+          <Route path="/me">
+            <Me></Me>
           </Route>
         </Switch>
       </Router>

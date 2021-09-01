@@ -2,22 +2,25 @@ import "./ArticleList.css";
 import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import ArticleCard from "../../components/articlecard/ArticleCard";
-import { ArticleItem, ArticleItemNew } from "../../types/types";
+import { ArticleItemNew } from "../../types/types";
+import axios from "axios";
 
 const bookJsonUrl = (id: string) => `/calibre/${id}/book.json`;
 
 export default function ArticleList() {
   const [newsList, setNewsList] = useState<ArticleItemNew[]>([]);
-  const params = useParams<{ id: string }>();
+  // const params = useParams<{ id: string }>();
 
   useEffect(() => {
     (async () => {
-      const result: ArticleItemNew[] = await fetch(bookJsonUrl(params.id))
-        .then((r) => r.json())
-        .then((j) => j.articleList);
+      const result: ArticleItemNew[] = await axios
+        .get("/api/articleList")
+        .then((data) => {
+          return data.data.data;
+        });
       setNewsList(result);
     })();
-  }, [params]);
+  }, []);
 
   const history = useHistory();
 
@@ -29,13 +32,16 @@ export default function ArticleList() {
     <div className="article-list">
       {newsList
         .filter((a) => a.length > 200)
-        .map((item, index) => (
+        .map((item) => (
           <ArticleCard
             title={item.title}
-            imgUrl={item.image}
+            url={item.url || ""}
             summary={item.excerpt}
-            key={index}
-            clickHandler={() => handleClick(item.articleJson)}
+            hostname={item.hostname || ""}
+            description={item.description || ""}
+            key={item._id}
+            user={item.user}
+            clickHandler={() => handleClick(item._id)}
           ></ArticleCard>
         ))}
     </div>

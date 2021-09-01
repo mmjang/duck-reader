@@ -9,7 +9,7 @@ export function getCleanedUser(user: User) {
 }
 
 export function isChineseContent(content: string) {
-  const threshhold = 0.5;
+  const threshhold = 0.1;
   let count = 0;
   const stripped = content.replace(/[\t\n\r\w]/g, "");
   for (let c of stripped) {

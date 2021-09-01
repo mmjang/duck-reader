@@ -5,6 +5,17 @@
   border-radius: 2px;
   padding-bottom: 4px;
 }
+
+.article-item .user {
+  margin: 4px 8px;
+  border-bottom: 1px solid rgb(197, 196, 196);
+}
+
+.article-item .user .username {
+  color: forestgreen;
+  font-weight: bold;
+}
+
 .article-item .img-wrapper {
   height: 68vw;
   width: 100%;
@@ -26,4 +37,10 @@
 .description {
   color: #767676;
   margin: 0px 8px;
+}
+
+.article-item .hostname {
+  color: darkseagreen;
+  font-style: italic;
+  margin: 0 8px;
 }

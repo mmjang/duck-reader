@@ -25,15 +25,26 @@ export interface ArticleItem {
   id: string;
 }
 
+export interface User {
+  _id: string;
+  name: string;
+  creationDate: number;
+  enabled: boolean;
+}
+
 export interface ArticleItemNew {
+  _id: string;
   title: string;
+  url?: string;
+  hostname?: string;
   byline: string;
-  dir: string;
+  dir: any;
   length: number;
   excerpt: string;
-  siteName: string;
-  articleJson: string;
-  image?: string;
+  siteName: string | null;
+  creationDate: number;
+  description: string | null;
+  user: User;
 }
 
 export interface BookItem {

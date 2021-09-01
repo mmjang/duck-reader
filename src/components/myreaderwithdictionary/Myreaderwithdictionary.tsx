@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState, useCallback, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Dictionary from "../dictionary/Dictionary";
@@ -11,22 +12,28 @@ export default function Myreaderwithdictionary() {
   const [wordSelection, setWordSelection] = useState<WordSelectionEvent>();
 
   useEffect(() => {
-    fetch(decodeURIComponent(params.id))
-      .then((r) => r.json())
-      .then((j) => setArticleHtml(j.content));
+    axios
+      .get("/api/articleDetail", {
+        params: {
+          articleId: params.id,
+        },
+      })
+      .then((data) => {
+        setArticleHtml(data.data.data.content);
+      });
   }, []);
 
   const onWordSelection = useCallback((event: WordSelectionEvent) => {
     setWordSelection(event);
-    setHighlights((highlights) => {
-      return highlights.concat([
-        {
-          start: event.word.positions[0],
-          end: event.word.positions[0] + 1,
-          type: "word",
-        },
-      ]);
-    });
+    // setHighlights((highlights) => {
+    //   return highlights.concat([
+    //     {
+    //       start: event.word.positions[0],
+    //       end: event.word.positions[0] + 1,
+    //       type: "word",
+    //     },
+    //   ]);
+    // });
   }, []);
   return (
     <div>

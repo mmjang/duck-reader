@@ -3,7 +3,12 @@ import jwt from "jsonwebtoken";
 import { resp } from "../response";
 import { JWT_KEY } from "../config";
 
-const ENDPOINT_NO_AUTH_LIST = ["/api/login", "/api/register"];
+const ENDPOINT_NO_AUTH_LIST = [
+  "/api/login",
+  "/api/register",
+  "/api/articleList",
+  "/api/articleDetail",
+];
 
 function needAuth(url: string) {
   return !ENDPOINT_NO_AUTH_LIST.some((endpoint) => url.startsWith(endpoint));

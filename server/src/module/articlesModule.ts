@@ -4,6 +4,7 @@ import { resp } from "../response";
 import { parseArticle } from "../readability";
 import { getCleanedUser, isChineseContent } from "../utils";
 import { ObjectId } from "mongodb";
+import { hostname } from "os";
 
 export default (app: express.Application) => {
   // 提交文章
@@ -12,7 +13,11 @@ export default (app: express.Application) => {
     const payload: { url: string; description: string } = req.body;
     parseArticle(payload.url)
       .then(async (parsed) => {
+        parsed.content = `<h2>${parsed.title}</h2>` + parsed.content;
+        const urlObj = new URL(payload.url);
         const article = {
+          url: payload.url,
+          hostname: urlObj.hostname,
           ...parsed,
           creationDate: Date.now(),
           description: payload.description,

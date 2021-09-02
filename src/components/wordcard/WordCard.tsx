@@ -14,7 +14,6 @@ type Props = Card & {
 
 export default function WordCard({
   defaultState,
-  id,
   originalWord,
   sentence,
   articleId,

@@ -16,6 +16,7 @@ import axios from "axios";
 import Register from "./components/register/Register";
 import Submit from "./components/submit/Submit";
 import Me from "./components/me/Me";
+import User from "./components/user/User";
 
 //为每个请求设置token
 axios.interceptors.request.use(
@@ -52,6 +53,14 @@ axios.interceptors.response.use(
     return Promise.reject(err.response);
   }
 );
+
+// app启动时，请求一次userInfo
+if (localStorage.getItem("token")) {
+  axios.get("/api/userinfo").then((data) => {
+    localStorage.setItem("userId", data.data.data._id);
+    localStorage.setItem("userName", data.data.data.name);
+  });
+}
 
 function App() {
   const [highlights, setHighlights] = useState<Highlight[]>([]);
@@ -95,6 +104,9 @@ function App() {
           </Route>
           <Route path="/me">
             <Me></Me>
+          </Route>
+          <Route path="/user/:id">
+            <User></User>
           </Route>
         </Switch>
       </Router>

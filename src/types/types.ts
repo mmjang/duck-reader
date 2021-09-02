@@ -73,7 +73,8 @@ export interface DictResultEntry {
 }
 
 export interface Card {
-  id: string;
+  _id?: string;
+  userId: string;
   originalWord: string;
   sentence: string;
   articleId: string;

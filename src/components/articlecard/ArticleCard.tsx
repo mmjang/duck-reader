@@ -1,3 +1,4 @@
+import { useHistory } from "react-router-dom";
 import { User } from "../../types/types";
 import "./ArticleCard.css";
 
@@ -20,10 +21,19 @@ export default function NewsCard({
   url: string;
   clickHandler: () => void;
 }) {
+  const history = useHistory();
   return (
     <div className="article-item" onClick={clickHandler}>
       <div className="user">
-        <span className="username">@{user.name}</span>
+        <span
+          className="username"
+          onClick={(e) => {
+            e.stopPropagation();
+            history.push(`/user/${user._id}`);
+          }}
+        >
+          @{user.name}
+        </span>
         <span className="description">{description}</span>
       </div>
       {imgUrl ? (

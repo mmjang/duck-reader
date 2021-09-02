@@ -6,6 +6,7 @@ import { cryptPwd } from "../hash";
 import { resp } from "../response";
 import { JWT_KEY } from "../config";
 import { getCleanedUser } from "../utils";
+import { ObjectId } from "mongodb";
 
 export default (app: express.Application) => {
   // 注册
@@ -59,6 +60,14 @@ export default (app: express.Application) => {
 
   // 用户信息
   app.get("/api/userinfo", async (req, res) => {
-    res.json(resp(true, getCleanedUser((req as any).user)));
+    const userId = req.query.userId || "";
+    if (!userId) {
+      res.json(resp(true, getCleanedUser((req as any).user)));
+    } else {
+      const user = await collection("users").findOne({
+        _id: new ObjectId(userId as string),
+      });
+      res.json(resp(true, getCleanedUser(user as User)));
+    }
   });
 };

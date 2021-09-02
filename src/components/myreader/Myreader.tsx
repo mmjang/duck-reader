@@ -155,7 +155,7 @@ function getSentence(
   } else {
     let maxLength = 100;
     let left = selectedTokenIndex;
-    while (left >= 0) {
+    while (left > 0) {
       left--;
       if (
         tokenList[left].classList.contains("para-end") ||

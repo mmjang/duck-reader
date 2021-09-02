@@ -7,14 +7,18 @@ import axios from "axios";
 
 const bookJsonUrl = (id: string) => `/calibre/${id}/book.json`;
 
-export default function ArticleList() {
+export default function ArticleList({ userId }: { userId?: string }) {
   const [newsList, setNewsList] = useState<ArticleItemNew[]>([]);
   // const params = useParams<{ id: string }>();
 
   useEffect(() => {
     (async () => {
       const result: ArticleItemNew[] = await axios
-        .get("/api/articleList")
+        .get("/api/articleList", {
+          params: {
+            userId: userId ? userId : "",
+          },
+        })
         .then((data) => {
           return data.data.data;
         });

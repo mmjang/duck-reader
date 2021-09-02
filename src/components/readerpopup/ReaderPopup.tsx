@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { api } from "../../api/index";
 import Reader from "../../components/reader/Reader";
@@ -19,10 +20,17 @@ export default function ReaderPopup({
   const [articleHtml, setArticleHtml] = useState("");
 
   useEffect(() => {
-    fetch(decodeURIComponent(articleId))
-      .then((r) => r.json())
-      .then((j) => setArticleHtml(j.content));
+    axios
+      .get("/api/articleDetail", {
+        params: {
+          articleId,
+        },
+      })
+      .then((data) => {
+        setArticleHtml(data.data.data.content);
+      });
   }, []);
+
   return (
     <div className="reader-popup-wrapper">
       <div className="blank-area" onClick={onClose}></div>

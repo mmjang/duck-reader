@@ -2,6 +2,7 @@ import express from "express";
 import { connect } from "./connection";
 import authentication from "./middleware/authentication";
 import articlesModule from "./module/articlesModule";
+import cardsModule from "./module/cardsModule";
 import dictionaryModule from "./module/dictionaryModule";
 import usersModule from "./module/usersModule";
 
@@ -20,6 +21,7 @@ app.use(authentication);
 usersModule(app);
 articlesModule(app);
 dictionaryModule(app);
+cardsModule(app);
 
 // 启动服务
 app.listen(port, () => {

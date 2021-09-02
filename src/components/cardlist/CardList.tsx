@@ -4,32 +4,24 @@ import WordCard from "../wordcard/WordCard";
 import "./CardList.css";
 import { Plugins, Capacitor } from "@capacitor/core";
 import toast from "react-hot-toast";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocalStorage } from "../../utils/hooks";
 import { Card } from "../../types/types";
 import ReaderPopup from "../readerpopup/ReaderPopup";
 import { detect } from "detect-browser";
 import axios from "axios";
+import back from "../../asset/back.svg";
+import { useHistory } from "react-router-dom";
 
 const { Filesystem, Share } = Plugins;
 type CardFilterOption = "all" | "exported" | "unexported";
 
 export default function CardList() {
   axios.get("/api/userinfo");
-
+  const history = useHistory();
   const browser = detect();
   async function exportCard() {
     try {
-      // if (
-      //   browser?.os?.includes("Android") ||
-      //   (browser?.os?.includes("iOS") &&
-      //     browser.name !== "safari" &&
-      //     browser.name !== "ios")
-      // ) {
-      //   console.log(browser);
-      //   toast("目前导出牌组功能仅支持电脑和iOS Safari。安卓App即将推出。");
-      //   return;
-      // }
       const exportedCards = filterCardListByType(cardList, cardFilter);
       const newCardList = cardList.map((c) => {
         if (exportedCards.includes(c)) {
@@ -74,18 +66,43 @@ export default function CardList() {
   }
 
   const [cardFilter, setCardFilter] = useState<CardFilterOption>("all");
-  const [cardList, setCardList] = useState<Card[]>(card.getCardList());
+  const [cardList, setCardList] = useState<Card[]>([]);
   const cardOptions: CardFilterOption[] = ["all", "exported", "unexported"];
   const [popupArticleId, setPopupArticleId] = useState("");
   const [popupWordIndex, setPopupWordIndex] = useState(-1);
+
+  useEffect(() => {
+    axios
+      .get("/api/cardList", {
+        params: {
+          userId: localStorage.getItem("userId"),
+        },
+      })
+      .then((data) => {
+        if (data.data.data.length === 0) {
+          toast.error("您还没有添加任何卡片，请在文章里选择单词添加哦");
+        }
+        setCardList(data.data.data);
+      });
+  }, []);
+
   return (
     <>
       <div className="card-list-banner">
-        <select value={cardFilter} onChange={onCardFilterSelectorChange}>
+        <div>
+          <img
+            src={back}
+            width="35"
+            onClick={() => {
+              history.goBack();
+            }}
+          />
+        </div>
+        {/* <select value={cardFilter} onChange={onCardFilterSelectorChange}>
           <option value={cardOptions[0]}>全部</option>
           <option value={cardOptions[1]}>已导出</option>
           <option value={cardOptions[2]}>未导出</option>
-        </select>
+        </select> */}
         {/* <button onClick={exportCard}>导出Anki牌组</button> */}
       </div>
       <div className="card-list">

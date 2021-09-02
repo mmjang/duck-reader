@@ -57,7 +57,7 @@ export default (app: express.Application) => {
         resp(
           true,
           await collection("articles")
-            .find({ "user._id": new ObjectId(userId) })
+            .find({ "user._id": userId })
             .sort({ creationDate: -1 })
             .project(projection)
             .toArray()

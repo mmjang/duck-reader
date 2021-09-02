@@ -1,0 +1,9 @@
+.user .userinfo {
+  padding: 0 8px;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.user .userinfo .username {
+  color: rgb(63, 107, 63);
+}

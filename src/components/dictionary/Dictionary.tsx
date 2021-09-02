@@ -10,6 +10,7 @@ import loading from "./loading.gif";
 import { card } from "../../api/card";
 import WordTile from "../wordtile/WordTile";
 import toast from "react-hot-toast";
+import axios from "axios";
 
 interface Props {
   word: string;
@@ -54,16 +55,30 @@ export default function Dictionary({
   }, [word]);
 
   function addDefinition(def: DictResultEntry): void {
-    card.addCard({
-      id: Date.now().toString(),
-      originalWord: word,
-      sentence,
-      articleId,
-      wordTileIndex: wordIndex,
-      dictResult: def,
-      addTime: Date.now(),
+    const userId = localStorage.getItem("userId") as string;
+    if (!userId) {
+      toast.error("您还未登录，请先登录");
+    }
+    const promise = axios
+      .post("/api/addCard/", {
+        userId,
+        originalWord: word,
+        sentence,
+        articleId,
+        wordTileIndex: wordIndex,
+        dictResult: def,
+        addTime: Date.now(),
+      })
+      .then((data) => {
+        if (!data.data.success) {
+          throw "err";
+        }
+      });
+    toast.promise(promise, {
+      loading: "正在添加",
+      success: "添加成功",
+      error: "添加失败",
     });
-    toast.success("添加成功");
   }
 
   const iconRow = (

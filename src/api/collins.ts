@@ -1,3 +1,4 @@
+import axios from "axios";
 import { DictResultEntry } from "../types/types";
 import { forms } from "./forms";
 
@@ -46,21 +47,18 @@ async function getHWDListToBeSearched(word: string): Promise<string[]> {
 
 export const collins = {
   async search(word: string): Promise<DictResultEntry[]> {
-    await this.init();
-    if (!hwdsMap) {
-      throw "柯林斯还未初始化";
-    }
-    const result = [];
-    const nestedResult = (await Promise.all(
-      (await getHWDListToBeSearched(word)).map((w) => {
-        return fetch(getCDNUrl(w)).then((r) => r.json());
+    // await this.init();
+    // if (!hwdsMap) {
+    //   throw "柯林斯还未初始化";
+    // }
+    const result = (await axios
+      .get("/api/dictionary/collins/", {
+        params: {
+          word,
+        },
       })
-    )) as CollinsEntry[][];
-    for (const resultForOneEntry of nestedResult) {
-      for (const definition of resultForOneEntry) {
-        result.push(definition);
-      }
-    }
+      .then((data) => data.data.data)) as CollinsEntry[];
+
     return result.map((item) => ({
       headword: item.phrase ? item.phrase : item.hwd,
       phonetics: item.phonetics,
@@ -68,13 +66,13 @@ export const collins = {
       definition: getDefinitionFromEntry(item),
     }));
   },
-  async init() {
-    await forms.init();
-    if (!hwdsMap) {
-      hwdsMap = new Set(
-        await fetch(CDN_PREFIX + "/hub/collins.list.json").then((r) => r.json())
-      );
-    }
-    return true;
-  },
+  // async init() {
+  //   await forms.init();
+  //   if (!hwdsMap) {
+  //     hwdsMap = new Set(
+  //       await fetch(CDN_PREFIX + "/hub/collins.list.json").then((r) => r.json())
+  //     );
+  //   }
+  //   return true;
+  // },
 };

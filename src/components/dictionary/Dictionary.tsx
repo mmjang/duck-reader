@@ -43,7 +43,8 @@ export default function Dictionary({
         if (result.length === 0) {
           setMessage("没查到这个词.");
         }
-      } catch {
+      } catch (e) {
+        console.log(e);
         setMessage("网络错误.");
       } finally {
         setIsLoading(false);

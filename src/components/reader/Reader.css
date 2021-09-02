@@ -2,7 +2,16 @@
   padding: 0 16px;
 }
 
-.reader p {
+.reader {
   font-family: serif;
+}
+
+.reader.small {
+  font-size: 18px;
+}
+.reader.middle {
   font-size: 20px;
+}
+.reader.large {
+  font-size: 22px;
 }

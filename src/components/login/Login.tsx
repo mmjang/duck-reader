@@ -3,7 +3,7 @@ import duck from "../../asset/duck.png";
 import React, { useState } from "react";
 import axios from "axios";
 import { useQuery } from "../../utils/hooks";
-import { Link } from "react-router-dom";
+import { Button, TextField, Link } from "@material-ui/core";
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -39,33 +39,38 @@ export default function Login() {
   return (
     <div className="login">
       <div className="login-banner">
-        <Link to="/">首页</Link>
-        <Link to="/register">注册</Link>
+        <Link href="/">首页</Link>
       </div>
       <div className="logo">
         <img src={duck} />
       </div>
-      <h1>{"请您登录"}</h1>
       <div className="username">
-        <label>用户名：</label>
-        <input
+        <TextField
           type="text"
           name="username"
+          label="用户名"
           value={username}
           onChange={onUsernameChange}
-        ></input>
+        ></TextField>
       </div>
       <div className="password">
-        <label>密 码：</label>
-        <input
+        <TextField
           type="password"
           name="password"
+          label="密码"
           value={password}
           onChange={onPasswordChange}
-        ></input>
+        ></TextField>
       </div>
       <div className="loginbutton">
-        <button onClick={onSubmit}>登录</button>
+        <Button onClick={onSubmit} color="primary" variant="contained">
+          登录
+        </Button>
+      </div>
+      <div className="loginbutton">
+        <Button href="/register" variant="contained">
+          注册
+        </Button>
       </div>
     </div>
   );

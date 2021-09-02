@@ -17,6 +17,15 @@ import Register from "./components/register/Register";
 import Submit from "./components/submit/Submit";
 import Me from "./components/me/Me";
 import User from "./components/user/User";
+import "@fontsource/roboto";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+import teal from "@material-ui/core/colors/blueGrey";
+
+const theme = createTheme({
+  palette: {
+    primary: teal,
+  },
+});
 
 //为每个请求设置token
 axios.interceptors.request.use(
@@ -78,7 +87,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Router>
         <Switch>
           <Route path="/" exact>
@@ -111,7 +120,7 @@ function App() {
         </Switch>
       </Router>
       <Toaster />
-    </>
+    </ThemeProvider>
   );
 }
 

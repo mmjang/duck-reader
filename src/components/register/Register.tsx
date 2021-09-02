@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useQuery } from "../../utils/hooks";
 import toast from "react-hot-toast";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { Button, TextField, Link } from "@material-ui/core";
 export default function Register() {
   const history = useHistory();
   const [username, setUsername] = useState("");
@@ -53,44 +54,50 @@ export default function Register() {
   return (
     <div className="register">
       <div className="register-banner">
-        <Link to="/">首页</Link>
-        <Link to="/login">登录</Link>
+        <Link href="/">首页</Link>
       </div>
       <div className="logo">
         <img src={duck} />
       </div>
-      <h1>{"请您注册"}</h1>
       <div className="username">
-        <label>用户名：</label>
-        <input
+        <TextField
+          label="用户名"
           type="text"
           name="username"
           value={username}
           onChange={onUsernameChange}
-        ></input>
+        ></TextField>
       </div>
       <div className="password">
-        <label>密 码：</label>
-        <input
+        <TextField
+          label="密码"
           type="password"
           name="password"
           value={password}
           onChange={onPasswordChange}
-        ></input>
+        ></TextField>
       </div>
 
       <div className="password">
-        <label>确认密码：</label>
-        <input
+        <TextField
+          label="确认密码"
           type="password"
           name="confirmpassword"
           value={confirmPassword}
           onChange={onConfirmPasswordChange}
-        ></input>
+        ></TextField>
       </div>
 
       <div className="loginbutton">
-        <button onClick={onSubmit}>注册</button>
+        <Button onClick={onSubmit} color="primary" variant="contained">
+          注册
+        </Button>
+      </div>
+
+      <div className="loginbutton">
+        <Button href="/login" variant="contained">
+          去登录
+        </Button>
       </div>
     </div>
   );

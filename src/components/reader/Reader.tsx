@@ -17,11 +17,13 @@ export default function Reader({
   // is word selectable
   selectable = true,
   scrollToHighlights = false,
+  fontSize = "middle",
 }: Partial<Article> & {
   articleId: string;
   highlights?: number[];
   selectable?: boolean;
   scrollToHighlights?: boolean;
+  fontSize: "small" | "middle" | "large";
 }) {
   const [selectedWordIndex, setSelectedWordIndex] = useState(-1);
 
@@ -108,7 +110,7 @@ export default function Reader({
   }
   return (
     <>
-      <div className="reader" onClick={onClickReader}>
+      <div className={"reader " + fontSize} onClick={onClickReader}>
         <h3>{makeWordTiles(title)}</h3>
         {content?.map((item, index) => (
           <p key={index}>{makeWordTiles(item.content)}</p>

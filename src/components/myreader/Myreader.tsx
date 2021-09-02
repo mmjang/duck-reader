@@ -224,11 +224,15 @@ export interface WordSelectionEvent {
 export default function Myreader({
   html = TEST_HTML,
   highlights = [],
+  fontSize = "middle",
+  fontFamily = "bookerly",
   onWordSelection,
 }: {
   html?: string;
   highlights?: Highlight[];
   setHighlights?: (hls: Highlight[]) => void;
+  fontSize?: string;
+  fontFamily?: string;
   onWordSelection?: (event: WordSelectionEvent) => void;
 }) {
   const readerRef = useRef<HTMLDivElement>(null);
@@ -266,7 +270,7 @@ export default function Myreader({
   // }, [html]);
 
   return (
-    <div ref={readerRef} className="myreader">
+    <div ref={readerRef} className={`myreader ${fontSize} ${fontFamily}`}>
       <div
         dangerouslySetInnerHTML={{
           __html: html,

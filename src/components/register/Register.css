@@ -11,12 +11,13 @@
 .register .register-banner {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-top: 16px;
+  justify-content: start;
 }
 
 .register .logo {
   width: 70%;
+  margin: 0 auto 20px auto;
 }
 
 .register div {

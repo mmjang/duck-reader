@@ -2,6 +2,7 @@ import { Link, useHistory } from "react-router-dom";
 import "./HomeBanner.css";
 import duck from "../../asset/duck.png";
 import toast from "react-hot-toast";
+import { Button } from "@material-ui/core";
 
 export default function HomeBanner() {
   const history = useHistory();
@@ -18,15 +19,28 @@ export default function HomeBanner() {
   return (
     <div className="home-banner">
       <div className="status">
-        {isLogin ? <Link to="/me">我</Link> : <Link to="/login">登录</Link>}
+        {isLogin ? (
+          <Button href="/me" variant="text" color="primary">
+            我
+          </Button>
+        ) : (
+          <Button variant="text" href="/login" color="secondary">
+            登录
+          </Button>
+        )}
       </div>
       <span className="title">
         <img src={duck} width={35} />
         填鸭阅读
       </span>
-      <div className="card-list-button" onClick={navigateToCardList}>
+      <Button
+        className="card-list-button"
+        onClick={navigateToCardList}
+        variant="text"
+        color="primary"
+      >
         我的卡片
-      </div>
+      </Button>
     </div>
   );
 }

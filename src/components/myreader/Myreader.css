@@ -1,7 +1,32 @@
 .myreader {
   width: 100%;
   padding: 0 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.myreader.serif {
+  font-family: serif;
+}
+
+.myreader.sans-serif {
+  font-family: sans-serif;
+}
+
+.myreader.bookerly {
+  font-family: bookerly;
+}
+
+.myreader.futura {
+  font-family: futura;
+}
+
+.myreader.small {
+  font-size: 16px;
+}
+.myreader.middle {
+  font-size: 18px;
+}
+.myreader.large {
+  font-size: 20px;
 }
 
 .myreader img {

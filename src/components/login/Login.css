@@ -11,12 +11,13 @@
 .login .login-banner {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: start;
   margin-top: 16px;
 }
 
 .login .logo {
   width: 70%;
+  margin: 0 auto 20px auto;
 }
 
 .login div {

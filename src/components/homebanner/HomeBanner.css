@@ -12,11 +12,7 @@
 .home-banner .status {
   position: absolute;
   left: 0;
-  margin: 8px;
-  padding: 8px;
-  border-radius: 4px;
-  color: white;
-  background: rgb(103, 151, 127);
+  line-height: 50px;
 }
 
 .home-banner .title {
@@ -30,21 +26,12 @@
 }
 
 .home-banner .title img {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
 }
 
 .home-banner .card-list-button {
   position: absolute;
   right: 0;
   top: 0;
-  margin: 8px;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: darkolivegreen;
-  color: aliceblue;
-}
-
-.status a {
-  text-decoration: none;
-  color: white;
+  line-height: 45px;
 }

@@ -23,7 +23,7 @@ export default function ReaderView() {
   }, [id]);
   return (
     <div className="App">
-      {article ? <Reader {...article} highlights={highlights}></Reader> : ""}
+      {/* {article ? <Reader {...article} highlights={highlights}></Reader> : ""} */}
     </div>
   );
 }

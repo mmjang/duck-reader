@@ -25,17 +25,21 @@ export default function Submit() {
     if (description.length > 140) {
       toast.error("你想说的话太长了， 只能140字以内哦。");
     }
-    axios
+    const promise = axios
       .post("/api/submitArticle", {
         url,
         description,
       })
       .then((data) => {
         if (data.data.success) {
-          toast.success("提交成功");
           history.push("/");
         }
       });
+    toast.promise(promise, {
+      loading: "正在解析文章网址...",
+      success: "文章提交成功。",
+      error: "出错...",
+    });
   };
   return (
     <div className="submit">

@@ -42,6 +42,10 @@
 
 .token-class.word:hover {
   cursor: pointer;
+}
+
+.token-class.word:active {
+  cursor: pointer;
   background-color: aquamarine;
 }
 

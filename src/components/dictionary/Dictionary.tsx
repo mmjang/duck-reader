@@ -11,6 +11,7 @@ import { card } from "../../api/card";
 import WordTile from "../wordtile/WordTile";
 import toast from "react-hot-toast";
 import axios from "axios";
+import { useLocalStorage } from "../../utils/hooks";
 
 interface Props {
   word: string;
@@ -31,7 +32,10 @@ export default function Dictionary({
 }: Props) {
   console.log("rerender");
   const [definitionList, setDefinitionList] = useState<DictResultEntry[]>([]);
-  const [displayMode, setDisplayMode] = useState<DisplayMode>("compact");
+  const [displayMode, setDisplayMode] = useLocalStorage(
+    "dictionary-mode",
+    "compact"
+  );
   const [isLoading, setIsLoading] = useState(true);
   const [message, setMessage] = useState("");
   useEffect(() => {
@@ -92,7 +96,14 @@ export default function Dictionary({
         src={displayMode === "full" ? arrowDown : arrowUp}
         className="expand-icon"
       />
-      <img src={close} className="close-icon" onClick={onClose} />
+      <img
+        src={close}
+        className="close-icon"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
+      />
     </div>
   );
   if (isLoading) {

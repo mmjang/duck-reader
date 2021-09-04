@@ -17,7 +17,6 @@ const { Filesystem, Share } = Plugins;
 type CardFilterOption = "all" | "exported" | "unexported";
 
 export default function CardList() {
-  axios.get("/api/userinfo");
   const history = useHistory();
   const browser = detect();
   async function exportCard() {

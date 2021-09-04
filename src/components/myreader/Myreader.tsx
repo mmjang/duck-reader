@@ -1,5 +1,10 @@
 import { start } from "node:repl";
-import React, { useEffect, useRef } from "react";
+import React, {
+  forwardRef,
+  useEffect,
+  useImperativeHandle,
+  useRef,
+} from "react";
 import "./Myreader.css";
 import { TEST_HTML } from "./testdata";
 
@@ -221,23 +226,43 @@ export interface WordSelectionEvent {
  *    主体部分，可事先通过mozilla readability库预处理得到
  */
 
-export default function Myreader({
-  html = TEST_HTML,
-  highlights = [],
-  fontSize = "middle",
-  fontFamily = "bookerly",
-  onWordSelection,
-}: {
-  html?: string;
-  highlights?: Highlight[];
-  setHighlights?: (hls: Highlight[]) => void;
-  fontSize?: string;
-  fontFamily?: string;
-  onWordSelection?: (event: WordSelectionEvent) => void;
-}) {
+const Myreader: React.ForwardRefRenderFunction<
+  {
+    scrollToHighlight: () => void;
+  },
+  {
+    html?: string;
+    highlights?: Highlight[];
+    setHighlights?: (hls: Highlight[]) => void;
+    fontSize?: string;
+    fontFamily?: string;
+    onWordSelection?: (event: WordSelectionEvent) => void;
+  }
+> = (
+  {
+    html = TEST_HTML,
+    highlights = [],
+    fontSize = "middle",
+    fontFamily = "bookerly",
+    onWordSelection,
+  },
+  ref
+) => {
   const readerRef = useRef<HTMLDivElement>(null);
   const tokenListRef = useRef<Element[]>([]);
-
+  useImperativeHandle(ref, () => ({
+    scrollToHighlight: () => {
+      setTimeout(() => {
+        const firstHighlight = readerRef.current?.querySelector(".highlight");
+        console.log("first highlights", firstHighlight);
+        if (firstHighlight) {
+          firstHighlight.scrollIntoView({
+            behavior: "smooth",
+          });
+        }
+      });
+    },
+  }));
   // 绑定事件
   useEffect(() => {
     if (readerRef.current) {
@@ -255,6 +280,8 @@ export default function Myreader({
     for (const token of tokenListRef.current) {
       token.classList.remove("highlight");
     }
+
+    console.log("highlights:", highlights);
 
     for (const hl of highlights) {
       if (tokenListRef.current.length > 0) {
@@ -278,4 +305,6 @@ export default function Myreader({
       ></div>
     </div>
   );
-}
+};
+
+export default forwardRef(Myreader);

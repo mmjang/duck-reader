@@ -1,5 +1,11 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, {
+  ElementRef,
+  MutableRefObject,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { api } from "../../api/index";
 import Reader from "../../components/reader/Reader";
 import { Article } from "../../types/types";
@@ -18,6 +24,7 @@ export default function ReaderPopup({
   onClose = undefined,
 }: Props) {
   const [articleHtml, setArticleHtml] = useState("");
+  const readerRef = useRef<ElementRef<typeof Myreader>>(null);
 
   useEffect(() => {
     axios
@@ -28,6 +35,8 @@ export default function ReaderPopup({
       })
       .then((data) => {
         setArticleHtml(data.data.data.content);
+        console.log("reader ref", readerRef.current);
+        readerRef.current?.scrollToHighlight();
       });
   }, []);
 
@@ -35,7 +44,19 @@ export default function ReaderPopup({
     <div className="reader-popup-wrapper">
       <div className="blank-area" onClick={onClose}></div>
       <div className="reader-popup">
-        {articleHtml ? <Myreader html={articleHtml}></Myreader> : ""}
+        {articleHtml ? (
+          <Myreader
+            html={articleHtml}
+            ref={readerRef}
+            highlights={highlights.map((h) => ({
+              start: h,
+              end: h + 1,
+              type: "word",
+            }))}
+          ></Myreader>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

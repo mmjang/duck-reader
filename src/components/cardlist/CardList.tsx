@@ -111,6 +111,11 @@ export default function CardList() {
             onShowContextPopup={showContextPopup}
             defaultState="show"
             key={index}
+            onDelete={() => {
+              setCardList((cardList) =>
+                cardList.filter((c) => c._id !== card._id)
+              );
+            }}
           ></WordCard>
         ))}
       </div>

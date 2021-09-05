@@ -90,4 +90,24 @@ export default (app: express.Application) => {
       res.json(resp(false, null, "没有找到该文章"));
     }
   });
+
+  app.post("/api/deleteArticle", async (req, res) => {
+    console.log(req.url);
+    const payload: { articleId: string } = req.body;
+    const articleId = payload.articleId;
+    const article = await collection("articles").findOne({
+      _id: new ObjectId(articleId),
+    });
+    if (!article) {
+      res.json(resp(false, null, "您要删除的文章不存在"));
+      return;
+    }
+    console.log("");
+    if (article.user._id !== (req as any).user._id) {
+      res.json(resp(false, null, "权限不足"));
+      return;
+    }
+    await collection("articles").deleteOne({ _id: new ObjectId(articleId) });
+    res.json(resp(true, null, "删除成功"));
+  });
 };

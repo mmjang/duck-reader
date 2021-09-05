@@ -38,6 +38,7 @@ export default function ArticleList({ userId }: { userId?: string }) {
         .filter((a) => a.length > 200)
         .map((item) => (
           <ArticleCard
+            articleId={item._id}
             title={item.title}
             url={item.url || ""}
             summary={item.excerpt}
@@ -46,6 +47,11 @@ export default function ArticleList({ userId }: { userId?: string }) {
             key={item._id}
             user={item.user}
             clickHandler={() => handleClick(item._id)}
+            onDelete={() => {
+              setNewsList((newsList) => {
+                return newsList.filter((c) => c._id !== item._id);
+              });
+            }}
           ></ArticleCard>
         ))}
     </div>

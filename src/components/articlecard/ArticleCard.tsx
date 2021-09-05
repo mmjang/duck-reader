@@ -1,9 +1,13 @@
 import { useHistory } from "react-router-dom";
 import { User } from "../../types/types";
-import { Card, CardContent, Link } from "@material-ui/core";
+import { Card, CardContent, Link, Button } from "@material-ui/core";
+import { useConfirm } from "material-ui-confirm";
 import "./ArticleCard.css";
+import React from "react";
+import axios from "axios";
 
 export default function NewsCard({
+  articleId,
   title,
   hostname,
   imgUrl,
@@ -12,7 +16,9 @@ export default function NewsCard({
   user,
   url,
   clickHandler,
+  onDelete,
 }: {
+  articleId: string;
   title: string;
   hostname: string;
   imgUrl?: string;
@@ -21,8 +27,22 @@ export default function NewsCard({
   user: User;
   url: string;
   clickHandler: () => void;
+  onDelete: () => void;
 }) {
   const history = useHistory();
+  const confirm = useConfirm();
+
+  function deleteArticle(e: React.MouseEvent<HTMLElement>) {
+    e.stopPropagation();
+    confirm({ title: "确定要删除吗" }).then(() => {
+      axios.post("/api/deleteArticle", { articleId }).then((data) => {
+        if (data.data.success) {
+          onDelete();
+        }
+      });
+    });
+  }
+
   return (
     <Card className="article-item" onClick={clickHandler}>
       <CardContent>
@@ -61,6 +81,12 @@ export default function NewsCard({
           >
             {hostname.replace("www.", "")}
           </Link>
+
+          {user._id === localStorage.getItem("userId") ? (
+            <Button variant="text" onClick={deleteArticle} color="secondary">
+              删除
+            </Button>
+          ) : null}
         </div>
       </CardContent>
     </Card>

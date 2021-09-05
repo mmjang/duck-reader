@@ -20,6 +20,7 @@ import User from "./components/user/User";
 import "@fontsource/roboto";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import teal from "@material-ui/core/colors/blueGrey";
+import { ConfirmProvider } from "material-ui-confirm";
 
 const theme = createTheme({
   palette: {
@@ -88,38 +89,40 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <Switch>
-          <Route path="/" exact>
-            <MainView></MainView>
-          </Route>
-          <Route path="/book/:id">
-            <ArticleList></ArticleList>
-          </Route>
-          <Route path="/article/:id">
-            <Myreaderwithdictionary></Myreaderwithdictionary>
-          </Route>
-          <Route path="/cardlist">
-            <CardListView></CardListView>
-          </Route>
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/register">
-            <Register></Register>
-          </Route>
-          <Route path="/submit">
-            <Submit></Submit>
-          </Route>
-          <Route path="/me">
-            <Me></Me>
-          </Route>
-          <Route path="/user/:id">
-            <User></User>
-          </Route>
-        </Switch>
-      </Router>
-      <Toaster />
+      <ConfirmProvider>
+        <Router>
+          <Switch>
+            <Route path="/" exact>
+              <MainView></MainView>
+            </Route>
+            <Route path="/book/:id">
+              <ArticleList></ArticleList>
+            </Route>
+            <Route path="/article/:id">
+              <Myreaderwithdictionary></Myreaderwithdictionary>
+            </Route>
+            <Route path="/cardlist">
+              <CardListView></CardListView>
+            </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="/submit">
+              <Submit></Submit>
+            </Route>
+            <Route path="/me">
+              <Me></Me>
+            </Route>
+            <Route path="/user/:id">
+              <User></User>
+            </Route>
+          </Switch>
+        </Router>
+        <Toaster />
+      </ConfirmProvider>
     </ThemeProvider>
   );
 }

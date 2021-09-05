@@ -45,7 +45,8 @@ export default function WordCard({
       <Button
         variant="text"
         color="secondary"
-        onClick={() => {
+        onClick={(e) => {
+          e.stopPropagation();
           confirm({
             title: "确定要删除吗？",
           }).then(() => {

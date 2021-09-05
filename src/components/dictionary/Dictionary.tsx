@@ -76,6 +76,8 @@ export default function Dictionary({
       .then((data) => {
         if (!data.data.success) {
           throw "err";
+        } else {
+          onClose();
         }
       });
     toast.promise(promise, {

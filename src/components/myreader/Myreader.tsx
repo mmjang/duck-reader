@@ -117,9 +117,7 @@ function bindEvent(
     const token = (e.target as Element).closest(".token-class");
     if ((e.target as Element).closest("a")) {
       e.preventDefault();
-      toast.error(
-        "原文中的链接不可点击，请在文章列表点击网址跳转至原始网页访问"
-      );
+      toast.error("您点击了一个外链，可长按或右键点击链接在新窗口访问");
     }
     if (token) {
       const sentence = getSentence(tokenList, token);
@@ -145,6 +143,13 @@ function bindEvent(
   };
 
   container.addEventListener("click", onClick);
+  container.addEventListener("contextmenu", (e: MouseEvent) => {
+    const a = (e.target as HTMLElement).closest("a");
+    if (a) {
+      e.preventDefault();
+      window.open(a.href);
+    }
+  });
 
   return () => {
     console.log("unbind reader click listeners.");

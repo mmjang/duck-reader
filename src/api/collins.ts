@@ -17,17 +17,6 @@ let hwdsMap: any;
 
 const CDN_PREFIX = "https://cdn.jsdelivr.net/gh/mmjang/dict_hub@main";
 
-function stripSpanTag(html: string) {
-  return html
-    .replace(/\r|\t|\n/g, "")
-    .replace(/^<span.+?>(.*?)<\/span>$/, "$1")
-    .trim();
-}
-
-function getDefinitionFromEntry(entry: CollinsEntry) {
-  return stripSpanTag(entry.def_cn) + " " + stripSpanTag(entry.def_en);
-}
-
 function getCDNUrl(word: string): string {
   if (word.length <= 2) {
     return `${CDN_PREFIX}/hub/collins/${word}.json`;
@@ -57,22 +46,8 @@ export const collins = {
           word,
         },
       })
-      .then((data) => data.data.data)) as CollinsEntry[];
+      .then((data) => data.data.data)) as DictResultEntry[];
 
-    return result.map((item) => ({
-      headword: item.phrase ? item.phrase : item.hwd,
-      phonetics: item.phonetics,
-      shortDefinition: stripSpanTag(item.def_cn),
-      definition: getDefinitionFromEntry(item),
-    }));
+    return result;
   },
-  // async init() {
-  //   await forms.init();
-  //   if (!hwdsMap) {
-  //     hwdsMap = new Set(
-  //       await fetch(CDN_PREFIX + "/hub/collins.list.json").then((r) => r.json())
-  //     );
-  //   }
-  //   return true;
-  // },
 };

@@ -5,6 +5,7 @@ import React, {
   useImperativeHandle,
   useRef,
 } from "react";
+import toast from "react-hot-toast";
 import "./Myreader.css";
 import { TEST_HTML } from "./testdata";
 
@@ -114,6 +115,12 @@ function bindEvent(
 
   const onClick = (e: MouseEvent) => {
     const token = (e.target as Element).closest(".token-class");
+    if ((e.target as Element).closest("a")) {
+      e.preventDefault();
+      toast.error(
+        "原文中的链接不可点击，请在文章列表点击网址跳转至原始网页访问"
+      );
+    }
     if (token) {
       const sentence = getSentence(tokenList, token);
       console.log(sentence);

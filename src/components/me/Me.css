@@ -1,3 +1,48 @@
 .me {
-  padding: 16px;
+  /* padding: 1rem; */
+  position: relative;
+  background-color: rgb(249, 240, 240);
+  width: 100vw;
+  height: 100vh;
+}
+
+.me_back_img {
+  margin: 1rem;
+}
+
+.me_name_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.me_name {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.me_time {
+  text-align: center;
+}
+
+.me_logout_box {
+  width: 100%;
+  padding: 1rem;
+  position: absolute;
+  bottom: 10vh;
+}
+
+.me_logout {
+  padding: 0.5rem;
+  color: rgb(25, 114, 230);
+  border: 2px rgb(25, 114, 230) solid;
+  text-align: center;
+  border-radius: 3rem;
+}
+
+.me_logout_text {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
 }

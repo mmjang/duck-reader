@@ -2,7 +2,19 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { User } from "../../types/types";
+import back from "../../asset/back.svg";
+
 import "./Me.css";
+
+function getRegisterTime(num: number) {
+  const registerDate = new Date(num || 0);
+  const Y = registerDate.getFullYear();
+  const M = registerDate.getMonth() + 1 < 10 ? '0' + (registerDate.getMonth() + 1) : registerDate.getMonth() + 1;
+  const D = registerDate.getDate();
+  return Y + '-' + M + '-' + D;
+}
+
+
 export default function Me() {
   const [user, setUser] = useState<User>();
   const history = useHistory();
@@ -13,18 +25,38 @@ export default function Me() {
   }, []);
   return (
     <div className="me">
-      <h3>用户名：{user?.name}</h3>
-      <h3>注册日期：{new Date(user?.creationDate || 0).toString()}</h3>
-      <Link to="/">回主页</Link>
-      <br />
-      <a
+      <img
+        className="me_back_img"
+        src={back}
+        width="35"
         onClick={() => {
-          localStorage.setItem("token", "");
-          history.push("/");
+          history.goBack();
         }}
-      >
-        退出登录
-      </a>
-    </div>
+      />
+      {/* <Link to="/">back</Link> */}
+      <div className="me_name_box">
+        <div>
+          <h3 className="me_name">{user?.name}</h3>
+          <h3 className="me_time">Register on &nbsp;
+            {getRegisterTime(user?.creationDate)}
+          </h3>
+        </div>
+      </div >
+      <div className="me_logout_box">
+
+        <div className="me_logout">
+
+          <a
+            className="me_logout_text"
+            onClick={() => {
+              localStorage.setItem("token", "");
+              history.push("/");
+            }}
+          >
+            退出登录
+          </a>
+        </div>
+      </div>
+    </div >
   );
 }

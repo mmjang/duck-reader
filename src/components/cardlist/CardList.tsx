@@ -98,12 +98,17 @@ export default function CardList() {
         })
         .then((data) => {
           const fileName = data.data.data.fileName;
-          window.open(`/api/downloadApkg/${fileName}`);
+          const href = `/api/downloadApkg/${fileName}`;
+          confirm({
+            title: `确认下载 ${fileName}.apkg 吗`,
+          }).then(() => {
+            window.open(href);
+          });
         });
       toast.promise(promise, {
         loading: "正在生成apkg",
-        success: "开始下载",
-        error: "导出失败",
+        success: "生成成功",
+        error: "生成apkg失败",
       });
     });
   };

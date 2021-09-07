@@ -35,7 +35,8 @@ export default (app: express.Application) => {
           headword: item.phrase ? item.phrase : item.hwd,
           phonetics: item.phonetics,
           shortDefinition: stripSpanTag(item.def_cn),
-          definition: getDefinitionFromEntry(item),
+          definition:
+            `<span>${item.sense}</span>` + getDefinitionFromEntry(item),
         }))
       );
     }

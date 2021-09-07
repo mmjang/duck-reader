@@ -74,6 +74,7 @@ export interface DictResultEntry {
 
 export interface Card {
   _id?: string;
+  checked: boolean;
   userId: string;
   originalWord: string;
   sentence: string;

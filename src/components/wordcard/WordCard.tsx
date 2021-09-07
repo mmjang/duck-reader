@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Card } from "../../types/types";
 import { makeClasses } from "../../utils";
 import { bracketToBoldTag, maskWord, maskBold } from "../../utils/tags";
-import { Button } from "@material-ui/core";
+import { Button, Checkbox, IconButton } from "@material-ui/core";
+import { Visibility, VisibilityOff, Delete, Link } from "@material-ui/icons";
 import { useConfirm } from "material-ui-confirm";
 import "./WordCard.css";
 import link from "./link.svg";
@@ -14,6 +15,8 @@ type Props = Card & {
   defaultState: State;
   onShowContextPopup: (articleId: string, wordTileIndex: number) => void;
   onDelete: () => void;
+  checked: boolean;
+  onCheckChange: (checked: boolean) => void;
 };
 
 export default function WordCard({
@@ -29,8 +32,10 @@ export default function WordCard({
   exported,
   onShowContextPopup,
   onDelete,
+  checked,
+  onCheckChange,
 }: Props) {
-  const [cardState, setCardState] = useState("hide");
+  const [cardState, setCardState] = useState("show");
   const confirm = useConfirm();
   function toggleHide() {
     setCardState(cardState === "hide" ? "show" : "hide");
@@ -42,9 +47,7 @@ export default function WordCard({
 
   const deleteButton =
     localStorage.getItem("userId") === userId ? (
-      <Button
-        variant="text"
-        color="secondary"
+      <IconButton
         onClick={(e) => {
           e.stopPropagation();
           confirm({
@@ -62,34 +65,58 @@ export default function WordCard({
           });
         }}
       >
-        删除
-      </Button>
+        <Delete></Delete>
+      </IconButton>
     ) : null;
+
+  const checkbox = (
+    <Checkbox
+      checked={checked}
+      onChange={(e) => {
+        e.stopPropagation();
+        onCheckChange(e.target.checked);
+      }}
+    ></Checkbox>
+  );
+
+  const toolRow = (
+    <div>
+      {checkbox}
+      <IconButton
+        onClick={(e: React.MouseEvent) => {
+          e.stopPropagation();
+          onShowContextPopup(articleId, wordTileIndex);
+        }}
+      >
+        <Link />
+      </IconButton>
+      {cardState === "hide" ? (
+        <IconButton onClick={toggleHide}>
+          <VisibilityOff></VisibilityOff>
+        </IconButton>
+      ) : (
+        <IconButton onClick={toggleHide}>
+          <Visibility></Visibility>
+        </IconButton>
+      )}
+      {deleteButton}
+    </div>
+  );
 
   if (cardState === "show") {
     return (
-      <div className={cardClass} onClick={toggleHide}>
-        <h3>
-          <img
-            src={link}
-            onClick={(e: React.MouseEvent) => {
-              e.stopPropagation();
-              onShowContextPopup(articleId, wordTileIndex);
-            }}
-          />{" "}
-          {dictResult.headword}
-          {deleteButton}
-        </h3>
+      <div className={cardClass}>
+        {toolRow}
+        <h3>{dictResult.headword}</h3>
         <p dangerouslySetInnerHTML={{ __html: dictResult.definition }}></p>
         <p dangerouslySetInnerHTML={{ __html: bracketToBoldTag(sentence) }}></p>
       </div>
     );
   } else {
     return (
-      <div className={cardClass} onClick={toggleHide}>
-        <h3>
-          {maskWord(dictResult.headword)} {deleteButton}
-        </h3>
+      <div className={cardClass}>
+        {toolRow}
+        <h3>{maskWord(dictResult.headword)}</h3>
         <p
           dangerouslySetInnerHTML={{ __html: maskBold(dictResult.definition) }}
         ></p>

@@ -272,7 +272,7 @@ const Myreader: React.ForwardRefRenderFunction<
             behavior: "smooth",
           });
         }
-      });
+      }, 100);
     },
   }));
   // 绑定事件

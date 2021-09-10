@@ -35,7 +35,7 @@ export default function WordCard({
   checked,
   onCheckChange,
 }: Props) {
-  const [cardState, setCardState] = useState("show");
+  const [cardState, setCardState] = useState("hide");
   const confirm = useConfirm();
   function toggleHide() {
     setCardState(cardState === "hide" ? "show" : "hide");
@@ -103,29 +103,15 @@ export default function WordCard({
     </div>
   );
 
-  if (cardState === "show") {
-    return (
-      <div className={cardClass}>
-        {toolRow}
-        <h3>{dictResult.headword}</h3>
-        <p dangerouslySetInnerHTML={{ __html: dictResult.definition }}></p>
-        <p dangerouslySetInnerHTML={{ __html: bracketToBoldTag(sentence) }}></p>
-      </div>
-    );
-  } else {
-    return (
-      <div className={cardClass}>
-        {toolRow}
-        <h3>{maskWord(dictResult.headword)}</h3>
-        <p
-          dangerouslySetInnerHTML={{ __html: maskBold(dictResult.definition) }}
-        ></p>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: maskBold(bracketToBoldTag(sentence)),
-          }}
-        ></p>
-      </div>
-    );
-  }
+  return (
+    <div className={cardClass}>
+      {toolRow}
+      <h3>{dictResult.headword}</h3>
+      <p
+        dangerouslySetInnerHTML={{ __html: dictResult.definition }}
+        className={cardState !== "show" ? "blurred" : ""}
+      ></p>
+      <p dangerouslySetInnerHTML={{ __html: bracketToBoldTag(sentence) }}></p>
+    </div>
+  );
 }

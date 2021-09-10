@@ -4,11 +4,11 @@ import { resp } from "../response";
 import { parseArticle } from "../readability";
 import { getCleanedUser, isChineseContent } from "../utils";
 import { ObjectId } from "mongodb";
-import { hostname } from "os";
+import cors from "cors";
 
 export default (app: express.Application) => {
   // 提交文章
-  app.post("/api/submitArticle", async (req, res) => {
+  app.post("/api/submitArticle", cors(), async (req, res) => {
     console.log(req.url);
     const payload: { url: string; description: string } = req.body;
     parseArticle(payload.url)

@@ -16,8 +16,14 @@
 }
 
 .register .logo {
-  width: 70%;
+  /* width: 70%; */
   margin: 0 auto 20px auto;
+}
+
+.register .logo img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: cover;
 }
 
 .register div {

@@ -2,22 +2,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 400px;
-  margin: 0 auto;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
+  /* max-width: 400px; */
+  padding: 1rem;
 }
 
 .login .login-banner {
   display: flex;
   flex-direction: row;
   justify-content: start;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .login .logo {
-  width: 70%;
-  margin: 0 auto 20px auto;
+  /* width: 70%; */
+  /* margin: 0 auto 20px auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 4rem 0;
+}
+
+.login .logo img {
+  width: 15rem;
+  height: 15rem;
 }
 
 .login div {
@@ -26,14 +35,36 @@
   justify-content: center;
 }
 
+.username {
+  padding: 1rem;
+}
+
+.userName_input {
+  padding: 0.4rem;
+}
+
+.password_input {
+  padding: 0.4rem;
+}
+
 .password {
-  margin-top: 8px;
+  padding: 1rem;
 }
 
 input {
   margin-top: 8px;
+  padding: 0.4rem;
+}
+
+.MuiInputBase-input {
+  margin: 10px 10px 0px 10px !important;
+}
+
+.MuiInput-input {
+  /* margin: 10px !important; */
+  padding: 10px !important;
 }
 
 .loginbutton {
-  margin-top: 20px;
+  padding: 1rem;
 }

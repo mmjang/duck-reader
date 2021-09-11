@@ -57,7 +57,10 @@ export default function Register() {
         <Link href="/">首页</Link>
       </div>
       <div className="logo">
-        <img src={duck} />
+        <img
+
+          src={duck}
+        />
       </div>
       <div className="username">
         <TextField

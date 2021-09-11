@@ -3,6 +3,23 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
 }
 
+.word-card h3 {
+  margin-top: 0;
+}
+
 .word-card.exported {
   background-color: rgb(221, 221, 221);
+}
+
+.word-card > p {
+  -webkit-transition: -webkit-filter 200ms ease;
+  transition: filter 200ms ease;
+}
+
+.word-card > p.blurred {
+  -webkit-filter: blur(7px);
+  -moz-filter: blur(7px);
+  -o-filter: blur(7px);
+  -ms-filter: blur(7px);
+  filter: blur(7px);
 }

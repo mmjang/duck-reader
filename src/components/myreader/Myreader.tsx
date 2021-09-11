@@ -5,6 +5,7 @@ import React, {
   useImperativeHandle,
   useRef,
 } from "react";
+import toast from "react-hot-toast";
 import "./Myreader.css";
 import { TEST_HTML } from "./testdata";
 
@@ -114,6 +115,10 @@ function bindEvent(
 
   const onClick = (e: MouseEvent) => {
     const token = (e.target as Element).closest(".token-class");
+    if ((e.target as Element).closest("a")) {
+      e.preventDefault();
+      toast.error("您点击了一个外链，可长按或右键点击链接在新窗口访问");
+    }
     if (token) {
       const sentence = getSentence(tokenList, token);
       console.log(sentence);
@@ -138,6 +143,13 @@ function bindEvent(
   };
 
   container.addEventListener("click", onClick);
+  container.addEventListener("contextmenu", (e: MouseEvent) => {
+    const a = (e.target as HTMLElement).closest("a");
+    if (a) {
+      e.preventDefault();
+      window.open(a.href);
+    }
+  });
 
   return () => {
     console.log("unbind reader click listeners.");
@@ -260,7 +272,7 @@ const Myreader: React.ForwardRefRenderFunction<
             behavior: "smooth",
           });
         }
-      });
+      }, 100);
     },
   }));
   // 绑定事件

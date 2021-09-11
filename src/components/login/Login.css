@@ -29,6 +29,12 @@
   height: 15rem;
 }
 
+.login .logo img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
 .login div {
   display: flex;
   flex-direction: column;

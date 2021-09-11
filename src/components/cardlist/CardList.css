@@ -21,12 +21,6 @@
   justify-content: space-between;
 }
 
-.card-list-banner > button {
-  background-color: rgb(235, 235, 235);
-  border: 1px solid #808080;
-  font-size: 16px;
-}
-
 .card-list-banner > select {
   font-size: 16px;
 }

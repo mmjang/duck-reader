@@ -9,6 +9,7 @@ const ENDPOINT_NO_AUTH_LIST = [
   "/api/articleList",
   "/api/articleDetail",
   "/api/dictionary",
+  "/api/downloadApkg",
 ];
 
 function needAuth(url: string) {

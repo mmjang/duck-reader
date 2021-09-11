@@ -11,7 +11,10 @@ import ReaderPopup from "../readerpopup/ReaderPopup";
 import { detect } from "detect-browser";
 import axios from "axios";
 import back from "../../asset/back.svg";
+import { useConfirm } from "material-ui-confirm";
 import { useHistory } from "react-router-dom";
+import { IconButton } from "@material-ui/core";
+import { ArrowBack, Delete, CloudDownload } from "@material-ui/icons";
 
 const { Filesystem, Share } = Plugins;
 type CardFilterOption = "all" | "exported" | "unexported";
@@ -19,6 +22,7 @@ type CardFilterOption = "all" | "exported" | "unexported";
 export default function CardList() {
   const history = useHistory();
   const browser = detect();
+  const confirm = useConfirm();
   async function exportCard() {
     try {
       const exportedCards = filterCardListByType(cardList, cardFilter);
@@ -81,28 +85,55 @@ export default function CardList() {
         if (data.data.data.length === 0) {
           toast.error("您还没有添加任何卡片，请在文章里选择单词添加哦");
         }
-        setCardList(data.data.data);
+        setCardList(data.data.data.map((c) => ({ ...c, checked: false })));
       });
   }, []);
+
+  const exportApkg = () => {
+    confirm({ title: "是否导出为Anki牌组?" }).then(() => {
+      const cardIds = cardList.filter((c) => c.checked).map((c) => c._id);
+      const promise = axios
+        .post("/api/generateApkg", {
+          cardIds,
+        })
+        .then((data) => {
+          const fileName = data.data.data.fileName;
+          const href = `/api/downloadApkg/${fileName}`;
+          confirm({
+            title: `确认下载 ${fileName}.apkg 吗`,
+          }).then(() => {
+            window.open(href);
+          });
+        });
+      toast.promise(promise, {
+        loading: "正在生成apkg",
+        success: "生成成功",
+        error: "生成apkg失败",
+      });
+    });
+  };
 
   return (
     <>
       <div className="card-list-banner">
-        <div>
-          <img
-            src={back}
-            width="35"
-            onClick={() => {
-              history.goBack();
-            }}
-          />
-        </div>
-        {/* <select value={cardFilter} onChange={onCardFilterSelectorChange}>
-          <option value={cardOptions[0]}>全部</option>
-          <option value={cardOptions[1]}>已导出</option>
-          <option value={cardOptions[2]}>未导出</option>
-        </select> */}
-        {/* <button onClick={exportCard}>导出Anki牌组</button> */}
+        <IconButton
+          onClick={() => {
+            history.goBack();
+          }}
+        >
+          <ArrowBack></ArrowBack>
+        </IconButton>
+
+        {cardList.some((c) => c.checked) ? (
+          <div>
+            {/* <IconButton>
+              <Delete></Delete>
+            </IconButton> */}
+            <IconButton onClick={exportApkg}>
+              <CloudDownload></CloudDownload>
+            </IconButton>
+          </div>
+        ) : null}
       </div>
       <div className="card-list">
         {filterCardListByType(cardList, cardFilter).map((card, index) => (
@@ -115,6 +146,16 @@ export default function CardList() {
               setCardList((cardList) =>
                 cardList.filter((c) => c._id !== card._id)
               );
+            }}
+            onCheckChange={(checked) => {
+              setCardList((cardList) => {
+                return cardList.map((c) => {
+                  if (c._id === card._id) {
+                    return { ...c, checked };
+                  }
+                  return c;
+                });
+              });
             }}
           ></WordCard>
         ))}

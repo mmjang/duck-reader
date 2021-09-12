@@ -12,6 +12,7 @@ import WordTile from "../wordtile/WordTile";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { useLocalStorage } from "../../utils/hooks";
+import { bracketToBoldTag } from "../../utils/tags";
 
 interface Props {
   word: string;
@@ -125,7 +126,17 @@ export default function Dictionary({
         <div className="message">{message}</div>
         {definitionList.map((d, i) => (
           <div key={i} className="definition-wrapper">
-            <Definition {...d} onAdd={() => addDefinition(d)}></Definition>
+            <Definition
+              {...d}
+              onAdd={() => addDefinition(d)}
+              onAddAnki={() => {
+                const front = `<h3>${d.headword}</h3>${bracketToBoldTag(
+                  sentence
+                )}`;
+                const back = d.phonetics + d.definition;
+                window.location.href = `anki://x-callback-url/addnote?profile=%E7%94%A8%E6%88%B7%201&type=Basic&deck=test&fldFront=${front}</h3>&fldBack=${back}&x-success={{safari://x-callback-url/}}`;
+              }}
+            ></Definition>
           </div>
         ))}
       </div>

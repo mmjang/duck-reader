@@ -5,25 +5,37 @@ import ArticleCard from "../../components/articlecard/ArticleCard";
 import { ArticleItemNew } from "../../types/types";
 import axios from "axios";
 
-const bookJsonUrl = (id: string) => `/calibre/${id}/book.json`;
+const PER_PAGE = 50;
 
 export default function ArticleList({ userId }: { userId?: string }) {
   const [newsList, setNewsList] = useState<ArticleItemNew[]>([]);
+  const [hasNext, setHasNext] = useState(true);
   // const params = useParams<{ id: string }>();
-
-  useEffect(() => {
+  const loadNext = () => {
     (async () => {
       const result: ArticleItemNew[] = await axios
         .get("/api/articleList", {
           params: {
             userId: userId ? userId : "",
+            perpage: PER_PAGE,
+            page: Math.floor(newsList.length / PER_PAGE) + 1,
           },
         })
         .then((data) => {
-          return data.data.data;
+          if (
+            data.data.data.articles.length + newsList.length ===
+            data.data.data.total
+          ) {
+            setHasNext(false);
+          }
+          return data.data.data.articles;
         });
-      setNewsList(result);
+      setNewsList((list) => list.concat(result));
     })();
+  };
+
+  useEffect(() => {
+    loadNext();
   }, []);
 
   const history = useHistory();
@@ -54,6 +66,17 @@ export default function ArticleList({ userId }: { userId?: string }) {
             }}
           ></ArticleCard>
         ))}
+      {hasNext ? (
+        <div className="load-more">
+          <div className="load-more-button" onClick={loadNext}>
+            加载更多
+          </div>
+        </div>
+      ) : (
+        <div className="load-more">
+          <div className="load-more-button">已经到底了</div>
+        </div>
+      )}
     </div>
   );
 }

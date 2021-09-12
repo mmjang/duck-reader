@@ -3,3 +3,22 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+
+.article-list .load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.article-list .load-more .load-more-button {
+  color: cadetblue;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* color: white; */
+}
+
+.article-list .load-more .load-more-button:hover {
+  background-color: azure;
+}

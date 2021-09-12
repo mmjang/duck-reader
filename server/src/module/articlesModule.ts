@@ -51,30 +51,24 @@ export default (app: express.Application) => {
       textContent: 0,
     };
     const userId: string = req.query.userId as string;
-    console.log("payload", userId);
-    if (userId) {
-      res.json(
-        resp(
-          true,
-          await collection("articles")
-            .find({ "user._id": userId })
-            .sort({ creationDate: -1 })
-            .project(projection)
-            .toArray()
-        )
-      );
-    } else {
-      res.json(
-        resp(
-          true,
-          await collection("articles")
-            .find({})
-            .sort({ creationDate: -1 })
-            .project(projection)
-            .toArray()
-        )
-      );
-    }
+    const page: number = +req.query.page || 1;
+    const perpage: number = +req.query.perpage || 100;
+    const query = userId ? { "user._id": userId } : {};
+    const total = await collection("articles").find(query).count();
+    res.json(
+      resp(true, {
+        articles: await collection("articles")
+          .find(query)
+          .sort({ creationDate: -1 })
+          .project(projection)
+          .limit(perpage)
+          .skip((page - 1) * perpage)
+          .toArray(),
+        page,
+        perpage,
+        total,
+      })
+    );
   });
 
   app.get("/api/articleDetail", async (req, res) => {

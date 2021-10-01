@@ -10,7 +10,21 @@ export default (app: express.Application) => {
   // 提交文章
   app.post("/api/submitArticle", cors(), async (req, res) => {
     console.log(req.url);
-    const payload: { url: string; description: string } = req.body;
+    const payload: {
+      url: string;
+      description: string;
+      disableDuplicate: false;
+    } = req.body;
+    // 检查链接是否已经提交过
+    if (payload.disableDuplicate) {
+      const article = await collection("articles").findOne({
+        url: payload.url,
+      });
+      if (article) {
+        res.json(resp(false, null, "已有重复文章哦"));
+        return;
+      }
+    }
     parseArticle(payload.url)
       .then(async (parsed) => {
         parsed.content = `<h2>${parsed.title}</h2>` + parsed.content;

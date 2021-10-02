@@ -5,6 +5,10 @@
   color: rgb(41, 41, 41);
 }
 
+.myreader a {
+  color: cadetblue;
+}
+
 .myreader div[data-crop-type] {
   display: none;
 }

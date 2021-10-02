@@ -4,6 +4,14 @@
   line-height: 1.5;
 }
 
+.myreader div[data-crop-type] {
+  display: none;
+}
+
+.myreader div[data-crop-type] + div {
+  display: none;
+}
+
 .myreader.serif {
   font-family: serif;
 }

@@ -58,6 +58,7 @@ export default function ArticleList({ userId }: { userId?: string }) {
             description={item.description || ""}
             key={item._id}
             user={item.user}
+            creationDate={item.creationDate}
             clickHandler={() => handleClick(item._id)}
             onDelete={() => {
               setNewsList((newsList) => {

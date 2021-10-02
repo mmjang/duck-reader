@@ -5,6 +5,7 @@ import { useConfirm } from "material-ui-confirm";
 import "./ArticleCard.css";
 import React from "react";
 import axios from "axios";
+import Formatteddate from "../formatteddate/Formatteddate";
 
 export default function NewsCard({
   articleId,
@@ -15,6 +16,7 @@ export default function NewsCard({
   description,
   user,
   url,
+  creationDate,
   clickHandler,
   onDelete,
 }: {
@@ -26,6 +28,7 @@ export default function NewsCard({
   description: string;
   user: User;
   url: string;
+  creationDate: number;
   clickHandler: () => void;
   onDelete: () => void;
 }) {
@@ -81,6 +84,8 @@ export default function NewsCard({
           >
             {hostname.replace("www.", "")}
           </Link>
+
+          <Formatteddate date={creationDate}></Formatteddate>
 
           {user._id === localStorage.getItem("userId") ? (
             <Button variant="text" onClick={deleteArticle} color="secondary">

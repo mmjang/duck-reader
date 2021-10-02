@@ -1,5 +1,3 @@
-const axios = require("axios");
-
 const username = "科学美国人";
 const password = "paitsaml";
 
@@ -11,32 +9,33 @@ const password = "paitsaml";
     })
   ).data.data.token;
   console.log(token);
-  const text = (await axios.get("rss.sciam.com/ScientificAmerican-Global"))
-    .data;
-  const pattern = /\"(https\/\/www\.scientificamerican\.com\/article\/.+?)\"/;
+  const text = (
+    await axios.get("http://rss.sciam.com/ScientificAmerican-Global")
+  ).data;
+  console.log(text);
+  const pattern =
+    /<link>(https:\/\/www\.scientificamerican\.com\/article\/.+?)<\/link>/;
   for (let line of text.split("\n").reverse()) {
-    if (line.includes("topic-title")) {
-      const match = line.match(pattern);
-      if (match) {
-        const url = match[1];
-        console.log(url);
-        try {
-          const article = await axios.post(
-            `https://duck-reader.com/api/submitArticle`,
-            {
-              url,
-              disableDuplicate: true,
+    const match = line.match(pattern);
+    if (match) {
+      const url = match[1];
+      console.log(url);
+      try {
+        const article = await axios.post(
+          `https://duck-reader.com/api/submitArticle`,
+          {
+            url,
+            disableDuplicate: true,
+          },
+          {
+            headers: {
+              token,
             },
-            {
-              headers: {
-                token,
-              },
-            }
-          );
-          console.log(article);
-        } catch (e) {
-          console.log(e);
-        }
+          }
+        );
+        console.log(article);
+      } catch (e) {
+        console.log(e);
       }
     }
   }

@@ -54,7 +54,11 @@ export default (app: express.Application) => {
         );
       })
       .catch((e) => {
-        res.json(resp(false, null, "解析文章失败了，55555"));
+        if (typeof e === "string") {
+          res.json(resp(false, null, e));
+        } else {
+          res.json(resp(false, null, "解析文章失败了，55555"));
+        }
       });
   });
 

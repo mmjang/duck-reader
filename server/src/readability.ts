@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Readability } from "@mozilla/readability";
+import { isProbablyReaderable, Readability } from "@mozilla/readability";
 import { JSDOM } from "jsdom";
 import { CHROME } from "./constant";
 
@@ -15,10 +15,14 @@ export function parseArticle(url: string) {
       const doc = new JSDOM(result.data, {
         url,
       });
-      const reader = new Readability(doc.window.document);
-      const parsed = reader.parse();
-      console.log(parsed);
-      return parsed;
+      if (isProbablyReaderable(doc.window.document)) {
+        const reader = new Readability(doc.window.document);
+        const parsed = reader.parse();
+        console.log(parsed);
+        return parsed;
+      } else {
+        throw "当前URL不适合解析为文章";
+      }
     });
 }
 

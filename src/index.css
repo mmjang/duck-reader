@@ -13,6 +13,11 @@ body {
 }
 
 @font-face {
+  font-family: faricynew;
+  src: url(./asset/font/FaricyNew-Regular.otf);
+}
+
+@font-face {
   font-family: literata;
   src: url(./asset/font/Literata-Regular.ttf);
 }

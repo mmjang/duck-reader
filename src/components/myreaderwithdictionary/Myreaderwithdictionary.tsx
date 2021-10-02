@@ -82,6 +82,7 @@ export default function Myreaderwithdictionary() {
               }}
             >
               <MenuItem value={"bookerly"}>Bookerly</MenuItem>
+              <MenuItem value={"faricynew"}>Faricy New</MenuItem>
               <MenuItem value={"sans-serif"}>Sans-serif</MenuItem>
               <MenuItem value={"serif"}>Serif</MenuItem>
             </Select>

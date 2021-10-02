@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 16px;
   line-height: 1.5;
+  color: rgb(41, 41, 41);
 }
 
 .myreader div[data-crop-type] {
@@ -22,6 +23,10 @@
 
 .myreader.bookerly {
   font-family: bookerly;
+}
+
+.myreader.faricynew {
+  font-family: faricynew;
 }
 
 .myreader.futura {

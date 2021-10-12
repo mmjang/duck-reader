@@ -27,10 +27,10 @@ runRobot({
   username: "静寂血刃",
   password: "paitsam777",
   urlExtractor: async () => {
+    const urls = [];
     for (let section of sectionList) {
       const text = (await axios.get(section)).data;
       console.log(text);
-      const urls = [];
       for (let line of text.split("\n").reverse()) {
         let m = line.match(/<link>(https:\/\/www\.economist\.com.+?)<\/link>/);
         let dateMatch = line.match(/([0-9]{4})\/([0-9]{2})\/([0-9]{2})/);

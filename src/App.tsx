@@ -47,6 +47,9 @@ axios.interceptors.response.use(
   (response) => {
     if (response?.data?.code == 500) {
       // toast.error('')
+      localStorage.setItem("token", "");
+      localStorage.setItem("userId", "");
+      localStorage.setItem("userName", "");
       window.location.href = `/login?redirect=${encodeURIComponent(
         window.location.href
       )}`;

@@ -15,6 +15,7 @@ import ArrowBack from "@material-ui/icons/ArrowBack";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useLocalStorage } from "../../utils/hooks";
+import { Slide, useScrollTrigger } from "@material-ui/core";
 
 export default function Myreaderwithdictionary() {
   const params = useParams<{ id: string }>();
@@ -49,46 +50,51 @@ export default function Myreaderwithdictionary() {
     //   ]);
     // });
   }, []);
+
+  const trigger = useScrollTrigger();
+
   return (
     <div className="my-reader-with-dictionary">
-      <AppBar position="sticky">
-        <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            onClick={() => {
-              history.goBack();
-            }}
-          >
-            <ArrowBack />
-          </IconButton>
-          <div style={{ width: "100%", textAlign: "right" }}>
-            <Select
-              value={fontSize}
-              style={{ marginRight: 16 }}
-              onChange={(e) => {
-                setFontSize(e.target.value);
+      <Slide appear={false} direction="down" in={!trigger}>
+        <AppBar position="sticky">
+          <Toolbar>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              onClick={() => {
+                history.goBack();
               }}
             >
-              <MenuItem value={"small"}>小</MenuItem>
-              <MenuItem value={"middle"}>中</MenuItem>
-              <MenuItem value={"large"}>大</MenuItem>
-            </Select>
-            <Select
-              value={fontFamily}
-              onChange={(e) => {
-                setFontFamily(e.target.value);
-              }}
-            >
-              <MenuItem value={"bookerly"}>Bookerly</MenuItem>
-              <MenuItem value={"faricynew"}>Faricy New</MenuItem>
-              <MenuItem value={"sans-serif"}>Sans-serif</MenuItem>
-              <MenuItem value={"serif"}>Serif</MenuItem>
-            </Select>
-          </div>
-        </Toolbar>
-      </AppBar>
+              <ArrowBack />
+            </IconButton>
+            <div style={{ width: "100%", textAlign: "right" }}>
+              <Select
+                value={fontSize}
+                style={{ marginRight: 16 }}
+                onChange={(e) => {
+                  setFontSize(e.target.value);
+                }}
+              >
+                <MenuItem value={"small"}>小</MenuItem>
+                <MenuItem value={"middle"}>中</MenuItem>
+                <MenuItem value={"large"}>大</MenuItem>
+              </Select>
+              <Select
+                value={fontFamily}
+                onChange={(e) => {
+                  setFontFamily(e.target.value);
+                }}
+              >
+                <MenuItem value={"bookerly"}>Bookerly</MenuItem>
+                <MenuItem value={"faricynew"}>Faricy New</MenuItem>
+                <MenuItem value={"sans-serif"}>Sans-serif</MenuItem>
+                <MenuItem value={"serif"}>Serif</MenuItem>
+              </Select>
+            </div>
+          </Toolbar>
+        </AppBar>
+      </Slide>
       <div className="reader">
         {articleHtml ? (
           <Myreader

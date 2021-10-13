@@ -21,6 +21,7 @@ import "@fontsource/roboto";
 import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import teal from "@material-ui/core/colors/blueGrey";
 import { ConfirmProvider } from "material-ui-confirm";
+import CacheRoute, { CacheSwitch } from "react-router-cache-route";
 
 const theme = createTheme({
   palette: {
@@ -91,10 +92,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <ConfirmProvider>
         <Router>
-          <Switch>
-            <Route path="/" exact>
+          <CacheSwitch>
+            <CacheRoute path="/" exact>
               <MainView></MainView>
-            </Route>
+            </CacheRoute>
             <Route path="/book/:id">
               <ArticleList></ArticleList>
             </Route>
@@ -116,10 +117,10 @@ function App() {
             <Route path="/me">
               <Me></Me>
             </Route>
-            <Route path="/user/:id">
+            <CacheRoute path="/user/:id">
               <User></User>
-            </Route>
-          </Switch>
+            </CacheRoute>
+          </CacheSwitch>
         </Router>
         <Toaster />
       </ConfirmProvider>

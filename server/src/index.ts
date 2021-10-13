@@ -25,5 +25,5 @@ cardsModule(app);
 
 // 启动服务
 app.listen(port, () => {
-  console.log(`server started at https://localhost:${port}`);
+  console.log(`server started at http://localhost:${port}`);
 });

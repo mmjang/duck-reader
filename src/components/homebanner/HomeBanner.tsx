@@ -15,12 +15,19 @@ export default function HomeBanner() {
   }
 
   const isLogin = localStorage.getItem("token");
+  const userId = localStorage.getItem("userId");
 
   return (
     <div className="home-banner">
       <div className="status">
         {isLogin ? (
-          <Button href="/me" variant="text" color="primary">
+          <Button
+            variant="text"
+            color="primary"
+            onClick={() => {
+              history.push(`/user/${userId}`);
+            }}
+          >
             我
           </Button>
         ) : (

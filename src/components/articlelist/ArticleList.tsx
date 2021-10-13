@@ -7,9 +7,16 @@ import axios from "axios";
 
 const PER_PAGE = 50;
 
-export default function ArticleList({ userId }: { userId?: string }) {
+export default function ArticleList({
+  userId,
+  favorate = false,
+}: {
+  userId?: string;
+  favorate?: boolean;
+}) {
   const [newsList, setNewsList] = useState<ArticleItemNew[]>([]);
   const [hasNext, setHasNext] = useState(true);
+  const loggedUserId = localStorage.getItem("userId");
   // const params = useParams<{ id: string }>();
   const loadNext = () => {
     (async () => {
@@ -19,9 +26,17 @@ export default function ArticleList({ userId }: { userId?: string }) {
             userId: userId ? userId : "",
             perpage: PER_PAGE,
             page: Math.floor(newsList.length / PER_PAGE) + 1,
+            favorate,
           },
         })
         .then((data) => {
+          // 判断点赞状态
+          data.data.data.articles.forEach((article) => {
+            article.favorate = Boolean(
+              loggedUserId && article.favoratedUserList?.includes(loggedUserId)
+            );
+          });
+          /////////////
           if (
             data.data.data.articles.length + newsList.length ===
             data.data.data.total
@@ -35,8 +50,9 @@ export default function ArticleList({ userId }: { userId?: string }) {
   };
 
   useEffect(() => {
+    setNewsList([]);
     loadNext();
-  }, []);
+  }, [favorate, userId]);
 
   const history = useHistory();
 
@@ -60,10 +76,15 @@ export default function ArticleList({ userId }: { userId?: string }) {
             user={item.user}
             creationDate={item.creationDate}
             clickHandler={() => handleClick(item._id)}
+            favorate={item.favorate}
             onDelete={() => {
               setNewsList((newsList) => {
                 return newsList.filter((c) => c._id !== item._id);
               });
+            }}
+            onFavorate={(status) => {
+              item.favorate = status;
+              setNewsList([...newsList]);
             }}
           ></ArticleCard>
         ))}

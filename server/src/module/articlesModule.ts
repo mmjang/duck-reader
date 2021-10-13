@@ -69,24 +69,50 @@ export default (app: express.Application) => {
       textContent: 0,
     };
     const userId: string = req.query.userId as string;
+    const favorate = req.query.favorate || "false";
     const page: number = +req.query.page || 1;
     const perpage: number = +req.query.perpage || 100;
     const query = userId ? { "user._id": userId } : {};
     const total = await collection("articles").find(query).count();
-    res.json(
-      resp(true, {
-        articles: await collection("articles")
-          .find(query)
-          .sort({ creationDate: -1 })
-          .project(projection)
-          .limit(perpage)
-          .skip((page - 1) * perpage)
-          .toArray(),
-        page,
-        perpage,
-        total,
-      })
-    );
+    // 查询用户所提交文章或者所有文章的场景，此场景查询文章对应的点赞详情
+    if (favorate === "false") {
+      res.json(
+        resp(true, {
+          articles: await collection("articles")
+            .find(query)
+            .sort({ creationDate: -1 })
+            .project(projection)
+            .limit(perpage)
+            .skip((page - 1) * perpage)
+            .toArray(),
+          page,
+          perpage,
+          total,
+        })
+      );
+    } else {
+      // 查询用户点赞过的文章场景，此查询不查询每篇文章的点赞详情
+      console.log("favorate");
+      const favorateList = await collection("favorate")
+        .find({ userId })
+        .toArray();
+      const favorateIdList = favorateList.map((f) => new ObjectId(f.articleId));
+      console.log(favorateIdList);
+      res.json(
+        resp(true, {
+          articles: await collection("articles")
+            .find({ _id: { $in: favorateIdList } })
+            .sort({ creationDate: -1 })
+            .project(projection)
+            .limit(perpage)
+            .skip((page - 1) * perpage)
+            .toArray(),
+          page,
+          perpage,
+          total,
+        })
+      );
+    }
   });
 
   app.get("/api/articleDetail", async (req, res) => {

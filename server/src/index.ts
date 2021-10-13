@@ -4,6 +4,7 @@ import authentication from "./middleware/authentication";
 import articlesModule from "./module/articlesModule";
 import cardsModule from "./module/cardsModule";
 import dictionaryModule from "./module/dictionaryModule";
+import favorateModule from "./module/favorateModule";
 import usersModule from "./module/usersModule";
 
 // 链接mongodb数据库
@@ -22,6 +23,7 @@ usersModule(app);
 articlesModule(app);
 dictionaryModule(app);
 cardsModule(app);
+favorateModule(app);
 
 // 启动服务
 app.listen(port, () => {

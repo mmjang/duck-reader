@@ -16,13 +16,16 @@ import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
 import { useLocalStorage } from "../../utils/hooks";
 import { Slide, useScrollTrigger } from "@material-ui/core";
+import Favorateicon from "../favorateicon/Favorateicon";
 
 export default function Myreaderwithdictionary() {
   const params = useParams<{ id: string }>();
+  const userId = localStorage.getItem("userId");
   const history = useHistory();
   const [articleHtml, setArticleHtml] = useState("");
   const [highlights, setHighlights] = useState<Highlight[]>([]);
   const [wordSelection, setWordSelection] = useState<WordSelectionEvent>();
+  const [favorateStatus, setFavorateStatus] = useState(false);
   const [fontSize, setFontSize] = useLocalStorage("fontSize", "middle");
   const [fontFamily, setFontFamily] = useLocalStorage("fontFamily", "bookerly");
 
@@ -35,6 +38,9 @@ export default function Myreaderwithdictionary() {
       })
       .then((data) => {
         setArticleHtml(data.data.data.content);
+        const favoratedUserList = data.data.data.favoratedUserList || [];
+        const isFavorate = favoratedUserList.includes(userId);
+        setFavorateStatus(isFavorate);
       });
   }, []);
 
@@ -69,6 +75,21 @@ export default function Myreaderwithdictionary() {
               <ArrowBack />
             </IconButton>
             <div style={{ width: "100%", textAlign: "right" }}>
+              <Favorateicon
+                status={favorateStatus}
+                onClick={() => {
+                  axios
+                    .post("/api/setFavorate", {
+                      articleId: params.id,
+                      status: !favorateStatus,
+                    })
+                    .then((data) => {
+                      if (data.data.success) {
+                        setFavorateStatus(!favorateStatus);
+                      }
+                    });
+                }}
+              ></Favorateicon>
               <Select
                 value={fontSize}
                 style={{ marginRight: 16 }}

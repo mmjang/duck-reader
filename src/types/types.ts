@@ -45,6 +45,7 @@ export interface ArticleItemNew {
   creationDate: number;
   description: string | null;
   user: User;
+  favorate: boolean;
 }
 
 export interface BookItem {

@@ -6,6 +6,7 @@ import "./ArticleCard.css";
 import React from "react";
 import axios from "axios";
 import Formatteddate from "../formatteddate/Formatteddate";
+import Favorateicon from "../favorateicon/Favorateicon";
 
 export default function NewsCard({
   articleId,
@@ -17,8 +18,10 @@ export default function NewsCard({
   user,
   url,
   creationDate,
+  favorate,
   clickHandler,
   onDelete,
+  onFavorate,
 }: {
   articleId: string;
   title: string;
@@ -29,8 +32,10 @@ export default function NewsCard({
   user: User;
   url: string;
   creationDate: number;
+  favorate: boolean;
   clickHandler: () => void;
   onDelete: () => void;
+  onFavorate: (status: boolean) => void;
 }) {
   const history = useHistory();
   const confirm = useConfirm();
@@ -75,6 +80,18 @@ export default function NewsCard({
           dangerouslySetInnerHTML={{ __html: summary }}
         ></div>
         <div className="hostname">
+          <Favorateicon
+            status={favorate}
+            onClick={() => {
+              axios
+                .post("/api/setFavorate", { articleId, status: !favorate })
+                .then((data) => {
+                  if (data.data.success) {
+                    onFavorate(!favorate);
+                  }
+                });
+            }}
+          ></Favorateicon>
           <Link
             href={url}
             target="_blank"

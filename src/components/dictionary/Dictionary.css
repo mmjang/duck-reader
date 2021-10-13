@@ -2,7 +2,8 @@
   position: fixed;
   bottom: 0;
   max-height: 38vh;
-  width: 100vw;
+  max-width: var(--app-width);
+  width: 100%;
   padding: 8px;
   background-color: rgba(220, 220, 220, 0.8);
   overflow-y: scroll;
